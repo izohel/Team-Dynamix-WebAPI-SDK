@@ -1,0 +1,13 @@
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\obj\Release\net8.0\Itsm.Tdx.WebApi.csproj.AssemblyReference.cache
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\obj\Release\net8.0\Itsm.Tdx.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\obj\Release\net8.0\Itsm.Tdx.WebApi.AssemblyInfoInputs.cache
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\obj\Release\net8.0\Itsm.Tdx.WebApi.AssemblyInfo.cs
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\obj\Release\net8.0\Itsm.Tdx.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\obj\Release\net8.0\Itsm.Tdx.WebApi.sourcelink.json
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\bin\Release\net8.0\Itsm.Tdx.WebApi.deps.json
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\bin\Release\net8.0\Itsm.Tdx.WebApi.dll
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\bin\Release\net8.0\Itsm.Tdx.WebApi.pdb
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\obj\Release\net8.0\Itsm.Tdx.WebApi.dll
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\obj\Release\net8.0\refint\Itsm.Tdx.WebApi.dll
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\obj\Release\net8.0\Itsm.Tdx.WebApi.pdb
+C:\Users\PeterS\source\repos\ItsmIntegrations\TdxApi\obj\Release\net8.0\ref\Itsm.Tdx.WebApi.dll
