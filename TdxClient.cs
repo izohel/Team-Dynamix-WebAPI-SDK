@@ -26,6 +26,7 @@ public class TdxClient : TdxBaseClient
         _webServicesBeId = webServicesBeId;
         _webServicesKey = webServicesKey;
     }
+
     /// <summary>
     /// Constructor that takes full configuration via TdxClientOptions.
     /// </summary>
@@ -37,14 +38,18 @@ public class TdxClient : TdxBaseClient
         _webServicesBeId = webServicesBeId;
         _webServicesKey = webServicesKey;
     }
-    private static Uri BuildBaseUri(string tenant, TdxClientOptions options)
+    /// <summary>
+    /// Use this constructor to supply your own <see cref="HttpClient"/> instance,
+    /// such as one configured with logging, handlers, or a shared retry policy.
+    /// If <c>BaseAddress</c> is not set, it will be inferred from the tenant and options.
+    /// </summary>
+    public TdxClient(HttpClient httpClient, string tenant, string webServicesBeId, string webServicesKey, TdxClientOptions? options = null)
+    : base(httpClient, tenant, options ?? new TdxClientOptions())
     {
-        if (!string.IsNullOrWhiteSpace(options.BaseApiUrl))
-            return new Uri(options.BaseApiUrl);
-
-        ArgumentException.ThrowIfNullOrWhiteSpace(tenant, "Tenant is required if BaseApiUrl is not set.");
-        string url = $"https://{tenant}.teamdynamix.com/TDWebApi/api/";
-        return new Uri(url);
+        ArgumentException.ThrowIfNullOrEmpty(webServicesBeId, nameof(webServicesBeId));
+        ArgumentException.ThrowIfNullOrEmpty(webServicesKey, nameof(webServicesKey));
+        _webServicesBeId = webServicesBeId;
+        _webServicesKey = webServicesKey;
     }
     public async Task AuthenticateAsync()
     {

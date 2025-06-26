@@ -13,14 +13,29 @@ public abstract class TdxBaseClient
     protected readonly AsyncRetryPolicy<HttpResponseMessage> RetryPolicy;
     protected readonly TdxClientOptions TdxClientOptions;
     protected string? Token;
-
+    protected TdxBaseClient(HttpClient httpClient, string tenant, TdxClientOptions? options)
+    : this(httpClient, options)
+    {
+        if (httpClient.BaseAddress == null)
+        {
+            httpClient.BaseAddress = BuildBaseUri(tenant, options ?? new TdxClientOptions());
+        }
+    }
     protected TdxBaseClient(HttpClient httpClient, TdxClientOptions? options)
     {
         HttpClient = httpClient;
         TdxClientOptions = options ?? new TdxClientOptions();
         RetryPolicy = CreateRetryPolicy(TdxClientOptions);
     }
+    protected static Uri BuildBaseUri(string tenant, TdxClientOptions options)
+    {
+        if (!string.IsNullOrWhiteSpace(options.BaseApiUrl))
+            return new Uri(options.BaseApiUrl);
 
+        ArgumentException.ThrowIfNullOrWhiteSpace(tenant, "Tenant is required if BaseApiUrl is not set.");
+        string url = $"https://{tenant}.teamdynamix.com/TDWebApi/api/";
+        return new Uri(url);
+    }
     protected static AsyncRetryPolicy<HttpResponseMessage> CreateRetryPolicy(TdxClientOptions clientOptions)
     {
         int retryCount = clientOptions.MaxRetries;
