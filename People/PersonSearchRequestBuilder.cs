@@ -1,66 +1,105 @@
 ﻿using Itsm.Tdx.WebApi.Exceptions;
 using Itsm.Tdx.WebApi.People.Models;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 
 namespace Itsm.Tdx.WebApi.People;
 
+/// <summary>
+/// Provides functionality to search for people in the TeamDynamix people database
+/// based on various search criteria.
+/// </summary>
 public class PersonSearchRequestBuilder : BaseRequestBuilder
 {
     private readonly Dictionary<string, object> _searchCriteria = new();
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="PersonSearchRequestBuilder"/> class.
+    /// </summary>
+    /// <param name="path">The relative API path for the search endpoint.</param>
+    /// <param name="client">The TDX API client used to send the request.</param>
     public PersonSearchRequestBuilder(string path, TdxBaseClient client)
         : base(path, client)
     {
-        
     }
-    public PersonSearchRequestBuilder WithExternalId(string externalId)
+
+    /// <summary>
+    /// Adds the external ID to the search criteria.
+    /// </summary>
+    /// <param name="externalId">The external ID of the person.</param>
+    /// <returns>The current <see cref="PersonSearchRequestBuilder"/> instance.</returns>
+    /// <exception cref="ArgumentException">Thrown when <paramref name="externalId"/> is null or empty.</exception>
+    public PersonSearchRequestBuilder WithExternalId(string externalId)=> Add("ExternalId",externalId);
+
+    /// <summary>
+    /// Adds the username to the search criteria.
+    /// </summary>
+    /// <param name="username">The username of the person.</param>
+    /// <returns>The current <see cref="PersonSearchRequestBuilder"/> instance.</returns>
+    /// <exception cref="ArgumentException">Thrown when <paramref name="username"/> is null or empty.</exception>    
+    public PersonSearchRequestBuilder WithUsername(string username) => Add("Username", username);
+
+    /// <summary>
+    /// Adds the first name to the search criteria.
+    /// </summary>
+    /// <param name="firstName">The first name of the person.</param>
+    /// <returns>The current <see cref="PersonSearchRequestBuilder"/> instance.</returns>
+    public PersonSearchRequestBuilder WithFirstName(string firstName) => Add("FirstName", firstName);
+
+    /// <summary>
+    /// Adds the last name to the search criteria.
+    /// </summary>
+    /// <param name="lastName">The last name of the person.</param>
+    /// <returns>The current <see cref="PersonSearchRequestBuilder"/> instance.</returns>
+    public PersonSearchRequestBuilder WithLastName(string lastName) => Add("LastName", lastName);
+
+    /// <summary>
+    /// Adds the email to the search criteria.
+    /// </summary>
+    /// <param name="email">The email address of the person.</param>
+    /// <returns>The current <see cref="PersonSearchRequestBuilder"/> instance.</returns>
+    public PersonSearchRequestBuilder WithEmail(string email) => Add("Email", email);
+
+    /// <summary>
+    /// Adds a custom search criterion to the search criteria.
+    /// </summary>
+    /// <param name="key">The key of the search criterion.</param>
+    /// <param name="value">The value of the search criterion.</param>
+    /// <returns>The current <see cref="PersonSearchRequestBuilder"/> instance.</returns>
+    /// <exception cref="ArgumentException">Thrown when <paramref name="key"/> or <paramref name="value"/> is null or empty.</exception>
+    public PersonSearchRequestBuilder With(string key, string value)
     {
-        ArgumentException.ThrowIfNullOrEmpty(externalId);
-        _searchCriteria["ExternalId"] = externalId;
-        return this;
-    }
-    public PersonSearchRequestBuilder WithUsername(string username)
-    {
-        ArgumentException.ThrowIfNullOrEmpty(username);
-        _searchCriteria["Username"] = username;
+        ArgumentException.ThrowIfNullOrEmpty(key, nameof(key));
+        ArgumentException.ThrowIfNullOrEmpty(value, nameof(value));
+        _searchCriteria[key] = value;
         return this;
     }
 
-    public PersonSearchRequestBuilder WithFirstName(string firstName)
-    {
-        if (!string.IsNullOrWhiteSpace(firstName))
-            _searchCriteria["FirstName"] = firstName;
-        return this;
-    }
-
-    public PersonSearchRequestBuilder WithLastName(string lastName)
-    {
-        if (!string.IsNullOrWhiteSpace(lastName))
-            _searchCriteria["LastName"] = lastName;
-        return this;
-    }
-
-    public PersonSearchRequestBuilder WithEmail(string email)
-    {
-        if (!string.IsNullOrWhiteSpace(email))
-            _searchCriteria["Email"] = email;
-        return this;
-    }
-
+    /// <summary>
+    /// Executes the search with the provided criteria and returns a list of matching users.
+    /// </summary>
+    /// <returns>A list of <see cref="User"/> objects that match the search criteria.</returns>
+    /// <exception cref="InvalidOperationException">Thrown when no search criteria have been provided.</exception>
+    /// <exception cref="UserException">Thrown when no matching users are found.</exception>
     public async Task<List<User>> GetAsync()
     {
         if (_searchCriteria.Count == 0)
             throw new InvalidOperationException("No search criteria provided for person search.");
 
         HttpRequestMessage request = new(HttpMethod.Post, "people/search");
-        request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
         string jsonBody = JsonConvert.SerializeObject(_searchCriteria);
         request.Content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
 
-        List<User> result = await Client.SendRequestAsync<List<User>>(request);
-
-        return result ?? throw new UserException("No matching users found.");
+        return await Client.SendRequestAsync<List<User>>(request) 
+            ?? throw new UserException("No matching users found.");
+    }
+    private PersonSearchRequestBuilder Add(string key, string? value)
+    {
+        ArgumentException.ThrowIfNullOrEmpty(value, nameof(value));
+        _searchCriteria[key] = value!;
+        return this;
     }
 }
