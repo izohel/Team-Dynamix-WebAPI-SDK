@@ -4,6 +4,7 @@ using Itsm.Tdx.WebApi.Extensions;
 using Newtonsoft.Json;
 using Itsm.Tdx.WebApi.People;
 using Itsm.Tdx.WebApi.Tickets;
+using Itsm.Tdx.WebApi.Accounts;
 
 namespace Itsm.Tdx.WebApi;
 
@@ -12,9 +13,8 @@ public class TdxClient : TdxBaseClient
     private readonly string _webServicesBeId;
     private readonly string _webServicesKey;
     public PeopleRequestBuilder Users => new(this);
-
-    // Fluent entry point: client.Tickets("244")["ticketId]
     public TicketsRequestBuilder Tickets(string appId) => new(this, appId);
+    public AccountsRequestBuilder Accounts => new(this);
     /// <summary>
     /// Constructor with default retry policy and no throttling callbacks.
     /// </summary>
