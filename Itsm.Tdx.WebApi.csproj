@@ -8,13 +8,17 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="docs\**" />
 	  <Compile Remove="_site\**" />
+	  <EmbeddedResource Remove="docs\**" />
 	  <EmbeddedResource Remove="_site\**" />
+	  <None Remove="docs\**" />
 	  <None Remove="_site\**" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove=".gitignore" />
+	  <None Remove="docfx.json" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Itsm.Tdx.WebApi.CustomAttributes.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,239 +7,470 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Itsm.Tdx.WebApi.People.Models;
+/// <summary>
+/// Represents a user in the TeamDynamix system.
+/// </summary>
 public class User
 {
-#pragma warning disable CA1507 // Use nameof to express symbol names
+    /// <summary>
+    /// The UID of the user.
+    /// </summary>
     [JsonProperty("UID")]
+    public required string Uid { get; set; }
 
-    public string? Uid { get; set; }
-
+    /// <summary>
+    /// The integer ID of the user.
+    /// </summary>
     [JsonProperty("ReferenceID")]
     public int ReferenceId { get; set; }
 
+    /// <summary>
+    /// The UID of the organization associated with the user.
+    /// </summary>
     [JsonProperty("BEID")]
     public string? BeId { get; set; }
 
+    /// <summary>
+    /// The integer ID of the organization associated with the user.
+    /// </summary>
     [JsonProperty("BEIDInt")]
     public int BeIdInt { get; set; }
 
-    [JsonProperty("IsActive")]
+    /// <summary>
+    /// The active status of the user. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(IsActive))]
     public bool IsActive { get; set; }
 
-    [JsonProperty("IsConfidential")]
+    /// <summary>
+    /// The confidential status of the user. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(IsConfidential))]
     public bool IsConfidential { get; set; }
 
-    [JsonProperty("UserName")]
-    public string? UserName { get; set; }
+    /// <summary>
+    /// The username of the user.
+    /// </summary>
+    [JsonProperty(nameof(UserName))]
+    public required string UserName { get; set; }
 
-    [JsonProperty("FullName")]
+    /// <summary>
+    /// The full name of the user.
+    /// </summary>
+    [JsonProperty(nameof(FullName))]
     public string? FullName { get; set; }
 
-    [JsonProperty("FirstName")]
+    /// <summary>
+    /// The first name of the user. Editable via API. Required.
+    /// </summary>
+    [JsonProperty(nameof(FirstName))]
     public string? FirstName { get; set; }
 
-    [JsonProperty("LastName")]
+    /// <summary>
+    /// The last name of the user. Editable via API. Required.
+    /// </summary>
+    [JsonProperty(nameof(LastName))]
     public string? LastName { get; set; }
 
-    [JsonProperty("MiddleName")]
+    /// <summary>
+    /// The middle name of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(MiddleName))]
     public string? MiddleName { get; set; }
 
-    [JsonProperty("Salutation")]
+    /// <summary>
+    /// The salutation of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(Salutation))]
     public string? Salutation { get; set; }
 
-    [JsonProperty("Nickname")]
+    /// <summary>
+    /// The nickname of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(Nickname))]
     public string? Nickname { get; set; }
 
+    /// <summary>
+    /// The ID of the default account/department associated with the user. Editable via API.
+    /// </summary>
     [JsonProperty("DefaultAccountID")]
     public int DefaultAccountId { get; set; }
 
-    [JsonProperty("DefaultAccountName")]
+    /// <summary>
+    /// The name of the default account/department associated with the user.
+    /// </summary>
+    [JsonProperty(nameof(DefaultAccountName))]
     public string? DefaultAccountName { get; set; }
 
-    [JsonProperty("PrimaryEmail")]
-    public string? PrimaryEmail { get; set; }
+    /// <summary>
+    /// The primary email address of the user. Editable via API. Required.
+    /// </summary>
+    [JsonProperty(nameof(PrimaryEmail))]
+    public required string PrimaryEmail { get; set; }
 
-    [JsonProperty("AlternateEmail")]
+    /// <summary>
+    /// The alternate email address of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(AlternateEmail))]
     public string? AlternateEmail { get; set; }
 
+    /// <summary>
+    /// The organizational ID of the user. Editable via API. Nullable.
+    /// </summary>
     [JsonProperty("ExternalID")]
     public string? ExternalId { get; set; }
 
+    /// <summary>
+    /// The alternate ID of the user. Editable via API. Nullable.
+    /// </summary>
     [JsonProperty("AlternateID")]
     public string? AlternateId { get; set; }
 
-    [JsonProperty("Applications")]
-    public List<object>? Applications { get; set; }
+    /// <summary>
+    /// The system-defined (non-platform) applications associated with the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(Applications))]
+    public List<string>? Applications { get; set; }
 
-    [JsonProperty("SecurityRoleName")]
+    /// <summary>
+    /// The name of the global security role associated with the user.
+    /// </summary>
+    [JsonProperty(nameof(SecurityRoleName))]
     public string? SecurityRoleName { get; set; }
 
+    /// <summary>
+    /// The UID of the global security role associated with the user. Editable via API.
+    /// </summary>
     [JsonProperty("SecurityRoleID")]
     public string? SecurityRoleId { get; set; }
 
-    [JsonProperty("Permissions")]
-    public List<object>? Permissions { get; set; }
+    /// <summary>
+    /// The global security role permissions associated with the user. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(Permissions))]
+    public List<string>? Permissions { get; set; }
 
-    [JsonProperty("OrgApplications")]
-    public object? OrgApplications { get; set; }
+    /// <summary>
+    /// The organizationally-defined (platform) applications associated with the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(OrgApplications))]
+    public List<Apps.Models.UserApplication>? OrgApplications { get; set; }
 
+    /// <summary>
+    /// The ID of the primary client portal application associated with the user. Editable via API. Nullable.
+    /// </summary>
     [JsonProperty("PrimaryClientPortalApplicationID")]
-    public object? PrimaryClientPortalApplicationId { get; set; }
+    public int? PrimaryClientPortalApplicationId { get; set; }
 
+    /// <summary>
+    /// The IDs of the groups associated with the user. Nullable.
+    /// </summary>
     [JsonProperty("GroupIDs")]
-    public List<object>? GroupIds { get; set; }
+    public List<int>? GroupIds { get; set; }
 
-    [JsonProperty("AlertEmail")]
+    /// <summary>
+    /// The alert email address of the user where system notifications are delivered. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(AlertEmail))]
     public string? AlertEmail { get; set; }
 
-    [JsonProperty("ProfileImageFileName")]
+    /// <summary>
+    /// The profile image file name of the user.
+    /// </summary>
+    [JsonProperty(nameof(ProfileImageFileName))]
     public string? ProfileImageFileName { get; set; }
 
-    [JsonProperty("Company")]
+    /// <summary>
+    /// The company of the user. Editable via API. Required.
+    /// </summary>
+    [JsonProperty(nameof(Company))]
     public string? Company { get; set; }
 
-    [JsonProperty("Title")]
+    /// <summary>
+    /// The title of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(Title))]
     public string? Title { get; set; }
 
-    [JsonProperty("HomePhone")]
+    /// <summary>
+    /// The home phone number of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(HomePhone))]
     public string? HomePhone { get; set; }
 
-    [JsonProperty("PrimaryPhone")]
+    /// <summary>
+    /// The primary phone number of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(PrimaryPhone))]
     public string? PrimaryPhone { get; set; }
 
-    [JsonProperty("WorkPhone")]
+    /// <summary>
+    /// The work phone number of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(WorkPhone))]
     public string? WorkPhone { get; set; }
 
-    [JsonProperty("Pager")]
+    /// <summary>
+    /// The pager number of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(Pager))]
     public string? Pager { get; set; }
 
-    [JsonProperty("OtherPhone")]
+    /// <summary>
+    /// The other phone number of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(OtherPhone))]
     public string? OtherPhone { get; set; }
 
-    [JsonProperty("MobilePhone")]
+    /// <summary>
+    /// The mobile phone number of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(MobilePhone))]
     public string? MobilePhone { get; set; }
 
-    [JsonProperty("Fax")]
+    /// <summary>
+    /// The fax number of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(Fax))]
     public string? Fax { get; set; }
 
-    [JsonProperty("DefaultPriorityID")]
+    /// <summary>
+    /// The ID of the default priority associated with the user. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(DefaultPriorityID))]
     public int DefaultPriorityID { get; set; }
 
-    [JsonProperty("DefaultPriorityName")]
+    /// <summary>
+    /// The name of the default priority associated with the user.
+    /// </summary>
+    [JsonProperty(nameof(DefaultPriorityName))]
     public string? DefaultPriorityName { get; set; }
 
-    [JsonProperty("AboutMe")]
+    /// <summary>
+    /// The "About Me" information associated with the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(AboutMe))]
     public string? AboutMe { get; set; }
 
-    [JsonProperty("TechnicianSignature")]
-    public object? TechnicianSignature { get; set; }
+    /// <summary>
+    /// The technician signature associated with the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(TechnicianSignature))]
+    public string? TechnicianSignature { get; set; }
 
-    [JsonProperty("ApplyTechnicianSignatureToUpdatesAndComments")]
+    /// <summary>
+    /// Determines whether the technician signature is applied to the updates and comments for all tickets and ticket tasks. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(ApplyTechnicianSignatureToUpdatesAndComments))]
     public bool ApplyTechnicianSignatureToUpdatesAndComments { get; set; }
 
-    [JsonProperty("ApplyTechnicianSignatureToReplies")]
+    /// <summary>
+    /// Determines whether the technician signature is applied to the replies for all tickets and ticket tasks. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(ApplyTechnicianSignatureToReplies))]
     public bool ApplyTechnicianSignatureToReplies { get; set; }
 
-    [JsonProperty("WorkAddress")]
+    /// <summary>
+    /// The work address of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(WorkAddress))]
     public string? WorkAddress { get; set; }
 
-    [JsonProperty("WorkCity")]
+    /// <summary>
+    /// The work city of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(WorkCity))]
     public string? WorkCity { get; set; }
 
-    [JsonProperty("WorkState")]
+    /// <summary>
+    /// The work state abbreviation of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(WorkState))]
     public string? WorkState { get; set; }
 
-    [JsonProperty("WorkZip")]
+    /// <summary>
+    /// The work zip code of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(WorkZip))]
     public string? WorkZip { get; set; }
 
-    [JsonProperty("WorkCountry")]
+    /// <summary>
+    /// The work country of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(WorkCountry))]
     public string? WorkCountry { get; set; }
 
-    [JsonProperty("HomeAddress")]
+    /// <summary>
+    /// The home address of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(HomeAddress))]
     public string? HomeAddress { get; set; }
 
-    [JsonProperty("HomeCity")]
+    /// <summary>
+    /// The home city of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(HomeCity))]
     public string? HomeCity { get; set; }
 
-    [JsonProperty("HomeState")]
+    /// <summary>
+    /// The home state abbreviation of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(HomeState))]
     public string? HomeState { get; set; }
 
-    [JsonProperty("HomeZip")]
+    /// <summary>
+    /// The home zip code of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(HomeZip))]
     public string? HomeZip { get; set; }
 
-    [JsonProperty("HomeCountry")]
+    /// <summary>
+    /// The home country of the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(HomeCountry))]
     public string? HomeCountry { get; set; }
 
+    /// <summary>
+    /// The ID of the location associated with the user. Editable via API.
+    /// </summary>
     [JsonProperty("LocationID")]
-    public int LocationID { get; set; }
+    public int LocationId { get; set; }
 
-    [JsonProperty("LocationName")]
-    public object? LocationName { get; set; }
+    /// <summary>
+    /// The name of the location associated with the user.
+    /// </summary>
+    [JsonProperty(nameof(LocationName))]
+    public string? LocationName { get; set; }
 
+    /// <summary>
+    /// The ID of the location room associated with the user. Editable via API.
+    /// </summary>
     [JsonProperty("LocationRoomID")]
-    public int LocationRoomID { get; set; }
+    public int LocationRoomId { get; set; }
 
-    [JsonProperty("LocationRoomName")]
-    public object? LocationRoomName { get; set; }
+    /// <summary>
+    /// The name of the location room associated with the user.
+    /// </summary>
+    [JsonProperty(nameof(LocationRoomName))]
+    public string? LocationRoomName { get; set; }
 
-    [JsonProperty("DefaultRate")]
+    /// <summary>
+    /// The default bill rate of the user. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(DefaultRate))]
     public double DefaultRate { get; set; }
 
-    [JsonProperty("CostRate")]
+    /// <summary>
+    /// The cost rate of the user. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(CostRate))]
     public double CostRate { get; set; }
 
-    [JsonProperty("IsEmployee")]
+    /// <summary>
+    /// The employee status of the user. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(IsEmployee))]
     public bool IsEmployee { get; set; }
 
-    [JsonProperty("WorkableHours")]
+    /// <summary>
+    /// The number of workable hours in a work day for the user. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(WorkableHours))]
     public double WorkableHours { get; set; }
 
-    [JsonProperty("IsCapacityManaged")]
+    /// <summary>
+    /// Whether the user's capacity is managed, meaning they can have capacity and appear on capacity/availability reports. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(IsCapacityManaged))]
     public bool IsCapacityManaged { get; set; }
 
-    [JsonProperty("ReportTimeAfterDate")]
+    /// <summary>
+    /// The date after which the user should start reporting time, also governs capacity calculations. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(ReportTimeAfterDate))]
     public DateTime ReportTimeAfterDate { get; set; }
 
-    [JsonProperty("EndDate")]
+    /// <summary>
+    /// The date after which the user is no longer available for scheduling and no longer required to log time. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(EndDate))]
     public DateTime EndDate { get; set; }
 
-    [JsonProperty("ShouldReportTime")]
+    /// <summary>
+    /// Whether the user should report time. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(ShouldReportTime))]
     public bool ShouldReportTime { get; set; }
 
+    /// <summary>
+    /// The UID of the person who the user reports to. Editable via API. Nullable.
+    /// </summary>
     [JsonProperty("ReportsToUID")]
     public string? ReportsToUid { get; set; }
 
-    [JsonProperty("ReportsToFullName")]
+    /// <summary>
+    /// The full name of the person who the user reports to.
+    /// </summary>
+    [JsonProperty(nameof(ReportsToFullName))]
     public string? ReportsToFullName { get; set; }
 
-    [JsonProperty("ResourcePoolID")]
-    public int ResourcePoolId { get; set; }
+    /// <summary>
+    /// The ID of the resource pool associated with the user. Editable via API.
+    /// </summary>
+    [JsonProperty(nameof(ResourcePoolID))]
+    public int ResourcePoolID { get; set; }
 
-    [JsonProperty("ResourcePoolName")]
+    /// <summary>
+    /// The name of the resource pool associated with the user.
+    /// </summary>
+    [JsonProperty(nameof(ResourcePoolName))]
     public string? ResourcePoolName { get; set; }
 
+    /// <summary>
+    /// The ID of the time zone associated with the user. Editable via API.
+    /// </summary>
     [JsonProperty("TZID")]
     public int Tzid { get; set; }
 
+    /// <summary>
+    /// The name of the time zone associated with the user.
+    /// </summary>
     [JsonProperty("TZName")]
     public string? TzName { get; set; }
 
+    /// <summary>
+    /// The type of the user.
+    /// </summary>
     [JsonProperty("TypeID")]
-    public int TypeId { get; set; }
+    public UserType TypeId { get; set; }
 
-    [JsonProperty("AuthenticationUserName")]
+    /// <summary>
+    /// The authentication username of the user, used for authenticating with non-TeamDynamix authentication types. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(AuthenticationUserName))]
     public string? AuthenticationUserName { get; set; }
 
-    [JsonProperty("AuthenticationProviderID")]
-    public int AuthenticationProviderId { get; set; }
+    /// <summary>
+    /// The ID of the authentication provider the new user will use for authentication. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(AuthenticationProviderID))]
+    public int? AuthenticationProviderID { get; set; }
 
-    [JsonProperty("Attributes")]
-    public List<object>? Attributes { get; set; }
+    /// <summary>
+    /// The custom attributes associated with the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(Attributes))]
+    public List<CustomAttribute>? Attributes { get; set; }
 
-    [JsonProperty("IMProvider")]
-    public string? ImProvider { get; set; }
+    /// <summary>
+    /// The Instant Messenger (IM) provider associated with the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(IMProvider))]
+    public string? IMProvider { get; set; }
 
-    [JsonProperty("IMHandle")]
-    public string? ImHandle { get; set; }
+    /// <summary>
+    /// The Instant Messenger (IM) username/handle associated with the user. Editable via API. Nullable.
+    /// </summary>
+    [JsonProperty(nameof(IMHandle))]
+    public string? IMHandle { get; set; }
 }
-#pragma warning restore CA1507 // Use nameof to express symbol names

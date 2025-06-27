@@ -1,362 +1,736 @@
-﻿using System;
+﻿using Itsm.Tdx.WebApi.CustomAttributes.Models;
+using Itsm.Tdx.WebApi.KnowledgeBase.Models;
+using Itsm.Tdx.WebApi.SharedModels;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Itsm.Tdx.WebApi.Tickets.Models;
 
+/// <summary>
+/// Represents a ticket with all associated details in TeamDynamix.
+/// </summary>
 public class Ticket
 {
-    [JsonPropertyName("ID")]
-    public int? ID { get; set; }
+    /// <summary>
+    /// The ID of the ticket.
+    /// </summary>
+    [JsonProperty("ID")]
+    public int Id { get; set; }
 
-    [JsonPropertyName("ParentID")]
-    public int? ParentID { get; set; }
+    /// <summary>
+    /// The ID of the parent associated with the ticket.
+    /// </summary>
+    [JsonProperty("ParentID")]
+    public int ParentId { get; set; }
 
-    [JsonPropertyName("ParentTitle")]
-    public string? ParentTitle { get; set; }
+    /// <summary>
+    /// The title of the parent associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ParentTitle))]
+    public string ParentTitle { get; set; } = string.Empty;
 
-    [JsonPropertyName("ParentClass")]
-    public int? ParentClass { get; set; }
+    /// <summary>
+    /// The classification of the parent associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ParentClass))]
+    public TicketClass ParentClass { get; set; }
 
-    [JsonPropertyName("TypeID")]
-    public int? TypeID { get; set; }
+    /// <summary>
+    /// The ID of the ticket type associated with the ticket.
+    /// </summary>
+    [JsonProperty("TypeID")]
+    public int TypeId { get; set; }
 
-    [JsonPropertyName("TypeName")]
-    public string? TypeName { get; set; }
+    /// <summary>
+    /// The name of the ticket type associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(TypeName))]
+    public string TypeName { get; set; } = string.Empty;
 
-    [JsonPropertyName("TypeCategoryID")]
-    public int? TypeCategoryID { get; set; }
+    /// <summary>
+    /// The ID of the category associated with the ticket's type.
+    /// </summary>
+    [JsonProperty("TypeCategoryID")]
+    public int TypeCategoryId { get; set; }
 
-    [JsonPropertyName("TypeCategoryName")]
-    public string? TypeCategoryName { get; set; }
+    /// <summary>
+    /// The name of the category associated with the ticket's type.
+    /// </summary>
+    [JsonProperty(nameof(TypeCategoryName))]
+    public string TypeCategoryName { get; set; } = string.Empty;
 
-    [JsonPropertyName("Classification")]
-    public int? Classification { get; set; }
+    /// <summary>
+    /// The classification associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(Classification))]
+    public TicketClass Classification { get; set; }
 
-    [JsonPropertyName("ClassificationName")]
-    public string? ClassificationName { get; set; }
+    /// <summary>
+    /// The application-defined name of the classification associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ClassificationName))]
+    public string ClassificationName { get; set; } = string.Empty;
 
-    [JsonPropertyName("FormID")]
-    public int? FormID { get; set; }
+    /// <summary>
+    /// The ID of the form associated with the ticket.
+    /// </summary>
+    [JsonProperty("FormID")]
+    public int FormId { get; set; }
 
-    [JsonPropertyName("FormName")]
-    public string? FormName { get; set; }
+    /// <summary>
+    /// The name of the form associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(FormName))]
+    public string FormName { get; set; } = string.Empty;
 
-    [JsonPropertyName("Title")]
-    public string? Title { get; set; }
+    /// <summary>
+    /// The title of the ticket.
+    /// </summary>
+    [JsonProperty(nameof(Title))]
+    public string Title { get; set; } = string.Empty;
 
-    [JsonPropertyName("Description")]
+    /// <summary>
+    /// The description of the ticket.
+    /// </summary>
+    [JsonProperty(nameof(Description))]
     public string? Description { get; set; }
 
-    [JsonPropertyName("IsRichHtml")]
-    public bool? IsRichHtml { get; set; }
+    /// <summary>
+    /// Indicates if the ticket description is rich-text or plain-text.
+    /// </summary>
+    [JsonProperty(nameof(IsRichHtml))]
+    public bool IsRichHtml { get; set; }
 
-    [JsonPropertyName("Uri")]
-    public string? Uri { get; set; }
+    /// <summary>
+    /// The URI to retrieve the full details of the ticket via the web API.
+    /// </summary>
+    [JsonProperty(nameof(Uri))]
+    public string Uri { get; set; } = string.Empty;
 
-    [JsonPropertyName("AccountID")]
-    public int? AccountID { get; set; }
+    /// <summary>
+    /// The ID of the account/department associated with the ticket.
+    /// </summary>
+    [JsonProperty("AccountID")]
+    public int AccountId { get; set; }
 
-    [JsonPropertyName("AccountName")]
-    public string? AccountName { get; set; }
+    /// <summary>
+    /// The name of the account/department associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(AccountName))]
+    public string AccountName { get; set; } = string.Empty;
 
-    [JsonPropertyName("SourceID")]
-    public int? SourceID { get; set; }
+    /// <summary>
+    /// The ID of the ticket source associated with the ticket.
+    /// </summary>
+    [JsonProperty("SourceID")]
+    public int SourceId { get; set; }
 
-    [JsonPropertyName("SourceName")]
-    public string? SourceName { get; set; }
+    /// <summary>
+    /// The name of the ticket source associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(SourceName))]
+    public string SourceName { get; set; } = string.Empty;
 
-    [JsonPropertyName("StatusID")]
-    public int? StatusID { get; set; }
+    /// <summary>
+    /// The ID of the ticket status associated with the ticket.
+    /// </summary>
+    [JsonProperty("StatusID")]
+    public int StatusId { get; set; }
 
-    [JsonPropertyName("StatusName")]
-    public string? StatusName { get; set; }
+    /// <summary>
+    /// The name of the ticket status associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(StatusName))]
+    public string StatusName { get; set; } = string.Empty;
 
-    [JsonPropertyName("StatusClass")]
-    public int? StatusClass { get; set; }
+    /// <summary>
+    /// The class of the ticket status associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(StatusClass))]
+    public StatusClass StatusClass { get; set; }
 
-    [JsonPropertyName("ImpactID")]
-    public int? ImpactID { get; set; }
+    /// <summary>
+    /// The ID of the impact associated with the ticket.
+    /// </summary>
+    [JsonProperty("ImpactID")]
+    public int ImpactId { get; set; }
 
-    [JsonPropertyName("ImpactName")]
-    public string? ImpactName { get; set; }
+    /// <summary>
+    /// The name of the impact associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ImpactName))]
+    public string ImpactName { get; set; } = string.Empty;
 
-    [JsonPropertyName("UrgencyID")]
-    public int? UrgencyID { get; set; }
+    /// <summary>
+    /// The ID of the urgency associated with the ticket.
+    /// </summary>
+    [JsonProperty("UrgencyID")]
+    public int UrgencyId { get; set; }
 
-    [JsonPropertyName("UrgencyName")]
-    public string? UrgencyName { get; set; }
+    /// <summary>
+    /// The name of the urgency associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(UrgencyName))]
+    public string UrgencyName { get; set; } = string.Empty;
 
-    [JsonPropertyName("PriorityID")]
-    public int? PriorityID { get; set; }
+    /// <summary>
+    /// The ID of the priority associated with the ticket.
+    /// </summary>
+    [JsonProperty("PriorityID")]
+    public int PriorityId { get; set; }
 
-    [JsonPropertyName("PriorityName")]
-    public string? PriorityName { get; set; }
+    /// <summary>
+    /// The name of the priority associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(PriorityName))]
+    public string PriorityName { get; set; } = string.Empty;
 
-    [JsonPropertyName("PriorityOrder")]
-    public double? PriorityOrder { get; set; }
+    /// <summary>
+    /// The order of the priority associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(PriorityOrder))]
+    public double PriorityOrder { get; set; }
 
-    [JsonPropertyName("SlaID")]
-    public int? SlaID { get; set; }
+    /// <summary>
+    /// The ID of the Service Level Agreement (SLA) associated with the ticket.
+    /// </summary>
+    [JsonProperty("SlaID")]
+    public int SlaId { get; set; }
 
-    [JsonPropertyName("SlaName")]
-    public string? SlaName { get; set; }
+    /// <summary>
+    /// The name of the Service Level Agreement (SLA) associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(SlaName))]
+    public string SlaName { get; set; } = string.Empty;
 
-    [JsonPropertyName("IsSlaViolated")]
-    public bool? IsSlaViolated { get; set; }
+    /// <summary>
+    /// Whether the Service Level Agreement (SLA) associated with the ticket has been violated.
+    /// </summary>
+    [JsonProperty(nameof(IsSlaViolated))]
+    public bool IsSlaViolated { get; set; }
 
-    [JsonPropertyName("IsSlaRespondByViolated")]
+    /// <summary>
+    /// Whether the Service Level Agreement (SLA) associated with the ticket has its "Respond By" component violated.
+    /// </summary>
+    [JsonProperty(nameof(IsSlaRespondByViolated))]
     public bool? IsSlaRespondByViolated { get; set; }
 
-    [JsonPropertyName("IsSlaResolveByViolated")]
+    /// <summary>
+    /// Whether the Service Level Agreement (SLA) associated with the ticket has its "Resolve By" component violated.
+    /// </summary>
+    [JsonProperty(nameof(IsSlaResolveByViolated))]
     public bool? IsSlaResolveByViolated { get; set; }
 
-    [JsonPropertyName("RespondByDate")]
+    /// <summary>
+    /// The "Respond By" deadline of the Service Level Agreement (SLA) associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(RespondByDate))]
     public DateTime? RespondByDate { get; set; }
 
-    [JsonPropertyName("ResolveByDate")]
+    /// <summary>
+    /// The "Resolve By" deadline of the Service Level Agreement (SLA) associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ResolveByDate))]
     public DateTime? ResolveByDate { get; set; }
 
-    [JsonPropertyName("SlaBeginDate")]
+    /// <summary>
+    /// The date the Service Level Agreement (SLA) associated with the ticket was started.
+    /// </summary>
+    [JsonProperty(nameof(SlaBeginDate))]
     public DateTime? SlaBeginDate { get; set; }
 
-    [JsonPropertyName("IsOnHold")]
-    public bool? IsOnHold { get; set; }
+    /// <summary>
+    /// The on hold status of the ticket.
+    /// </summary>
+    [JsonProperty(nameof(IsOnHold))]
+    public bool IsOnHold { get; set; }
 
-    [JsonPropertyName("PlacedOnHoldDate")]
+    /// <summary>
+    /// The date the ticket was placed on hold.
+    /// </summary>
+    [JsonProperty(nameof(PlacedOnHoldDate))]
     public DateTime? PlacedOnHoldDate { get; set; }
 
-    [JsonPropertyName("GoesOffHoldDate")]
+    /// <summary>
+    /// The date the ticket goes off hold.
+    /// </summary>
+    [JsonProperty(nameof(GoesOffHoldDate))]
     public DateTime? GoesOffHoldDate { get; set; }
 
-    [JsonPropertyName("CreatedDate")]
-    public DateTime? CreatedDate { get; set; }
+    /// <summary>
+    /// The created date of the ticket.
+    /// </summary>
+    [JsonProperty(nameof(CreatedDate))]
+    public DateTime CreatedDate { get; set; }
 
-    [JsonPropertyName("CreatedUid")]
+    /// <summary>
+    /// The UID of the user who created the ticket.
+    /// </summary>
+    [JsonProperty(nameof(CreatedUid))]
     public string? CreatedUid { get; set; }
 
-    [JsonPropertyName("CreatedFullName")]
-    public string? CreatedFullName { get; set; }
+    /// <summary>
+    /// The full name of the user who created the ticket.
+    /// </summary>
+    [JsonProperty(nameof(CreatedFullName))]
+    public string CreatedFullName { get; set; } = string.Empty;
 
-    [JsonPropertyName("CreatedEmail")]
-    public string? CreatedEmail { get; set; }
+    /// <summary>
+    /// The email address of the user who created the ticket.
+    /// </summary>
+    [JsonProperty(nameof(CreatedEmail))]
+    public string CreatedEmail { get; set; } = string.Empty;
 
-    [JsonPropertyName("ModifiedDate")]
-    public DateTime? ModifiedDate { get; set; }
+    /// <summary>
+    /// The last modified date of the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ModifiedDate))]
+    public DateTime ModifiedDate { get; set; }
 
-    [JsonPropertyName("ModifiedUid")]
+    /// <summary>
+    /// The UID of the user who last modified the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ModifiedUid))]
     public string? ModifiedUid { get; set; }
 
-    [JsonPropertyName("ModifiedFullName")]
-    public string? ModifiedFullName { get; set; }
+    /// <summary>
+    /// The full name of the user who last modified the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ModifiedFullName))]
+    public string ModifiedFullName { get; set; } = string.Empty;
 
-    [JsonPropertyName("RequestorName")]
-    public string? RequestorName { get; set; }
+    /// <summary>
+    /// The full name of the requestor associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(RequestorName))]
+    public string RequestorName { get; set; } = string.Empty;
 
-    [JsonPropertyName("RequestorFirstName")]
-    public string? RequestorFirstName { get; set; }
+    /// <summary>
+    /// The first name of the requestor associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(RequestorFirstName))]
+    public string RequestorFirstName { get; set; } = string.Empty;
 
-    [JsonPropertyName("RequestorLastName")]
-    public string? RequestorLastName { get; set; }
+    /// <summary>
+    /// The last name of the requestor associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(RequestorLastName))]
+    public string RequestorLastName { get; set; } = string.Empty;
 
-    [JsonPropertyName("RequestorEmail")]
-    public string? RequestorEmail { get; set; }
+    /// <summary>
+    /// The email address of the requestor associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(RequestorEmail))]
+    public string RequestorEmail { get; set; } = string.Empty;
 
-    [JsonPropertyName("RequestorPhone")]
-    public string? RequestorPhone { get; set; }
+    /// <summary>
+    /// The phone number of the requestor associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(RequestorPhone))]
+    public string RequestorPhone { get; set; } = string.Empty;
 
-    [JsonPropertyName("RequestorUid")]
+    /// <summary>
+    /// The UID of the requestor associated with the ticket.
+    /// Nullable because it may not be provided in some cases.
+    /// </summary>
+    [JsonProperty("RequestorUID")]
     public string? RequestorUid { get; set; }
 
-    [JsonPropertyName("ActualMinutes")]
-    public int? ActualMinutes { get; set; }
+    /// <summary>
+    /// The time, in minutes, entered against the ticket or associated tasks/activities.
+    /// </summary>
+    [JsonProperty(nameof(ActualMinutes))]
+    public int ActualMinutes { get; set; }
 
-    [JsonPropertyName("EstimatedMinutes")]
-    public int? EstimatedMinutes { get; set; }
+    /// <summary>
+    /// The estimated minutes of the ticket.
+    /// </summary>
+    [JsonProperty(nameof(EstimatedMinutes))]
+    public int EstimatedMinutes { get; set; }
 
-    [JsonPropertyName("DaysOld")]
-    public int? DaysOld { get; set; }
+    /// <summary>
+    /// The age of the ticket, in days.
+    /// </summary>
+    [JsonProperty(nameof(DaysOld))]
+    public int DaysOld { get; set; }
 
-    [JsonPropertyName("StartDate")]
-    public object? StartDate { get; set; }
+    /// <summary>
+    /// The start date of the ticket.
+    /// Nullable because it may not be provided.
+    /// </summary>
+    [JsonProperty(nameof(StartDate))]
+    public DateTime? StartDate { get; set; }
 
-    [JsonPropertyName("EndDate")]
-    public object? EndDate { get; set; }
+    /// <summary>
+    /// The end date of the ticket.
+    /// Nullable because it may not be provided.
+    /// </summary>
+    [JsonProperty(nameof(EndDate))]
+    public DateTime? EndDate { get; set; }
 
-    [JsonPropertyName("ResponsibleUid")]
+    /// <summary>
+    /// The UID of the responsible user associated with the ticket.
+    /// Nullable because it may not be provided.
+    /// </summary>
+    [JsonProperty(nameof(ResponsibleUid))]
     public string? ResponsibleUid { get; set; }
 
-    [JsonPropertyName("ResponsibleFullName")]
-    public string? ResponsibleFullName { get; set; }
+    /// <summary>
+    /// The full name of the responsible user associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ResponsibleFullName))]
+    public string ResponsibleFullName { get; set; } = string.Empty;
 
-    [JsonPropertyName("ResponsibleEmail")]
-    public string? ResponsibleEmail { get; set; }
+    /// <summary>
+    /// The email address of the responsible user associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ResponsibleEmail))]
+    public string ResponsibleEmail { get; set; } = string.Empty;
 
-    [JsonPropertyName("ResponsibleGroupID")]
-    public int? ResponsibleGroupID { get; set; }
+    /// <summary>
+    /// The ID of the responsible group associated with the ticket.
+    /// </summary>
+    [JsonProperty("ResponsibleGroupID")]
+    public int ResponsibleGroupId { get; set; }
 
-    [JsonPropertyName("ResponsibleGroupName")]
-    public string? ResponsibleGroupName { get; set; }
+    /// <summary>
+    /// The name of the responsible group associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ResponsibleGroupName))]
+    public string ResponsibleGroupName { get; set; } = string.Empty;
 
-    [JsonPropertyName("RespondedDate")]
-    public DateTime? RespondedDate { get; set; }
+    /// <summary>
+    /// The date the ticket was responded to.
+    /// </summary>
+    [JsonProperty(nameof(RespondedDate))]
+    public DateTime RespondedDate { get; set; }
 
-    [JsonPropertyName("RespondedUid")]
-    public object? RespondedUid { get; set; }
+    /// <summary>
+    /// The UID of the user who responded to the ticket.
+    /// Nullable because it may not be provided.
+    /// </summary>
+    [JsonProperty(nameof(RespondedUid))]
+    public string? RespondedUid { get; set; }
 
-    [JsonPropertyName("RespondedFullName")]
-    public string? RespondedFullName { get; set; }
+    /// <summary>
+    /// The full name of the user who responded to the ticket.
+    /// </summary>
+    [JsonProperty(nameof(RespondedFullName))]
+    public string RespondedFullName { get; set; } = string.Empty;
 
-    [JsonPropertyName("CompletedDate")]
-    public DateTime? CompletedDate { get; set; }
+    /// <summary>
+    /// The completed/closed date of the ticket.
+    /// </summary>
+    [JsonProperty(nameof(CompletedDate))]
+    public DateTime CompletedDate { get; set; }
 
-    [JsonPropertyName("CompletedUid")]
+    /// <summary>
+    /// The UID of the user who completed/closed the ticket.
+    /// Nullable because it may not be provided.
+    /// </summary>
+    [JsonProperty(nameof(CompletedUid))]
     public string? CompletedUid { get; set; }
 
-    [JsonPropertyName("CompletedFullName")]
-    public string? CompletedFullName { get; set; }
+    /// <summary>
+    /// The full name of the user who completed/closed the ticket.
+    /// </summary>
+    [JsonProperty(nameof(CompletedFullName))]
+    public string CompletedFullName { get; set; } = string.Empty;
 
-    [JsonPropertyName("ReviewerUid")]
-    public object? ReviewerUid { get; set; }
+    /// <summary>
+    /// The UID of the reviewing user associated with the ticket.
+    /// Nullable because it may not be provided.
+    /// </summary>
+    [JsonProperty(nameof(ReviewerUid))]
+    public string? ReviewerUid { get; set; }
 
-    [JsonPropertyName("ReviewerFullName")]
-    public string? ReviewerFullName { get; set; }
+    /// <summary>
+    /// The full name of the reviewing user associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ReviewerFullName))]
+    public string ReviewerFullName { get; set; } = string.Empty;
 
-    [JsonPropertyName("ReviewerEmail")]
-    public string? ReviewerEmail { get; set; }
+    /// <summary>
+    /// The email address of the reviewing user associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ReviewerEmail))]
+    public string ReviewerEmail { get; set; } = string.Empty;
 
-    [JsonPropertyName("ReviewingGroupID")]
-    public int? ReviewingGroupID { get; set; }
+    /// <summary>
+    /// The ID of the reviewing group associated with the ticket.
+    /// </summary>
+    [JsonProperty("ReviewingGroupID")]
+    public int ReviewingGroupId { get; set; }
 
-    [JsonPropertyName("ReviewingGroupName")]
-    public string? ReviewingGroupName { get; set; }
+    /// <summary>
+    /// The name of the reviewing group associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ReviewingGroupName))]
+    public string ReviewingGroupName { get; set; } = string.Empty;
 
-    [JsonPropertyName("TimeBudget")]
-    public double? TimeBudget { get; set; }
+    /// <summary>
+    /// The time budget of the ticket.
+    /// </summary>
+    [JsonProperty(nameof(TimeBudget))]
+    public double TimeBudget { get; set; }
 
-    [JsonPropertyName("ExpensesBudget")]
-    public double? ExpensesBudget { get; set; }
+    /// <summary>
+    /// The expense budget of the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ExpensesBudget))]
+    public double ExpensesBudget { get; set; }
 
-    [JsonPropertyName("TimeBudgetUsed")]
-    public double? TimeBudgetUsed { get; set; }
+    /// <summary>
+    /// The used time budget of the ticket.
+    /// </summary>
+    [JsonProperty(nameof(TimeBudgetUsed))]
+    public double TimeBudgetUsed { get; set; }
 
-    [JsonPropertyName("ExpensesBudgetUsed")]
-    public double? ExpensesBudgetUsed { get; set; }
+    /// <summary>
+    /// The used expense budget of the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ExpensesBudgetUsed))]
+    public double ExpensesBudgetUsed { get; set; }
 
-    [JsonPropertyName("IsConvertedToTask")]
-    public bool? IsConvertedToTask { get; set; }
+    /// <summary>
+    /// Whether the ticket has been converted to a project task.
+    /// </summary>
+    [JsonProperty(nameof(IsConvertedToTask))]
+    public bool IsConvertedToTask { get; set; }
 
-    [JsonPropertyName("ConvertedToTaskDate")]
-    public DateTime? ConvertedToTaskDate { get; set; }
+    /// <summary>
+    /// The date the ticket was converted to a project task.
+    /// </summary>
+    [JsonProperty(nameof(ConvertedToTaskDate))]
+    public DateTime ConvertedToTaskDate { get; set; }
 
-    [JsonPropertyName("ConvertedToTaskUid")]
-    public object? ConvertedToTaskUid { get; set; }
+    /// <summary>
+    /// The UID of the user who converted the ticket to a project task.
+    /// Nullable because it may not be provided.
+    /// </summary>
+    [JsonProperty(nameof(ConvertedToTaskUid))]
+    public string? ConvertedToTaskUid { get; set; }
 
-    [JsonPropertyName("ConvertedToTaskFullName")]
-    public string? ConvertedToTaskFullName { get; set; }
+    /// <summary>
+    /// The full name of the user who converted the ticket to a project task.
+    /// </summary>
+    [JsonProperty(nameof(ConvertedToTaskFullName))]
+    public string ConvertedToTaskFullName { get; set; } = string.Empty;
 
-    [JsonPropertyName("TaskProjectID")]
-    public int? TaskProjectID { get; set; }
+    /// <summary>
+    /// The ID of the associated project when the ticket has been converted to a project task.
+    /// </summary>
+    [JsonProperty("TaskProjectID")]
+    public int TaskProjectId { get; set; }
 
-    [JsonPropertyName("TaskProjectName")]
-    public string? TaskProjectName { get; set; }
+    /// <summary>
+    /// The name of the associated project when the ticket has been converted to a project task.
+    /// </summary>
+    [JsonProperty(nameof(TaskProjectName))]
+    public string TaskProjectName { get; set; } = string.Empty;
 
-    [JsonPropertyName("TaskPlanID")]
-    public int? TaskPlanID { get; set; }
+    /// <summary>
+    /// The ID of the associated project plan when the ticket has been converted to a project task.
+    /// </summary>
+    [JsonProperty("TaskPlanID")]
+    public int TaskPlanId { get; set; }
 
-    [JsonPropertyName("TaskPlanName")]
-    public string? TaskPlanName { get; set; }
+    /// <summary>
+    /// The name of the associated project plan when the ticket has been converted to a project task.
+    /// </summary>
+    [JsonProperty(nameof(TaskPlanName))]
+    public string TaskPlanName { get; set; } = string.Empty;
 
-    [JsonPropertyName("TaskID")]
-    public int? TaskID { get; set; }
+    /// <summary>
+    /// The ID of the associated project task when the ticket has been converted to a project task.
+    /// </summary>
+    [JsonProperty("TaskID")]
+    public int TaskId { get; set; }
 
-    [JsonPropertyName("TaskTitle")]
-    public string? TaskTitle { get; set; }
+    /// <summary>
+    /// The title of the associated project task when the ticket has been converted to a project task.
+    /// </summary>
+    [JsonProperty(nameof(TaskTitle))]
+    public string TaskTitle { get; set; } = string.Empty;
 
-    [JsonPropertyName("TaskStartDate")]
-    public DateTime? TaskStartDate { get; set; }
+    /// <summary>
+    /// The start date of the associated project task when the ticket has been converted to a project task.
+    /// </summary>
+    [JsonProperty(nameof(TaskStartDate))]
+    public DateTime TaskStartDate { get; set; }
 
-    [JsonPropertyName("TaskEndDate")]
-    public DateTime? TaskEndDate { get; set; }
+    /// <summary>
+    /// The end date of the associated project task when the ticket has been converted to a project task.
+    /// </summary>
+    [JsonProperty(nameof(TaskEndDate))]
+    public DateTime TaskEndDate { get; set; }
 
-    [JsonPropertyName("TaskPercentComplete")]
-    public int? TaskPercentComplete { get; set; }
+    /// <summary>
+    /// The percent complete of the associated project task when the ticket has been converted to a project task.
+    /// </summary>
+    [JsonProperty(nameof(TaskPercentComplete))]
+    public int TaskPercentComplete { get; set; }
 
-    [JsonPropertyName("LocationID")]
-    public int? LocationID { get; set; }
+    /// <summary>
+    /// The ID of the location associated with the ticket.
+    /// </summary>
+    [JsonProperty("LocationID")]
+    public int LocationId { get; set; }
 
-    [JsonPropertyName("LocationName")]
-    public string? LocationName { get; set; }
+    /// <summary>
+    /// The name of the location associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(LocationName))]
+    public string LocationName { get; set; } = string.Empty;
 
-    [JsonPropertyName("LocationRoomID")]
-    public int? LocationRoomID { get; set; }
+    /// <summary>
+    /// The ID of the location room associated with the ticket.
+    /// </summary>
+    [JsonProperty("LocationRoomID")]
+    public int LocationRoomId { get; set; }
 
-    [JsonPropertyName("LocationRoomName")]
-    public string? LocationRoomName { get; set; }
+    /// <summary>
+    /// The name of the location room associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(LocationRoomName))]
+    public string LocationRoomName { get; set; } = string.Empty;
 
-    [JsonPropertyName("RefCode")]
-    public string? RefCode { get; set; }
+    /// <summary>
+    /// The reference code of the ticket.
+    /// </summary>
+    [JsonProperty(nameof(RefCode))]
+    public string RefCode { get; set; } = string.Empty;
 
-    [JsonPropertyName("ServiceID")]
-    public int? ServiceID { get; set; }
+    /// <summary>
+    /// The ID of the service associated with the ticket.
+    /// </summary>
+    [JsonProperty("ServiceID")]
+    public int ServiceId { get; set; }
 
-    [JsonPropertyName("ServiceName")]
-    public string? ServiceName { get; set; }
+    /// <summary>
+    /// The name of the service associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ServiceName))]
+    public string ServiceName { get; set; } = string.Empty;
 
-    [JsonPropertyName("ServiceOfferingID")]
-    public int? ServiceOfferingID { get; set; }
+    /// <summary>
+    /// The ID of the service offering associated with the ticket.
+    /// </summary>
+    [JsonProperty("ServiceOfferingID")]
+    public int ServiceOfferingId { get; set; }
 
-    [JsonPropertyName("ServiceOfferingName")]
-    public string? ServiceOfferingName { get; set; }
+    /// <summary>
+    /// The name of the service offering associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ServiceOfferingName))]
+    public string ServiceOfferingName { get; set; } = string.Empty;
 
-    [JsonPropertyName("ServiceCategoryID")]
-    public int? ServiceCategoryID { get; set; }
+    /// <summary>
+    /// The ID of the category associated with the ticket's service.
+    /// </summary>
+    [JsonProperty("ServiceCategoryID")]
+    public int ServiceCategoryId { get; set; }
 
-    [JsonPropertyName("ServiceCategoryName")]
-    public string? ServiceCategoryName { get; set; }
+    /// <summary>
+    /// The name of the category associated with the ticket's service.
+    /// </summary>
+    [JsonProperty(nameof(ServiceCategoryName))]
+    public string ServiceCategoryName { get; set; } = string.Empty;
 
-    [JsonPropertyName("ArticleID")]
-    public int? ArticleID { get; set; }
+    /// <summary>
+    /// The ID of the Knowledge Base article associated with the ticket.
+    /// </summary>
+    [JsonProperty("ArticleID")]
+    public int ArticleId { get; set; }
 
-    [JsonPropertyName("ArticleSubject")]
-    public string? ArticleSubject { get; set; }
+    /// <summary>
+    /// The subject of the Knowledge Base article associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ArticleSubject))]
+    public string ArticleSubject { get; set; } = string.Empty;
 
-    [JsonPropertyName("ArticleStatus")]
-    public int? ArticleStatus { get; set; }
+    /// <summary>
+    /// The ID of the Knowledge Base article associated with the ticket.
+    /// </summary>
+    [JsonProperty(nameof(ArticleStatus))]
+    public ArticleStatus ArticleStatus { get; set; }
 
-    [JsonPropertyName("ArticleCategoryPathNames")]
-    public string? ArticleCategoryPathNames { get; set; }
+    /// <summary>
+    /// A delimited string of the category hierarchy associated with the ticket's Knowledge Base article.
+    /// </summary>
+    [JsonProperty(nameof(ArticleCategoryPathNames))]
+    public string ArticleCategoryPathNames { get; set; } = string.Empty;
 
-    [JsonPropertyName("ArticleAppID")]
-    public int? ArticleAppID { get; set; }
+    /// <summary>
+    /// The ID of the client portal application associated with the ticket's Knowledge Base article.
+    /// </summary>
+    [JsonProperty("ArticleAppID")]
+    public int ArticleAppId { get; set; }
 
-    [JsonPropertyName("ArticleShortcutID")]
-    public object? ArticleShortcutID { get; set; }
+    /// <summary>
+    /// The ID of the shortcut that is used when viewing the ticket's Knowledge Base article. This is set when the ticket is associated with a cross client portal article shortcut.
+    /// Nullable.
+    /// </summary>
+    [JsonProperty("ArticleShortcutID")]
+    public int? ArticleShortcutId { get; set; }
 
-    [JsonPropertyName("AppID")]
-    public int? AppID { get; set; }
+    /// <summary>
+    /// The ID of the ticketing application associated with the ticket.
+    /// </summary>
+    [JsonProperty("AppID")]
+    public int AppId { get; set; }
 
-    [JsonPropertyName("Attributes")]
-    public List<object>? Attributes { get; set; }
+    /// <summary>
+    /// The custom attributes associated with the ticket.
+    /// Nullable.
+    /// </summary>
+    [JsonProperty(nameof(Attributes))]
+    public List<CustomAttribute>? Attributes { get; set; }
 
-    [JsonPropertyName("Attachments")]
-    public List<object>? Attachments { get; set; }
+    /// <summary>
+    /// The attachments associated with the ticket.
+    /// Nullable.
+    /// </summary>
+    [JsonProperty(nameof(Attachments))]
+    public List<Attachments.Models.Attachment>? Attachments { get; set; }
 
-    [JsonPropertyName("Tasks")]
-    public List<object>? Tasks { get; set; }
+    /// <summary>
+    /// The ticket tasks associated with the ticket.
+    /// Nullable.
+    /// </summary>
+    [JsonProperty(nameof(Tasks))]
+    public List<TicketTask>? Tasks { get; set; }
 
-    [JsonPropertyName("Notify")]
-    public List<Notify>? Notify { get; set; }
+    /// <summary>
+    /// The list of people who can be notified for the ticket.
+    /// Nullable.
+    /// </summary>
+    [JsonProperty(nameof(Notify))]
+    public List<ResourceItem>? Notify { get; set; }
 
-    [JsonPropertyName("WorkflowID")]
-    public int? WorkflowID { get; set; }
+    /// <summary>
+    /// The ID of the workflow associated with the ticket.
+    /// </summary>
+    [JsonProperty("WorkflowID")]
+    public int WorkflowId { get; set; }
 
-    [JsonPropertyName("WorkflowConfigurationID")]
-    public int? WorkflowConfigurationID { get; set; }
+    /// <summary>
+    /// The ID of the configuration workflow associated with the ticket.
+    /// </summary>
+    [JsonProperty("WorkflowConfigurationID")]
+    public int WorkflowConfigurationId { get; set; }
 
-    [JsonPropertyName("WorkflowName")]
+    /// <summary>
+    /// The name of the workflow associated with the ticket.
+    /// Nullable.
+    /// </summary>
+    [JsonProperty(nameof(WorkflowName))]
     public string? WorkflowName { get; set; }
 }
+

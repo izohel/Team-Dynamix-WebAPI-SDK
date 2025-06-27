@@ -1,19 +1,29 @@
 ﻿namespace Itsm.Tdx.WebApi;
 /// <summary>
-/// Factory for creating <see cref="HttpClient"/> instances with advanced control over message handlers.
-/// Consumers can:
-/// - Create any number of custom <see cref="DelegatingHandler"/> instances (e.g., logging, authentication, retry, telemetry).
-/// - Pass them as a collection to the factory method.
-/// The factory chains these handlers together and builds an <see cref="HttpClient"/> instance that
-/// executes all handlers in the specified order.
+/// Factory for creating <see cref="HttpClient"/> instances with advanced control over the message handler pipeline.
 /// </summary>
 /// <remarks>
-/// Use this factory when you need to customize the <see cref="HttpClient"/> pipeline, such as adding
-/// custom logging, authentication, or retry policies. This enables flexible, reusable,
-/// and testable HTTP communication.
+/// This factory allows consumers to compose a customized <see cref="HttpClient"/> by chaining any number of
+/// <see cref="DelegatingHandler"/> instances such as logging, authentication, retry policies, or telemetry.
+/// 
+/// By providing a collection of handlers, the factory builds a pipeline that executes handlers in the specified order,
+/// enabling flexible, reusable, and testable HTTP communication tailored to specific needs.
+/// 
+/// Use this factory when the default <see cref="HttpClient"/> behavior is insufficient or when custom
+/// cross-cutting concerns need to be injected into the HTTP request/response pipeline.
 /// </remarks>
 public static class TdxClientFactory
 {
+    /// <summary>
+    /// Creates a new <see cref="HttpClient"/> instance configured with a pipeline of <see cref="DelegatingHandler"/> instances.
+    /// </summary>
+    /// <param name="handlers">A collection of <see cref="DelegatingHandler"/> instances to be chained together
+    /// in the order provided. These handlers can implement cross-cutting concerns like logging, retry, or authentication.</param>
+    /// <param name="tenantOrUrl">The base URI for the <see cref="HttpClient"/>. This can be a full URI string,
+    /// or a tenant identifier which will be used to construct a standard TeamDynamix API URL.</param>
+    /// <param name="rootHandler">An optional root <see cref="HttpMessageHandler"/> to terminate the pipeline.
+    /// If null, the default <see cref="HttpClientHandler"/> is used.</param>
+    /// <returns>A new <see cref="HttpClient"/> instance with the specified handler pipeline and base address.</returns>
     public static HttpClient CreateHttpClient(
          IEnumerable<DelegatingHandler> handlers,
          string tenantOrUrl,
@@ -29,10 +39,18 @@ public static class TdxClientFactory
         return httpClient;
     }
 
+    /// <summary>
+    /// Constructs a chained <see cref="HttpMessageHandler"/> pipeline from a collection of <see cref="DelegatingHandler"/> instances,
+    /// terminating with the provided root handler.
+    /// </summary>
+    /// <param name="handlers">The <see cref="DelegatingHandler"/> instances to chain.</param>
+    /// <param name="rootHandler">The terminal <see cref="HttpMessageHandler"/> in the pipeline.</param>
+    /// <returns>The first <see cref="HttpMessageHandler"/> in the chained pipeline.</returns>
     private static HttpMessageHandler CreatePipeline(IEnumerable<DelegatingHandler> handlers, HttpMessageHandler rootHandler)
     {
         HttpMessageHandler current = rootHandler;
 
+        // Handlers are chained in reverse order to ensure the first handler executes first in the pipeline.
         foreach (DelegatingHandler handler in handlers.Reverse())
         {
             handler.InnerHandler = current;
@@ -42,6 +60,11 @@ public static class TdxClientFactory
         return current;
     }
 
+    /// <summary>
+    /// Builds the base <see cref="Uri"/> for the HttpClient from a tenant name or an absolute URL.
+    /// </summary>
+    /// <param name="tenantOrUrl">Either a full absolute URI or a TeamDynamix tenant name.</param>
+    /// <returns>A valid absolute <see cref="Uri"/> representing the base address.</returns>
     private static Uri BuildBaseUri(string tenantOrUrl)
     {
         return Uri.TryCreate(tenantOrUrl, UriKind.Absolute, out Uri? absolute)

@@ -48,13 +48,13 @@ public class TicketCreateObjectRequestBuilder : BaseRequestBuilder
     {
         if (string.IsNullOrWhiteSpace(_ticket.Title))
             throw new InvalidOperationException("Title is required.");
-        if (_ticket.TypeID == 0)
+        if (_ticket.TypeId == 0)
             throw new InvalidOperationException("TypeID is required.");
-        if (_ticket.AccountID == 0)
+        if (_ticket.AccountId == 0)
             throw new InvalidOperationException("AccountID is required.");
-        if (_ticket.StatusID == 0)
+        if (_ticket.StatusId == 0)
             throw new InvalidOperationException("StatusID is required.");
-        if (_ticket.PriorityID == 0)
+        if (_ticket.PriorityId == 0)
             throw new InvalidOperationException("PriorityID is required.");
         if (string.IsNullOrEmpty( _ticket.RequestorUid))
             throw new InvalidOperationException("RequestorUid is required.");

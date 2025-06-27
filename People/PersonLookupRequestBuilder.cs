@@ -1,5 +1,17 @@
 ﻿namespace Itsm.Tdx.WebApi.People;
-
-public class PersonLookupRequestBuilder
+/// <summary>
+/// 
+/// </summary>
+public class PersonLookupRequestBuilder : BaseRequestBuilder
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="client"></param>
+    /// <param name="path"></param>
+    public PersonLookupRequestBuilder(TdxBaseClient client, string path)
+        : base(path, client)
+    {
+        
+    }
 }
