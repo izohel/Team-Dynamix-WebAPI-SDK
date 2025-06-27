@@ -1,0 +1,4173 @@
+### YamlMime:ManagedReference
+items:
+- uid: Itsm.Tdx.WebApi.People.Models.User
+  commentId: T:Itsm.Tdx.WebApi.People.Models.User
+  id: User
+  parent: Itsm.Tdx.WebApi.People.Models
+  children:
+  - Itsm.Tdx.WebApi.People.Models.User.AboutMe
+  - Itsm.Tdx.WebApi.People.Models.User.AlertEmail
+  - Itsm.Tdx.WebApi.People.Models.User.AlternateEmail
+  - Itsm.Tdx.WebApi.People.Models.User.AlternateId
+  - Itsm.Tdx.WebApi.People.Models.User.Applications
+  - Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToReplies
+  - Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToUpdatesAndComments
+  - Itsm.Tdx.WebApi.People.Models.User.Attributes
+  - Itsm.Tdx.WebApi.People.Models.User.AuthenticationProviderId
+  - Itsm.Tdx.WebApi.People.Models.User.AuthenticationUserName
+  - Itsm.Tdx.WebApi.People.Models.User.BeId
+  - Itsm.Tdx.WebApi.People.Models.User.BeIdInt
+  - Itsm.Tdx.WebApi.People.Models.User.Company
+  - Itsm.Tdx.WebApi.People.Models.User.CostRate
+  - Itsm.Tdx.WebApi.People.Models.User.DefaultAccountId
+  - Itsm.Tdx.WebApi.People.Models.User.DefaultAccountName
+  - Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityID
+  - Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityName
+  - Itsm.Tdx.WebApi.People.Models.User.DefaultRate
+  - Itsm.Tdx.WebApi.People.Models.User.EndDate
+  - Itsm.Tdx.WebApi.People.Models.User.ExternalId
+  - Itsm.Tdx.WebApi.People.Models.User.Fax
+  - Itsm.Tdx.WebApi.People.Models.User.FirstName
+  - Itsm.Tdx.WebApi.People.Models.User.FullName
+  - Itsm.Tdx.WebApi.People.Models.User.GroupIds
+  - Itsm.Tdx.WebApi.People.Models.User.HomeAddress
+  - Itsm.Tdx.WebApi.People.Models.User.HomeCity
+  - Itsm.Tdx.WebApi.People.Models.User.HomeCountry
+  - Itsm.Tdx.WebApi.People.Models.User.HomePhone
+  - Itsm.Tdx.WebApi.People.Models.User.HomeState
+  - Itsm.Tdx.WebApi.People.Models.User.HomeZip
+  - Itsm.Tdx.WebApi.People.Models.User.ImHandle
+  - Itsm.Tdx.WebApi.People.Models.User.ImProvider
+  - Itsm.Tdx.WebApi.People.Models.User.IsActive
+  - Itsm.Tdx.WebApi.People.Models.User.IsCapacityManaged
+  - Itsm.Tdx.WebApi.People.Models.User.IsConfidential
+  - Itsm.Tdx.WebApi.People.Models.User.IsEmployee
+  - Itsm.Tdx.WebApi.People.Models.User.LastName
+  - Itsm.Tdx.WebApi.People.Models.User.LocationID
+  - Itsm.Tdx.WebApi.People.Models.User.LocationName
+  - Itsm.Tdx.WebApi.People.Models.User.LocationRoomID
+  - Itsm.Tdx.WebApi.People.Models.User.LocationRoomName
+  - Itsm.Tdx.WebApi.People.Models.User.MiddleName
+  - Itsm.Tdx.WebApi.People.Models.User.MobilePhone
+  - Itsm.Tdx.WebApi.People.Models.User.Nickname
+  - Itsm.Tdx.WebApi.People.Models.User.OrgApplications
+  - Itsm.Tdx.WebApi.People.Models.User.OtherPhone
+  - Itsm.Tdx.WebApi.People.Models.User.Pager
+  - Itsm.Tdx.WebApi.People.Models.User.Permissions
+  - Itsm.Tdx.WebApi.People.Models.User.PrimaryClientPortalApplicationId
+  - Itsm.Tdx.WebApi.People.Models.User.PrimaryEmail
+  - Itsm.Tdx.WebApi.People.Models.User.PrimaryPhone
+  - Itsm.Tdx.WebApi.People.Models.User.ProfileImageFileName
+  - Itsm.Tdx.WebApi.People.Models.User.ReferenceId
+  - Itsm.Tdx.WebApi.People.Models.User.ReportTimeAfterDate
+  - Itsm.Tdx.WebApi.People.Models.User.ReportsToFullName
+  - Itsm.Tdx.WebApi.People.Models.User.ReportsToUid
+  - Itsm.Tdx.WebApi.People.Models.User.ResourcePoolId
+  - Itsm.Tdx.WebApi.People.Models.User.ResourcePoolName
+  - Itsm.Tdx.WebApi.People.Models.User.Salutation
+  - Itsm.Tdx.WebApi.People.Models.User.SecurityRoleId
+  - Itsm.Tdx.WebApi.People.Models.User.SecurityRoleName
+  - Itsm.Tdx.WebApi.People.Models.User.ShouldReportTime
+  - Itsm.Tdx.WebApi.People.Models.User.TechnicianSignature
+  - Itsm.Tdx.WebApi.People.Models.User.Title
+  - Itsm.Tdx.WebApi.People.Models.User.TypeId
+  - Itsm.Tdx.WebApi.People.Models.User.TzName
+  - Itsm.Tdx.WebApi.People.Models.User.Tzid
+  - Itsm.Tdx.WebApi.People.Models.User.Uid
+  - Itsm.Tdx.WebApi.People.Models.User.UserName
+  - Itsm.Tdx.WebApi.People.Models.User.WorkAddress
+  - Itsm.Tdx.WebApi.People.Models.User.WorkCity
+  - Itsm.Tdx.WebApi.People.Models.User.WorkCountry
+  - Itsm.Tdx.WebApi.People.Models.User.WorkPhone
+  - Itsm.Tdx.WebApi.People.Models.User.WorkState
+  - Itsm.Tdx.WebApi.People.Models.User.WorkZip
+  - Itsm.Tdx.WebApi.People.Models.User.WorkableHours
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: User
+  fullName: Itsm.Tdx.WebApi.People.Models.User
+  type: Class
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: User
+    path: People/Models/User.cs
+    startLine: 8
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: public class User
+    content.vb: Public Class User
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Itsm.Tdx.WebApi.People.Models.User.Uid
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.Uid
+  id: Uid
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Uid
+  nameWithType: User.Uid
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Uid
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Uid
+    path: People/Models/User.cs
+    startLine: 11
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("UID")]
+
+      public string? Uid { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("UID")>
+
+      Public Property Uid As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.Uid*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UID
+- uid: Itsm.Tdx.WebApi.People.Models.User.ReferenceId
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ReferenceId
+  id: ReferenceId
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ReferenceId
+  nameWithType: User.ReferenceId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ReferenceId
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ReferenceId
+    path: People/Models/User.cs
+    startLine: 15
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("ReferenceID")]
+
+      public int ReferenceId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("ReferenceID")>
+
+      Public Property ReferenceId As Integer
+  overload: Itsm.Tdx.WebApi.People.Models.User.ReferenceId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ReferenceID
+- uid: Itsm.Tdx.WebApi.People.Models.User.BeId
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.BeId
+  id: BeId
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: BeId
+  nameWithType: User.BeId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.BeId
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: BeId
+    path: People/Models/User.cs
+    startLine: 18
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("BEID")]
+
+      public string? BeId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("BEID")>
+
+      Public Property BeId As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.BeId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: BEID
+- uid: Itsm.Tdx.WebApi.People.Models.User.BeIdInt
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.BeIdInt
+  id: BeIdInt
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: BeIdInt
+  nameWithType: User.BeIdInt
+  fullName: Itsm.Tdx.WebApi.People.Models.User.BeIdInt
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: BeIdInt
+    path: People/Models/User.cs
+    startLine: 21
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("BEIDInt")]
+
+      public int BeIdInt { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("BEIDInt")>
+
+      Public Property BeIdInt As Integer
+  overload: Itsm.Tdx.WebApi.People.Models.User.BeIdInt*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: BEIDInt
+- uid: Itsm.Tdx.WebApi.People.Models.User.IsActive
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.IsActive
+  id: IsActive
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: User.IsActive
+  fullName: Itsm.Tdx.WebApi.People.Models.User.IsActive
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: IsActive
+    path: People/Models/User.cs
+    startLine: 24
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("IsActive")]
+
+      public bool IsActive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty("IsActive")>
+
+      Public Property IsActive As Boolean
+  overload: Itsm.Tdx.WebApi.People.Models.User.IsActive*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: IsActive
+- uid: Itsm.Tdx.WebApi.People.Models.User.IsConfidential
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.IsConfidential
+  id: IsConfidential
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: IsConfidential
+  nameWithType: User.IsConfidential
+  fullName: Itsm.Tdx.WebApi.People.Models.User.IsConfidential
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: IsConfidential
+    path: People/Models/User.cs
+    startLine: 27
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("IsConfidential")]
+
+      public bool IsConfidential { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty("IsConfidential")>
+
+      Public Property IsConfidential As Boolean
+  overload: Itsm.Tdx.WebApi.People.Models.User.IsConfidential*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: IsConfidential
+- uid: Itsm.Tdx.WebApi.People.Models.User.UserName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.UserName
+  id: UserName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: UserName
+  nameWithType: User.UserName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.UserName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: UserName
+    path: People/Models/User.cs
+    startLine: 30
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("UserName")]
+
+      public string? UserName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("UserName")>
+
+      Public Property UserName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.UserName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UserName
+- uid: Itsm.Tdx.WebApi.People.Models.User.FullName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.FullName
+  id: FullName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: FullName
+  nameWithType: User.FullName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.FullName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: FullName
+    path: People/Models/User.cs
+    startLine: 33
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("FullName")]
+
+      public string? FullName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("FullName")>
+
+      Public Property FullName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.FullName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: FullName
+- uid: Itsm.Tdx.WebApi.People.Models.User.FirstName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.FirstName
+  id: FirstName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: FirstName
+  nameWithType: User.FirstName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.FirstName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: FirstName
+    path: People/Models/User.cs
+    startLine: 36
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("FirstName")]
+
+      public string? FirstName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("FirstName")>
+
+      Public Property FirstName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.FirstName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: FirstName
+- uid: Itsm.Tdx.WebApi.People.Models.User.LastName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.LastName
+  id: LastName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: LastName
+  nameWithType: User.LastName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.LastName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: LastName
+    path: People/Models/User.cs
+    startLine: 39
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("LastName")]
+
+      public string? LastName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("LastName")>
+
+      Public Property LastName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.LastName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LastName
+- uid: Itsm.Tdx.WebApi.People.Models.User.MiddleName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.MiddleName
+  id: MiddleName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: MiddleName
+  nameWithType: User.MiddleName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.MiddleName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: MiddleName
+    path: People/Models/User.cs
+    startLine: 42
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("MiddleName")]
+
+      public string? MiddleName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("MiddleName")>
+
+      Public Property MiddleName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.MiddleName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: MiddleName
+- uid: Itsm.Tdx.WebApi.People.Models.User.Salutation
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.Salutation
+  id: Salutation
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Salutation
+  nameWithType: User.Salutation
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Salutation
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Salutation
+    path: People/Models/User.cs
+    startLine: 45
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("Salutation")]
+
+      public string? Salutation { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Salutation")>
+
+      Public Property Salutation As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.Salutation*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Salutation
+- uid: Itsm.Tdx.WebApi.People.Models.User.Nickname
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.Nickname
+  id: Nickname
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Nickname
+  nameWithType: User.Nickname
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Nickname
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Nickname
+    path: People/Models/User.cs
+    startLine: 48
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("Nickname")]
+
+      public string? Nickname { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Nickname")>
+
+      Public Property Nickname As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.Nickname*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Nickname
+- uid: Itsm.Tdx.WebApi.People.Models.User.DefaultAccountId
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.DefaultAccountId
+  id: DefaultAccountId
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: DefaultAccountId
+  nameWithType: User.DefaultAccountId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.DefaultAccountId
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: DefaultAccountId
+    path: People/Models/User.cs
+    startLine: 51
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("DefaultAccountID")]
+
+      public int DefaultAccountId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("DefaultAccountID")>
+
+      Public Property DefaultAccountId As Integer
+  overload: Itsm.Tdx.WebApi.People.Models.User.DefaultAccountId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DefaultAccountID
+- uid: Itsm.Tdx.WebApi.People.Models.User.DefaultAccountName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.DefaultAccountName
+  id: DefaultAccountName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: DefaultAccountName
+  nameWithType: User.DefaultAccountName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.DefaultAccountName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: DefaultAccountName
+    path: People/Models/User.cs
+    startLine: 54
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("DefaultAccountName")]
+
+      public string? DefaultAccountName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("DefaultAccountName")>
+
+      Public Property DefaultAccountName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.DefaultAccountName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DefaultAccountName
+- uid: Itsm.Tdx.WebApi.People.Models.User.PrimaryEmail
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.PrimaryEmail
+  id: PrimaryEmail
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: PrimaryEmail
+  nameWithType: User.PrimaryEmail
+  fullName: Itsm.Tdx.WebApi.People.Models.User.PrimaryEmail
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: PrimaryEmail
+    path: People/Models/User.cs
+    startLine: 57
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("PrimaryEmail")]
+
+      public string? PrimaryEmail { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("PrimaryEmail")>
+
+      Public Property PrimaryEmail As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.PrimaryEmail*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: PrimaryEmail
+- uid: Itsm.Tdx.WebApi.People.Models.User.AlternateEmail
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.AlternateEmail
+  id: AlternateEmail
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: AlternateEmail
+  nameWithType: User.AlternateEmail
+  fullName: Itsm.Tdx.WebApi.People.Models.User.AlternateEmail
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: AlternateEmail
+    path: People/Models/User.cs
+    startLine: 60
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("AlternateEmail")]
+
+      public string? AlternateEmail { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("AlternateEmail")>
+
+      Public Property AlternateEmail As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.AlternateEmail*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AlternateEmail
+- uid: Itsm.Tdx.WebApi.People.Models.User.ExternalId
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ExternalId
+  id: ExternalId
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ExternalId
+  nameWithType: User.ExternalId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ExternalId
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ExternalId
+    path: People/Models/User.cs
+    startLine: 63
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("ExternalID")]
+
+      public string? ExternalId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("ExternalID")>
+
+      Public Property ExternalId As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.ExternalId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ExternalID
+- uid: Itsm.Tdx.WebApi.People.Models.User.AlternateId
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.AlternateId
+  id: AlternateId
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: AlternateId
+  nameWithType: User.AlternateId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.AlternateId
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: AlternateId
+    path: People/Models/User.cs
+    startLine: 66
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("AlternateID")]
+
+      public string? AlternateId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("AlternateID")>
+
+      Public Property AlternateId As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.AlternateId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AlternateID
+- uid: Itsm.Tdx.WebApi.People.Models.User.Applications
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.Applications
+  id: Applications
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Applications
+  nameWithType: User.Applications
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Applications
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Applications
+    path: People/Models/User.cs
+    startLine: 69
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("Applications")]
+
+      public List<object>? Applications { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Object}
+    content.vb: >-
+      <JsonProperty("Applications")>
+
+      Public Property Applications As List(Of Object)
+  overload: Itsm.Tdx.WebApi.People.Models.User.Applications*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Applications
+- uid: Itsm.Tdx.WebApi.People.Models.User.SecurityRoleName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.SecurityRoleName
+  id: SecurityRoleName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: SecurityRoleName
+  nameWithType: User.SecurityRoleName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.SecurityRoleName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: SecurityRoleName
+    path: People/Models/User.cs
+    startLine: 72
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("SecurityRoleName")]
+
+      public string? SecurityRoleName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("SecurityRoleName")>
+
+      Public Property SecurityRoleName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.SecurityRoleName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: SecurityRoleName
+- uid: Itsm.Tdx.WebApi.People.Models.User.SecurityRoleId
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.SecurityRoleId
+  id: SecurityRoleId
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: SecurityRoleId
+  nameWithType: User.SecurityRoleId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.SecurityRoleId
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: SecurityRoleId
+    path: People/Models/User.cs
+    startLine: 75
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("SecurityRoleID")]
+
+      public string? SecurityRoleId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("SecurityRoleID")>
+
+      Public Property SecurityRoleId As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.SecurityRoleId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: SecurityRoleID
+- uid: Itsm.Tdx.WebApi.People.Models.User.Permissions
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.Permissions
+  id: Permissions
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Permissions
+  nameWithType: User.Permissions
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Permissions
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Permissions
+    path: People/Models/User.cs
+    startLine: 78
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("Permissions")]
+
+      public List<object>? Permissions { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Object}
+    content.vb: >-
+      <JsonProperty("Permissions")>
+
+      Public Property Permissions As List(Of Object)
+  overload: Itsm.Tdx.WebApi.People.Models.User.Permissions*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Permissions
+- uid: Itsm.Tdx.WebApi.People.Models.User.OrgApplications
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.OrgApplications
+  id: OrgApplications
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: OrgApplications
+  nameWithType: User.OrgApplications
+  fullName: Itsm.Tdx.WebApi.People.Models.User.OrgApplications
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: OrgApplications
+    path: People/Models/User.cs
+    startLine: 81
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("OrgApplications")]
+
+      public object? OrgApplications { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: >-
+      <JsonProperty("OrgApplications")>
+
+      Public Property OrgApplications As Object
+  overload: Itsm.Tdx.WebApi.People.Models.User.OrgApplications*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: OrgApplications
+- uid: Itsm.Tdx.WebApi.People.Models.User.PrimaryClientPortalApplicationId
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.PrimaryClientPortalApplicationId
+  id: PrimaryClientPortalApplicationId
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: PrimaryClientPortalApplicationId
+  nameWithType: User.PrimaryClientPortalApplicationId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.PrimaryClientPortalApplicationId
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: PrimaryClientPortalApplicationId
+    path: People/Models/User.cs
+    startLine: 84
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("PrimaryClientPortalApplicationID")]
+
+      public object? PrimaryClientPortalApplicationId { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: >-
+      <JsonProperty("PrimaryClientPortalApplicationID")>
+
+      Public Property PrimaryClientPortalApplicationId As Object
+  overload: Itsm.Tdx.WebApi.People.Models.User.PrimaryClientPortalApplicationId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: PrimaryClientPortalApplicationID
+- uid: Itsm.Tdx.WebApi.People.Models.User.GroupIds
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.GroupIds
+  id: GroupIds
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: GroupIds
+  nameWithType: User.GroupIds
+  fullName: Itsm.Tdx.WebApi.People.Models.User.GroupIds
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: GroupIds
+    path: People/Models/User.cs
+    startLine: 87
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("GroupIDs")]
+
+      public List<object>? GroupIds { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Object}
+    content.vb: >-
+      <JsonProperty("GroupIDs")>
+
+      Public Property GroupIds As List(Of Object)
+  overload: Itsm.Tdx.WebApi.People.Models.User.GroupIds*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: GroupIDs
+- uid: Itsm.Tdx.WebApi.People.Models.User.AlertEmail
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.AlertEmail
+  id: AlertEmail
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: AlertEmail
+  nameWithType: User.AlertEmail
+  fullName: Itsm.Tdx.WebApi.People.Models.User.AlertEmail
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: AlertEmail
+    path: People/Models/User.cs
+    startLine: 90
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("AlertEmail")]
+
+      public string? AlertEmail { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("AlertEmail")>
+
+      Public Property AlertEmail As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.AlertEmail*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AlertEmail
+- uid: Itsm.Tdx.WebApi.People.Models.User.ProfileImageFileName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ProfileImageFileName
+  id: ProfileImageFileName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ProfileImageFileName
+  nameWithType: User.ProfileImageFileName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ProfileImageFileName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ProfileImageFileName
+    path: People/Models/User.cs
+    startLine: 93
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("ProfileImageFileName")]
+
+      public string? ProfileImageFileName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("ProfileImageFileName")>
+
+      Public Property ProfileImageFileName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.ProfileImageFileName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ProfileImageFileName
+- uid: Itsm.Tdx.WebApi.People.Models.User.Company
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.Company
+  id: Company
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Company
+  nameWithType: User.Company
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Company
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Company
+    path: People/Models/User.cs
+    startLine: 96
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("Company")]
+
+      public string? Company { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Company")>
+
+      Public Property Company As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.Company*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Company
+- uid: Itsm.Tdx.WebApi.People.Models.User.Title
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.Title
+  id: Title
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: User.Title
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Title
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Title
+    path: People/Models/User.cs
+    startLine: 99
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("Title")]
+
+      public string? Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Title")>
+
+      Public Property Title As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.Title*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Title
+- uid: Itsm.Tdx.WebApi.People.Models.User.HomePhone
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.HomePhone
+  id: HomePhone
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: HomePhone
+  nameWithType: User.HomePhone
+  fullName: Itsm.Tdx.WebApi.People.Models.User.HomePhone
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: HomePhone
+    path: People/Models/User.cs
+    startLine: 102
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("HomePhone")]
+
+      public string? HomePhone { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("HomePhone")>
+
+      Public Property HomePhone As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.HomePhone*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: HomePhone
+- uid: Itsm.Tdx.WebApi.People.Models.User.PrimaryPhone
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.PrimaryPhone
+  id: PrimaryPhone
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: PrimaryPhone
+  nameWithType: User.PrimaryPhone
+  fullName: Itsm.Tdx.WebApi.People.Models.User.PrimaryPhone
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: PrimaryPhone
+    path: People/Models/User.cs
+    startLine: 105
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("PrimaryPhone")]
+
+      public string? PrimaryPhone { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("PrimaryPhone")>
+
+      Public Property PrimaryPhone As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.PrimaryPhone*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: PrimaryPhone
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkPhone
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.WorkPhone
+  id: WorkPhone
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: WorkPhone
+  nameWithType: User.WorkPhone
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkPhone
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: WorkPhone
+    path: People/Models/User.cs
+    startLine: 108
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("WorkPhone")]
+
+      public string? WorkPhone { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("WorkPhone")>
+
+      Public Property WorkPhone As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.WorkPhone*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: WorkPhone
+- uid: Itsm.Tdx.WebApi.People.Models.User.Pager
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.Pager
+  id: Pager
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Pager
+  nameWithType: User.Pager
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Pager
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Pager
+    path: People/Models/User.cs
+    startLine: 111
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("Pager")]
+
+      public string? Pager { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Pager")>
+
+      Public Property Pager As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.Pager*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Pager
+- uid: Itsm.Tdx.WebApi.People.Models.User.OtherPhone
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.OtherPhone
+  id: OtherPhone
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: OtherPhone
+  nameWithType: User.OtherPhone
+  fullName: Itsm.Tdx.WebApi.People.Models.User.OtherPhone
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: OtherPhone
+    path: People/Models/User.cs
+    startLine: 114
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("OtherPhone")]
+
+      public string? OtherPhone { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("OtherPhone")>
+
+      Public Property OtherPhone As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.OtherPhone*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: OtherPhone
+- uid: Itsm.Tdx.WebApi.People.Models.User.MobilePhone
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.MobilePhone
+  id: MobilePhone
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: MobilePhone
+  nameWithType: User.MobilePhone
+  fullName: Itsm.Tdx.WebApi.People.Models.User.MobilePhone
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: MobilePhone
+    path: People/Models/User.cs
+    startLine: 117
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("MobilePhone")]
+
+      public string? MobilePhone { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("MobilePhone")>
+
+      Public Property MobilePhone As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.MobilePhone*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: MobilePhone
+- uid: Itsm.Tdx.WebApi.People.Models.User.Fax
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.Fax
+  id: Fax
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Fax
+  nameWithType: User.Fax
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Fax
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Fax
+    path: People/Models/User.cs
+    startLine: 120
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("Fax")]
+
+      public string? Fax { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Fax")>
+
+      Public Property Fax As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.Fax*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Fax
+- uid: Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityID
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityID
+  id: DefaultPriorityID
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: DefaultPriorityID
+  nameWithType: User.DefaultPriorityID
+  fullName: Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityID
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: DefaultPriorityID
+    path: People/Models/User.cs
+    startLine: 123
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("DefaultPriorityID")]
+
+      public int DefaultPriorityID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("DefaultPriorityID")>
+
+      Public Property DefaultPriorityID As Integer
+  overload: Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityID*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DefaultPriorityID
+- uid: Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityName
+  id: DefaultPriorityName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: DefaultPriorityName
+  nameWithType: User.DefaultPriorityName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: DefaultPriorityName
+    path: People/Models/User.cs
+    startLine: 126
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("DefaultPriorityName")]
+
+      public string? DefaultPriorityName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("DefaultPriorityName")>
+
+      Public Property DefaultPriorityName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DefaultPriorityName
+- uid: Itsm.Tdx.WebApi.People.Models.User.AboutMe
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.AboutMe
+  id: AboutMe
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: AboutMe
+  nameWithType: User.AboutMe
+  fullName: Itsm.Tdx.WebApi.People.Models.User.AboutMe
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: AboutMe
+    path: People/Models/User.cs
+    startLine: 129
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("AboutMe")]
+
+      public string? AboutMe { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("AboutMe")>
+
+      Public Property AboutMe As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.AboutMe*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AboutMe
+- uid: Itsm.Tdx.WebApi.People.Models.User.TechnicianSignature
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.TechnicianSignature
+  id: TechnicianSignature
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: TechnicianSignature
+  nameWithType: User.TechnicianSignature
+  fullName: Itsm.Tdx.WebApi.People.Models.User.TechnicianSignature
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: TechnicianSignature
+    path: People/Models/User.cs
+    startLine: 132
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("TechnicianSignature")]
+
+      public object? TechnicianSignature { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: >-
+      <JsonProperty("TechnicianSignature")>
+
+      Public Property TechnicianSignature As Object
+  overload: Itsm.Tdx.WebApi.People.Models.User.TechnicianSignature*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TechnicianSignature
+- uid: Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToUpdatesAndComments
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToUpdatesAndComments
+  id: ApplyTechnicianSignatureToUpdatesAndComments
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ApplyTechnicianSignatureToUpdatesAndComments
+  nameWithType: User.ApplyTechnicianSignatureToUpdatesAndComments
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToUpdatesAndComments
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ApplyTechnicianSignatureToUpdatesAndComments
+    path: People/Models/User.cs
+    startLine: 135
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("ApplyTechnicianSignatureToUpdatesAndComments")]
+
+      public bool ApplyTechnicianSignatureToUpdatesAndComments { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty("ApplyTechnicianSignatureToUpdatesAndComments")>
+
+      Public Property ApplyTechnicianSignatureToUpdatesAndComments As Boolean
+  overload: Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToUpdatesAndComments*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ApplyTechnicianSignatureToUpdatesAndComments
+- uid: Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToReplies
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToReplies
+  id: ApplyTechnicianSignatureToReplies
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ApplyTechnicianSignatureToReplies
+  nameWithType: User.ApplyTechnicianSignatureToReplies
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToReplies
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ApplyTechnicianSignatureToReplies
+    path: People/Models/User.cs
+    startLine: 138
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("ApplyTechnicianSignatureToReplies")]
+
+      public bool ApplyTechnicianSignatureToReplies { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty("ApplyTechnicianSignatureToReplies")>
+
+      Public Property ApplyTechnicianSignatureToReplies As Boolean
+  overload: Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToReplies*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ApplyTechnicianSignatureToReplies
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkAddress
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.WorkAddress
+  id: WorkAddress
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: WorkAddress
+  nameWithType: User.WorkAddress
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkAddress
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: WorkAddress
+    path: People/Models/User.cs
+    startLine: 141
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("WorkAddress")]
+
+      public string? WorkAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("WorkAddress")>
+
+      Public Property WorkAddress As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.WorkAddress*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: WorkAddress
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkCity
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.WorkCity
+  id: WorkCity
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: WorkCity
+  nameWithType: User.WorkCity
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkCity
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: WorkCity
+    path: People/Models/User.cs
+    startLine: 144
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("WorkCity")]
+
+      public string? WorkCity { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("WorkCity")>
+
+      Public Property WorkCity As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.WorkCity*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: WorkCity
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkState
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.WorkState
+  id: WorkState
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: WorkState
+  nameWithType: User.WorkState
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkState
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: WorkState
+    path: People/Models/User.cs
+    startLine: 147
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("WorkState")]
+
+      public string? WorkState { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("WorkState")>
+
+      Public Property WorkState As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.WorkState*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: WorkState
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkZip
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.WorkZip
+  id: WorkZip
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: WorkZip
+  nameWithType: User.WorkZip
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkZip
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: WorkZip
+    path: People/Models/User.cs
+    startLine: 150
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("WorkZip")]
+
+      public string? WorkZip { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("WorkZip")>
+
+      Public Property WorkZip As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.WorkZip*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: WorkZip
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkCountry
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.WorkCountry
+  id: WorkCountry
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: WorkCountry
+  nameWithType: User.WorkCountry
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkCountry
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: WorkCountry
+    path: People/Models/User.cs
+    startLine: 153
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("WorkCountry")]
+
+      public string? WorkCountry { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("WorkCountry")>
+
+      Public Property WorkCountry As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.WorkCountry*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: WorkCountry
+- uid: Itsm.Tdx.WebApi.People.Models.User.HomeAddress
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.HomeAddress
+  id: HomeAddress
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: HomeAddress
+  nameWithType: User.HomeAddress
+  fullName: Itsm.Tdx.WebApi.People.Models.User.HomeAddress
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: HomeAddress
+    path: People/Models/User.cs
+    startLine: 156
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("HomeAddress")]
+
+      public string? HomeAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("HomeAddress")>
+
+      Public Property HomeAddress As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.HomeAddress*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: HomeAddress
+- uid: Itsm.Tdx.WebApi.People.Models.User.HomeCity
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.HomeCity
+  id: HomeCity
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: HomeCity
+  nameWithType: User.HomeCity
+  fullName: Itsm.Tdx.WebApi.People.Models.User.HomeCity
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: HomeCity
+    path: People/Models/User.cs
+    startLine: 159
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("HomeCity")]
+
+      public string? HomeCity { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("HomeCity")>
+
+      Public Property HomeCity As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.HomeCity*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: HomeCity
+- uid: Itsm.Tdx.WebApi.People.Models.User.HomeState
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.HomeState
+  id: HomeState
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: HomeState
+  nameWithType: User.HomeState
+  fullName: Itsm.Tdx.WebApi.People.Models.User.HomeState
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: HomeState
+    path: People/Models/User.cs
+    startLine: 162
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("HomeState")]
+
+      public string? HomeState { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("HomeState")>
+
+      Public Property HomeState As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.HomeState*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: HomeState
+- uid: Itsm.Tdx.WebApi.People.Models.User.HomeZip
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.HomeZip
+  id: HomeZip
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: HomeZip
+  nameWithType: User.HomeZip
+  fullName: Itsm.Tdx.WebApi.People.Models.User.HomeZip
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: HomeZip
+    path: People/Models/User.cs
+    startLine: 165
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("HomeZip")]
+
+      public string? HomeZip { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("HomeZip")>
+
+      Public Property HomeZip As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.HomeZip*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: HomeZip
+- uid: Itsm.Tdx.WebApi.People.Models.User.HomeCountry
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.HomeCountry
+  id: HomeCountry
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: HomeCountry
+  nameWithType: User.HomeCountry
+  fullName: Itsm.Tdx.WebApi.People.Models.User.HomeCountry
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: HomeCountry
+    path: People/Models/User.cs
+    startLine: 168
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("HomeCountry")]
+
+      public string? HomeCountry { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("HomeCountry")>
+
+      Public Property HomeCountry As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.HomeCountry*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: HomeCountry
+- uid: Itsm.Tdx.WebApi.People.Models.User.LocationID
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.LocationID
+  id: LocationID
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: LocationID
+  nameWithType: User.LocationID
+  fullName: Itsm.Tdx.WebApi.People.Models.User.LocationID
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: LocationID
+    path: People/Models/User.cs
+    startLine: 171
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("LocationID")]
+
+      public int LocationID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("LocationID")>
+
+      Public Property LocationID As Integer
+  overload: Itsm.Tdx.WebApi.People.Models.User.LocationID*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LocationID
+- uid: Itsm.Tdx.WebApi.People.Models.User.LocationName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.LocationName
+  id: LocationName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: LocationName
+  nameWithType: User.LocationName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.LocationName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: LocationName
+    path: People/Models/User.cs
+    startLine: 174
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("LocationName")]
+
+      public object? LocationName { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: >-
+      <JsonProperty("LocationName")>
+
+      Public Property LocationName As Object
+  overload: Itsm.Tdx.WebApi.People.Models.User.LocationName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LocationName
+- uid: Itsm.Tdx.WebApi.People.Models.User.LocationRoomID
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.LocationRoomID
+  id: LocationRoomID
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: LocationRoomID
+  nameWithType: User.LocationRoomID
+  fullName: Itsm.Tdx.WebApi.People.Models.User.LocationRoomID
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: LocationRoomID
+    path: People/Models/User.cs
+    startLine: 177
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("LocationRoomID")]
+
+      public int LocationRoomID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("LocationRoomID")>
+
+      Public Property LocationRoomID As Integer
+  overload: Itsm.Tdx.WebApi.People.Models.User.LocationRoomID*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LocationRoomID
+- uid: Itsm.Tdx.WebApi.People.Models.User.LocationRoomName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.LocationRoomName
+  id: LocationRoomName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: LocationRoomName
+  nameWithType: User.LocationRoomName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.LocationRoomName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: LocationRoomName
+    path: People/Models/User.cs
+    startLine: 180
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("LocationRoomName")]
+
+      public object? LocationRoomName { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: >-
+      <JsonProperty("LocationRoomName")>
+
+      Public Property LocationRoomName As Object
+  overload: Itsm.Tdx.WebApi.People.Models.User.LocationRoomName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: LocationRoomName
+- uid: Itsm.Tdx.WebApi.People.Models.User.DefaultRate
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.DefaultRate
+  id: DefaultRate
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: DefaultRate
+  nameWithType: User.DefaultRate
+  fullName: Itsm.Tdx.WebApi.People.Models.User.DefaultRate
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: DefaultRate
+    path: People/Models/User.cs
+    startLine: 183
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("DefaultRate")]
+
+      public double DefaultRate { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonProperty("DefaultRate")>
+
+      Public Property DefaultRate As Double
+  overload: Itsm.Tdx.WebApi.People.Models.User.DefaultRate*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DefaultRate
+- uid: Itsm.Tdx.WebApi.People.Models.User.CostRate
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.CostRate
+  id: CostRate
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: CostRate
+  nameWithType: User.CostRate
+  fullName: Itsm.Tdx.WebApi.People.Models.User.CostRate
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: CostRate
+    path: People/Models/User.cs
+    startLine: 186
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("CostRate")]
+
+      public double CostRate { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonProperty("CostRate")>
+
+      Public Property CostRate As Double
+  overload: Itsm.Tdx.WebApi.People.Models.User.CostRate*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CostRate
+- uid: Itsm.Tdx.WebApi.People.Models.User.IsEmployee
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.IsEmployee
+  id: IsEmployee
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: IsEmployee
+  nameWithType: User.IsEmployee
+  fullName: Itsm.Tdx.WebApi.People.Models.User.IsEmployee
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: IsEmployee
+    path: People/Models/User.cs
+    startLine: 189
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("IsEmployee")]
+
+      public bool IsEmployee { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty("IsEmployee")>
+
+      Public Property IsEmployee As Boolean
+  overload: Itsm.Tdx.WebApi.People.Models.User.IsEmployee*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: IsEmployee
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkableHours
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.WorkableHours
+  id: WorkableHours
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: WorkableHours
+  nameWithType: User.WorkableHours
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkableHours
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: WorkableHours
+    path: People/Models/User.cs
+    startLine: 192
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("WorkableHours")]
+
+      public double WorkableHours { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonProperty("WorkableHours")>
+
+      Public Property WorkableHours As Double
+  overload: Itsm.Tdx.WebApi.People.Models.User.WorkableHours*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: WorkableHours
+- uid: Itsm.Tdx.WebApi.People.Models.User.IsCapacityManaged
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.IsCapacityManaged
+  id: IsCapacityManaged
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: IsCapacityManaged
+  nameWithType: User.IsCapacityManaged
+  fullName: Itsm.Tdx.WebApi.People.Models.User.IsCapacityManaged
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: IsCapacityManaged
+    path: People/Models/User.cs
+    startLine: 195
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("IsCapacityManaged")]
+
+      public bool IsCapacityManaged { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty("IsCapacityManaged")>
+
+      Public Property IsCapacityManaged As Boolean
+  overload: Itsm.Tdx.WebApi.People.Models.User.IsCapacityManaged*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: IsCapacityManaged
+- uid: Itsm.Tdx.WebApi.People.Models.User.ReportTimeAfterDate
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ReportTimeAfterDate
+  id: ReportTimeAfterDate
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ReportTimeAfterDate
+  nameWithType: User.ReportTimeAfterDate
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ReportTimeAfterDate
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ReportTimeAfterDate
+    path: People/Models/User.cs
+    startLine: 198
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("ReportTimeAfterDate")]
+
+      public DateTime ReportTimeAfterDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonProperty("ReportTimeAfterDate")>
+
+      Public Property ReportTimeAfterDate As Date
+  overload: Itsm.Tdx.WebApi.People.Models.User.ReportTimeAfterDate*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ReportTimeAfterDate
+- uid: Itsm.Tdx.WebApi.People.Models.User.EndDate
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.EndDate
+  id: EndDate
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: EndDate
+  nameWithType: User.EndDate
+  fullName: Itsm.Tdx.WebApi.People.Models.User.EndDate
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: EndDate
+    path: People/Models/User.cs
+    startLine: 201
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("EndDate")]
+
+      public DateTime EndDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonProperty("EndDate")>
+
+      Public Property EndDate As Date
+  overload: Itsm.Tdx.WebApi.People.Models.User.EndDate*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EndDate
+- uid: Itsm.Tdx.WebApi.People.Models.User.ShouldReportTime
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ShouldReportTime
+  id: ShouldReportTime
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ShouldReportTime
+  nameWithType: User.ShouldReportTime
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ShouldReportTime
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ShouldReportTime
+    path: People/Models/User.cs
+    startLine: 204
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("ShouldReportTime")]
+
+      public bool ShouldReportTime { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty("ShouldReportTime")>
+
+      Public Property ShouldReportTime As Boolean
+  overload: Itsm.Tdx.WebApi.People.Models.User.ShouldReportTime*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ShouldReportTime
+- uid: Itsm.Tdx.WebApi.People.Models.User.ReportsToUid
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ReportsToUid
+  id: ReportsToUid
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ReportsToUid
+  nameWithType: User.ReportsToUid
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ReportsToUid
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ReportsToUid
+    path: People/Models/User.cs
+    startLine: 207
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("ReportsToUID")]
+
+      public string? ReportsToUid { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("ReportsToUID")>
+
+      Public Property ReportsToUid As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.ReportsToUid*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ReportsToUID
+- uid: Itsm.Tdx.WebApi.People.Models.User.ReportsToFullName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ReportsToFullName
+  id: ReportsToFullName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ReportsToFullName
+  nameWithType: User.ReportsToFullName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ReportsToFullName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ReportsToFullName
+    path: People/Models/User.cs
+    startLine: 210
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("ReportsToFullName")]
+
+      public string? ReportsToFullName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("ReportsToFullName")>
+
+      Public Property ReportsToFullName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.ReportsToFullName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ReportsToFullName
+- uid: Itsm.Tdx.WebApi.People.Models.User.ResourcePoolId
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ResourcePoolId
+  id: ResourcePoolId
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ResourcePoolId
+  nameWithType: User.ResourcePoolId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ResourcePoolId
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ResourcePoolId
+    path: People/Models/User.cs
+    startLine: 213
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("ResourcePoolID")]
+
+      public int ResourcePoolId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("ResourcePoolID")>
+
+      Public Property ResourcePoolId As Integer
+  overload: Itsm.Tdx.WebApi.People.Models.User.ResourcePoolId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ResourcePoolID
+- uid: Itsm.Tdx.WebApi.People.Models.User.ResourcePoolName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ResourcePoolName
+  id: ResourcePoolName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ResourcePoolName
+  nameWithType: User.ResourcePoolName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ResourcePoolName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ResourcePoolName
+    path: People/Models/User.cs
+    startLine: 216
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("ResourcePoolName")]
+
+      public string? ResourcePoolName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("ResourcePoolName")>
+
+      Public Property ResourcePoolName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.ResourcePoolName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ResourcePoolName
+- uid: Itsm.Tdx.WebApi.People.Models.User.Tzid
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.Tzid
+  id: Tzid
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Tzid
+  nameWithType: User.Tzid
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Tzid
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Tzid
+    path: People/Models/User.cs
+    startLine: 219
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("TZID")]
+
+      public int Tzid { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("TZID")>
+
+      Public Property Tzid As Integer
+  overload: Itsm.Tdx.WebApi.People.Models.User.Tzid*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TZID
+- uid: Itsm.Tdx.WebApi.People.Models.User.TzName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.TzName
+  id: TzName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: TzName
+  nameWithType: User.TzName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.TzName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: TzName
+    path: People/Models/User.cs
+    startLine: 222
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("TZName")]
+
+      public string? TzName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("TZName")>
+
+      Public Property TzName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.TzName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TZName
+- uid: Itsm.Tdx.WebApi.People.Models.User.TypeId
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.TypeId
+  id: TypeId
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: TypeId
+  nameWithType: User.TypeId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.TypeId
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: TypeId
+    path: People/Models/User.cs
+    startLine: 225
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("TypeID")]
+
+      public int TypeId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("TypeID")>
+
+      Public Property TypeId As Integer
+  overload: Itsm.Tdx.WebApi.People.Models.User.TypeId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: TypeID
+- uid: Itsm.Tdx.WebApi.People.Models.User.AuthenticationUserName
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.AuthenticationUserName
+  id: AuthenticationUserName
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationUserName
+  nameWithType: User.AuthenticationUserName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.AuthenticationUserName
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: AuthenticationUserName
+    path: People/Models/User.cs
+    startLine: 228
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("AuthenticationUserName")]
+
+      public string? AuthenticationUserName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("AuthenticationUserName")>
+
+      Public Property AuthenticationUserName As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.AuthenticationUserName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AuthenticationUserName
+- uid: Itsm.Tdx.WebApi.People.Models.User.AuthenticationProviderId
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.AuthenticationProviderId
+  id: AuthenticationProviderId
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationProviderId
+  nameWithType: User.AuthenticationProviderId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.AuthenticationProviderId
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: AuthenticationProviderId
+    path: People/Models/User.cs
+    startLine: 231
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("AuthenticationProviderID")]
+
+      public int AuthenticationProviderId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("AuthenticationProviderID")>
+
+      Public Property AuthenticationProviderId As Integer
+  overload: Itsm.Tdx.WebApi.People.Models.User.AuthenticationProviderId*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AuthenticationProviderID
+- uid: Itsm.Tdx.WebApi.People.Models.User.Attributes
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.Attributes
+  id: Attributes
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Attributes
+  nameWithType: User.Attributes
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Attributes
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Attributes
+    path: People/Models/User.cs
+    startLine: 234
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("Attributes")]
+
+      public List<object>? Attributes { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Object}
+    content.vb: >-
+      <JsonProperty("Attributes")>
+
+      Public Property Attributes As List(Of Object)
+  overload: Itsm.Tdx.WebApi.People.Models.User.Attributes*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Attributes
+- uid: Itsm.Tdx.WebApi.People.Models.User.ImProvider
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ImProvider
+  id: ImProvider
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ImProvider
+  nameWithType: User.ImProvider
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ImProvider
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ImProvider
+    path: People/Models/User.cs
+    startLine: 237
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("IMProvider")]
+
+      public string? ImProvider { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("IMProvider")>
+
+      Public Property ImProvider As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.ImProvider*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: IMProvider
+- uid: Itsm.Tdx.WebApi.People.Models.User.ImHandle
+  commentId: P:Itsm.Tdx.WebApi.People.Models.User.ImHandle
+  id: ImHandle
+  parent: Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: ImHandle
+  nameWithType: User.ImHandle
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ImHandle
+  type: Property
+  source:
+    remote:
+      path: People/Models/User.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ImHandle
+    path: People/Models/User.cs
+    startLine: 240
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.People.Models
+  syntax:
+    content: >-
+      [JsonProperty("IMHandle")]
+
+      public string? ImHandle { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("IMHandle")>
+
+      Public Property ImHandle As String
+  overload: Itsm.Tdx.WebApi.People.Models.User.ImHandle*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: IMHandle
+references:
+- uid: Itsm.Tdx.WebApi.People.Models
+  commentId: N:Itsm.Tdx.WebApi.People.Models
+  href: Itsm.html
+  name: Itsm.Tdx.WebApi.People.Models
+  nameWithType: Itsm.Tdx.WebApi.People.Models
+  fullName: Itsm.Tdx.WebApi.People.Models
+  spec.csharp:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.People
+    name: People
+    href: Itsm.Tdx.WebApi.People.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.People.Models
+    name: Models
+    href: Itsm.Tdx.WebApi.People.Models.html
+  spec.vb:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.People
+    name: People
+    href: Itsm.Tdx.WebApi.People.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.People.Models
+    name: Models
+    href: Itsm.Tdx.WebApi.People.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Itsm.Tdx.WebApi.People.Models.User.Uid*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.Uid
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_Uid
+  name: Uid
+  nameWithType: User.Uid
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Uid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Itsm.Tdx.WebApi.People.Models.User.ReferenceId*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ReferenceId
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ReferenceId
+  name: ReferenceId
+  nameWithType: User.ReferenceId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ReferenceId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Itsm.Tdx.WebApi.People.Models.User.BeId*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.BeId
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_BeId
+  name: BeId
+  nameWithType: User.BeId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.BeId
+- uid: Itsm.Tdx.WebApi.People.Models.User.BeIdInt*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.BeIdInt
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_BeIdInt
+  name: BeIdInt
+  nameWithType: User.BeIdInt
+  fullName: Itsm.Tdx.WebApi.People.Models.User.BeIdInt
+- uid: Itsm.Tdx.WebApi.People.Models.User.IsActive*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.IsActive
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_IsActive
+  name: IsActive
+  nameWithType: User.IsActive
+  fullName: Itsm.Tdx.WebApi.People.Models.User.IsActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Itsm.Tdx.WebApi.People.Models.User.IsConfidential*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.IsConfidential
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_IsConfidential
+  name: IsConfidential
+  nameWithType: User.IsConfidential
+  fullName: Itsm.Tdx.WebApi.People.Models.User.IsConfidential
+- uid: Itsm.Tdx.WebApi.People.Models.User.UserName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.UserName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_UserName
+  name: UserName
+  nameWithType: User.UserName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.UserName
+- uid: Itsm.Tdx.WebApi.People.Models.User.FullName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.FullName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_FullName
+  name: FullName
+  nameWithType: User.FullName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.FullName
+- uid: Itsm.Tdx.WebApi.People.Models.User.FirstName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.FirstName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_FirstName
+  name: FirstName
+  nameWithType: User.FirstName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.FirstName
+- uid: Itsm.Tdx.WebApi.People.Models.User.LastName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.LastName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_LastName
+  name: LastName
+  nameWithType: User.LastName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.LastName
+- uid: Itsm.Tdx.WebApi.People.Models.User.MiddleName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.MiddleName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_MiddleName
+  name: MiddleName
+  nameWithType: User.MiddleName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.MiddleName
+- uid: Itsm.Tdx.WebApi.People.Models.User.Salutation*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.Salutation
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_Salutation
+  name: Salutation
+  nameWithType: User.Salutation
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Salutation
+- uid: Itsm.Tdx.WebApi.People.Models.User.Nickname*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.Nickname
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_Nickname
+  name: Nickname
+  nameWithType: User.Nickname
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Nickname
+- uid: Itsm.Tdx.WebApi.People.Models.User.DefaultAccountId*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.DefaultAccountId
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_DefaultAccountId
+  name: DefaultAccountId
+  nameWithType: User.DefaultAccountId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.DefaultAccountId
+- uid: Itsm.Tdx.WebApi.People.Models.User.DefaultAccountName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.DefaultAccountName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_DefaultAccountName
+  name: DefaultAccountName
+  nameWithType: User.DefaultAccountName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.DefaultAccountName
+- uid: Itsm.Tdx.WebApi.People.Models.User.PrimaryEmail*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.PrimaryEmail
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_PrimaryEmail
+  name: PrimaryEmail
+  nameWithType: User.PrimaryEmail
+  fullName: Itsm.Tdx.WebApi.People.Models.User.PrimaryEmail
+- uid: Itsm.Tdx.WebApi.People.Models.User.AlternateEmail*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.AlternateEmail
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_AlternateEmail
+  name: AlternateEmail
+  nameWithType: User.AlternateEmail
+  fullName: Itsm.Tdx.WebApi.People.Models.User.AlternateEmail
+- uid: Itsm.Tdx.WebApi.People.Models.User.ExternalId*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ExternalId
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ExternalId
+  name: ExternalId
+  nameWithType: User.ExternalId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ExternalId
+- uid: Itsm.Tdx.WebApi.People.Models.User.AlternateId*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.AlternateId
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_AlternateId
+  name: AlternateId
+  nameWithType: User.AlternateId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.AlternateId
+- uid: Itsm.Tdx.WebApi.People.Models.User.Applications*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.Applications
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_Applications
+  name: Applications
+  nameWithType: User.Applications
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Applications
+- uid: System.Collections.Generic.List{System.Object}
+  commentId: T:System.Collections.Generic.List{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<object>
+  nameWithType: List<object>
+  fullName: System.Collections.Generic.List<object>
+  nameWithType.vb: List(Of Object)
+  fullName.vb: System.Collections.Generic.List(Of Object)
+  name.vb: List(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Itsm.Tdx.WebApi.People.Models.User.SecurityRoleName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.SecurityRoleName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_SecurityRoleName
+  name: SecurityRoleName
+  nameWithType: User.SecurityRoleName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.SecurityRoleName
+- uid: Itsm.Tdx.WebApi.People.Models.User.SecurityRoleId*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.SecurityRoleId
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_SecurityRoleId
+  name: SecurityRoleId
+  nameWithType: User.SecurityRoleId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.SecurityRoleId
+- uid: Itsm.Tdx.WebApi.People.Models.User.Permissions*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.Permissions
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_Permissions
+  name: Permissions
+  nameWithType: User.Permissions
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Permissions
+- uid: Itsm.Tdx.WebApi.People.Models.User.OrgApplications*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.OrgApplications
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_OrgApplications
+  name: OrgApplications
+  nameWithType: User.OrgApplications
+  fullName: Itsm.Tdx.WebApi.People.Models.User.OrgApplications
+- uid: Itsm.Tdx.WebApi.People.Models.User.PrimaryClientPortalApplicationId*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.PrimaryClientPortalApplicationId
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_PrimaryClientPortalApplicationId
+  name: PrimaryClientPortalApplicationId
+  nameWithType: User.PrimaryClientPortalApplicationId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.PrimaryClientPortalApplicationId
+- uid: Itsm.Tdx.WebApi.People.Models.User.GroupIds*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.GroupIds
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_GroupIds
+  name: GroupIds
+  nameWithType: User.GroupIds
+  fullName: Itsm.Tdx.WebApi.People.Models.User.GroupIds
+- uid: Itsm.Tdx.WebApi.People.Models.User.AlertEmail*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.AlertEmail
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_AlertEmail
+  name: AlertEmail
+  nameWithType: User.AlertEmail
+  fullName: Itsm.Tdx.WebApi.People.Models.User.AlertEmail
+- uid: Itsm.Tdx.WebApi.People.Models.User.ProfileImageFileName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ProfileImageFileName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ProfileImageFileName
+  name: ProfileImageFileName
+  nameWithType: User.ProfileImageFileName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ProfileImageFileName
+- uid: Itsm.Tdx.WebApi.People.Models.User.Company*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.Company
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_Company
+  name: Company
+  nameWithType: User.Company
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Company
+- uid: Itsm.Tdx.WebApi.People.Models.User.Title*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.Title
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_Title
+  name: Title
+  nameWithType: User.Title
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Title
+- uid: Itsm.Tdx.WebApi.People.Models.User.HomePhone*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.HomePhone
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_HomePhone
+  name: HomePhone
+  nameWithType: User.HomePhone
+  fullName: Itsm.Tdx.WebApi.People.Models.User.HomePhone
+- uid: Itsm.Tdx.WebApi.People.Models.User.PrimaryPhone*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.PrimaryPhone
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_PrimaryPhone
+  name: PrimaryPhone
+  nameWithType: User.PrimaryPhone
+  fullName: Itsm.Tdx.WebApi.People.Models.User.PrimaryPhone
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkPhone*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.WorkPhone
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_WorkPhone
+  name: WorkPhone
+  nameWithType: User.WorkPhone
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkPhone
+- uid: Itsm.Tdx.WebApi.People.Models.User.Pager*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.Pager
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_Pager
+  name: Pager
+  nameWithType: User.Pager
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Pager
+- uid: Itsm.Tdx.WebApi.People.Models.User.OtherPhone*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.OtherPhone
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_OtherPhone
+  name: OtherPhone
+  nameWithType: User.OtherPhone
+  fullName: Itsm.Tdx.WebApi.People.Models.User.OtherPhone
+- uid: Itsm.Tdx.WebApi.People.Models.User.MobilePhone*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.MobilePhone
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_MobilePhone
+  name: MobilePhone
+  nameWithType: User.MobilePhone
+  fullName: Itsm.Tdx.WebApi.People.Models.User.MobilePhone
+- uid: Itsm.Tdx.WebApi.People.Models.User.Fax*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.Fax
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_Fax
+  name: Fax
+  nameWithType: User.Fax
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Fax
+- uid: Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityID*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityID
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_DefaultPriorityID
+  name: DefaultPriorityID
+  nameWithType: User.DefaultPriorityID
+  fullName: Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityID
+- uid: Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_DefaultPriorityName
+  name: DefaultPriorityName
+  nameWithType: User.DefaultPriorityName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.DefaultPriorityName
+- uid: Itsm.Tdx.WebApi.People.Models.User.AboutMe*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.AboutMe
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_AboutMe
+  name: AboutMe
+  nameWithType: User.AboutMe
+  fullName: Itsm.Tdx.WebApi.People.Models.User.AboutMe
+- uid: Itsm.Tdx.WebApi.People.Models.User.TechnicianSignature*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.TechnicianSignature
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_TechnicianSignature
+  name: TechnicianSignature
+  nameWithType: User.TechnicianSignature
+  fullName: Itsm.Tdx.WebApi.People.Models.User.TechnicianSignature
+- uid: Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToUpdatesAndComments*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToUpdatesAndComments
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ApplyTechnicianSignatureToUpdatesAndComments
+  name: ApplyTechnicianSignatureToUpdatesAndComments
+  nameWithType: User.ApplyTechnicianSignatureToUpdatesAndComments
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToUpdatesAndComments
+- uid: Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToReplies*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToReplies
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ApplyTechnicianSignatureToReplies
+  name: ApplyTechnicianSignatureToReplies
+  nameWithType: User.ApplyTechnicianSignatureToReplies
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ApplyTechnicianSignatureToReplies
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkAddress*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.WorkAddress
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_WorkAddress
+  name: WorkAddress
+  nameWithType: User.WorkAddress
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkAddress
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkCity*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.WorkCity
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_WorkCity
+  name: WorkCity
+  nameWithType: User.WorkCity
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkCity
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkState*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.WorkState
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_WorkState
+  name: WorkState
+  nameWithType: User.WorkState
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkState
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkZip*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.WorkZip
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_WorkZip
+  name: WorkZip
+  nameWithType: User.WorkZip
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkZip
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkCountry*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.WorkCountry
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_WorkCountry
+  name: WorkCountry
+  nameWithType: User.WorkCountry
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkCountry
+- uid: Itsm.Tdx.WebApi.People.Models.User.HomeAddress*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.HomeAddress
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_HomeAddress
+  name: HomeAddress
+  nameWithType: User.HomeAddress
+  fullName: Itsm.Tdx.WebApi.People.Models.User.HomeAddress
+- uid: Itsm.Tdx.WebApi.People.Models.User.HomeCity*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.HomeCity
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_HomeCity
+  name: HomeCity
+  nameWithType: User.HomeCity
+  fullName: Itsm.Tdx.WebApi.People.Models.User.HomeCity
+- uid: Itsm.Tdx.WebApi.People.Models.User.HomeState*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.HomeState
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_HomeState
+  name: HomeState
+  nameWithType: User.HomeState
+  fullName: Itsm.Tdx.WebApi.People.Models.User.HomeState
+- uid: Itsm.Tdx.WebApi.People.Models.User.HomeZip*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.HomeZip
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_HomeZip
+  name: HomeZip
+  nameWithType: User.HomeZip
+  fullName: Itsm.Tdx.WebApi.People.Models.User.HomeZip
+- uid: Itsm.Tdx.WebApi.People.Models.User.HomeCountry*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.HomeCountry
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_HomeCountry
+  name: HomeCountry
+  nameWithType: User.HomeCountry
+  fullName: Itsm.Tdx.WebApi.People.Models.User.HomeCountry
+- uid: Itsm.Tdx.WebApi.People.Models.User.LocationID*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.LocationID
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_LocationID
+  name: LocationID
+  nameWithType: User.LocationID
+  fullName: Itsm.Tdx.WebApi.People.Models.User.LocationID
+- uid: Itsm.Tdx.WebApi.People.Models.User.LocationName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.LocationName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_LocationName
+  name: LocationName
+  nameWithType: User.LocationName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.LocationName
+- uid: Itsm.Tdx.WebApi.People.Models.User.LocationRoomID*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.LocationRoomID
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_LocationRoomID
+  name: LocationRoomID
+  nameWithType: User.LocationRoomID
+  fullName: Itsm.Tdx.WebApi.People.Models.User.LocationRoomID
+- uid: Itsm.Tdx.WebApi.People.Models.User.LocationRoomName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.LocationRoomName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_LocationRoomName
+  name: LocationRoomName
+  nameWithType: User.LocationRoomName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.LocationRoomName
+- uid: Itsm.Tdx.WebApi.People.Models.User.DefaultRate*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.DefaultRate
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_DefaultRate
+  name: DefaultRate
+  nameWithType: User.DefaultRate
+  fullName: Itsm.Tdx.WebApi.People.Models.User.DefaultRate
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Itsm.Tdx.WebApi.People.Models.User.CostRate*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.CostRate
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_CostRate
+  name: CostRate
+  nameWithType: User.CostRate
+  fullName: Itsm.Tdx.WebApi.People.Models.User.CostRate
+- uid: Itsm.Tdx.WebApi.People.Models.User.IsEmployee*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.IsEmployee
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_IsEmployee
+  name: IsEmployee
+  nameWithType: User.IsEmployee
+  fullName: Itsm.Tdx.WebApi.People.Models.User.IsEmployee
+- uid: Itsm.Tdx.WebApi.People.Models.User.WorkableHours*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.WorkableHours
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_WorkableHours
+  name: WorkableHours
+  nameWithType: User.WorkableHours
+  fullName: Itsm.Tdx.WebApi.People.Models.User.WorkableHours
+- uid: Itsm.Tdx.WebApi.People.Models.User.IsCapacityManaged*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.IsCapacityManaged
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_IsCapacityManaged
+  name: IsCapacityManaged
+  nameWithType: User.IsCapacityManaged
+  fullName: Itsm.Tdx.WebApi.People.Models.User.IsCapacityManaged
+- uid: Itsm.Tdx.WebApi.People.Models.User.ReportTimeAfterDate*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ReportTimeAfterDate
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ReportTimeAfterDate
+  name: ReportTimeAfterDate
+  nameWithType: User.ReportTimeAfterDate
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ReportTimeAfterDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Itsm.Tdx.WebApi.People.Models.User.EndDate*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.EndDate
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_EndDate
+  name: EndDate
+  nameWithType: User.EndDate
+  fullName: Itsm.Tdx.WebApi.People.Models.User.EndDate
+- uid: Itsm.Tdx.WebApi.People.Models.User.ShouldReportTime*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ShouldReportTime
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ShouldReportTime
+  name: ShouldReportTime
+  nameWithType: User.ShouldReportTime
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ShouldReportTime
+- uid: Itsm.Tdx.WebApi.People.Models.User.ReportsToUid*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ReportsToUid
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ReportsToUid
+  name: ReportsToUid
+  nameWithType: User.ReportsToUid
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ReportsToUid
+- uid: Itsm.Tdx.WebApi.People.Models.User.ReportsToFullName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ReportsToFullName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ReportsToFullName
+  name: ReportsToFullName
+  nameWithType: User.ReportsToFullName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ReportsToFullName
+- uid: Itsm.Tdx.WebApi.People.Models.User.ResourcePoolId*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ResourcePoolId
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ResourcePoolId
+  name: ResourcePoolId
+  nameWithType: User.ResourcePoolId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ResourcePoolId
+- uid: Itsm.Tdx.WebApi.People.Models.User.ResourcePoolName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ResourcePoolName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ResourcePoolName
+  name: ResourcePoolName
+  nameWithType: User.ResourcePoolName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ResourcePoolName
+- uid: Itsm.Tdx.WebApi.People.Models.User.Tzid*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.Tzid
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_Tzid
+  name: Tzid
+  nameWithType: User.Tzid
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Tzid
+- uid: Itsm.Tdx.WebApi.People.Models.User.TzName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.TzName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_TzName
+  name: TzName
+  nameWithType: User.TzName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.TzName
+- uid: Itsm.Tdx.WebApi.People.Models.User.TypeId*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.TypeId
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_TypeId
+  name: TypeId
+  nameWithType: User.TypeId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.TypeId
+- uid: Itsm.Tdx.WebApi.People.Models.User.AuthenticationUserName*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.AuthenticationUserName
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_AuthenticationUserName
+  name: AuthenticationUserName
+  nameWithType: User.AuthenticationUserName
+  fullName: Itsm.Tdx.WebApi.People.Models.User.AuthenticationUserName
+- uid: Itsm.Tdx.WebApi.People.Models.User.AuthenticationProviderId*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.AuthenticationProviderId
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_AuthenticationProviderId
+  name: AuthenticationProviderId
+  nameWithType: User.AuthenticationProviderId
+  fullName: Itsm.Tdx.WebApi.People.Models.User.AuthenticationProviderId
+- uid: Itsm.Tdx.WebApi.People.Models.User.Attributes*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.Attributes
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_Attributes
+  name: Attributes
+  nameWithType: User.Attributes
+  fullName: Itsm.Tdx.WebApi.People.Models.User.Attributes
+- uid: Itsm.Tdx.WebApi.People.Models.User.ImProvider*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ImProvider
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ImProvider
+  name: ImProvider
+  nameWithType: User.ImProvider
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ImProvider
+- uid: Itsm.Tdx.WebApi.People.Models.User.ImHandle*
+  commentId: Overload:Itsm.Tdx.WebApi.People.Models.User.ImHandle
+  href: Itsm.Tdx.WebApi.People.Models.User.html#Itsm_Tdx_WebApi_People_Models_User_ImHandle
+  name: ImHandle
+  nameWithType: User.ImHandle
+  fullName: Itsm.Tdx.WebApi.People.Models.User.ImHandle

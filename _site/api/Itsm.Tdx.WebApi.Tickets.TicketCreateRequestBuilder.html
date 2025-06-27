@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TicketCreateRequestBuilder | TdxWebApiDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TicketCreateRequestBuilder | TdxWebApiDocs ">
+      
+      <meta name="description" content="Provides a fluent interface for constructing and submitting a new ticket using discrete fields.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/new/master/apiSpec/new?filename=Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder.md&amp;value=---%0Auid%3A%20Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="TdxWebApiDocs">
+            TdxWebApiDocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder">
+
+
+
+  <h1 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder" class="text-break">
+Class TicketCreateRequestBuilder  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Itsm.html">Itsm</a>.<a class="xref" href="Itsm.Tdx.html">Tdx</a>.<a class="xref" href="Itsm.Tdx.WebApi.html">WebApi</a>.<a class="xref" href="Itsm.Tdx.WebApi.Tickets.html">Tickets</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Itsm.Tdx.WebApi.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides a fluent interface for constructing and submitting a new ticket using discrete fields.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TicketCreateRequestBuilder : BaseRequestBuilder</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Itsm.Tdx.WebApi.BaseRequestBuilder.html">BaseRequestBuilder</a></div>
+      <div><span class="xref">TicketCreateRequestBuilder</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_Client">BaseRequestBuilder.Client</a>
+    </div>
+    <div>
+      <a class="xref" href="Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_Path">BaseRequestBuilder.Path</a>
+    </div>
+    <div>
+      <a class="xref" href="Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_CreateRequest_System_Net_Http_HttpMethod_System_String_System_Object_">BaseRequestBuilder.CreateRequest(HttpMethod, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_SendAsync__1_System_Net_Http_HttpRequestMessage_">BaseRequestBuilder.SendAsync&lt;T&gt;(HttpRequestMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_SendAsync_System_Net_Http_HttpRequestMessage_">BaseRequestBuilder.SendAsync(HttpRequestMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder__ctor_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.#ctor*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder__ctor_System_String_Itsm_Tdx_WebApi_TdxBaseClient_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.#ctor(System.String,Itsm.Tdx.WebApi.TdxBaseClient)">
+  TicketCreateRequestBuilder(string, TdxBaseClient)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.html">TicketCreateRequestBuilder</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TicketCreateRequestBuilder(string path, TdxBaseClient client)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The base path for the ticket creation API endpoint.</p>
+</dd>
+    <dt><code>client</code> <a class="xref" href="Itsm.Tdx.WebApi.TdxBaseClient.html">TdxBaseClient</a></dt>
+    <dd><p>The API client used to make requests.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_PostAsync_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.PostAsync*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_PostAsync" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.PostAsync">
+  PostAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Submits the ticket creation request and returns the created <a class="xref" href="Itsm.Tdx.WebApi.Tickets.Models.Ticket.html">Ticket</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Ticket&gt; PostAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Itsm.Tdx.WebApi.Tickets.Models.Ticket.html">Ticket</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_ValidateRequiredFields_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.ValidateRequiredFields*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_ValidateRequiredFields" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.ValidateRequiredFields">
+  ValidateRequiredFields()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates that all required fields for ticket creation are present.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ValidateRequiredFields()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when a required field is missing.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithAccountId_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithAccountId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithAccountId_System_String_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithAccountId(System.String)">
+  WithAccountId(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the account ID associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TicketCreateRequestBuilder WithAccountId(string accountId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accountId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.html">TicketCreateRequestBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithDescription_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithDescription*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithDescription_System_String_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithDescription(System.String)">
+  WithDescription(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the description for the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TicketCreateRequestBuilder WithDescription(string description)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.html">TicketCreateRequestBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithOptions_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithOptions*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithOptions_System_Action_Itsm_Tdx_WebApi_Tickets_Options_TicketCreateOptions__" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithOptions(System.Action{Itsm.Tdx.WebApi.Tickets.Options.TicketCreateOptions})">
+  WithOptions(Action&lt;TicketCreateOptions&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies additional options for the ticket creation request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TicketCreateRequestBuilder WithOptions(Action&lt;TicketCreateOptions&gt; configure)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configure</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Itsm.Tdx.WebApi.Tickets.Options.TicketCreateOptions.html">TicketCreateOptions</a>&gt;</dt>
+    <dd><p>An action to configure the <a class="xref" href="Itsm.Tdx.WebApi.Tickets.Options.TicketCreateOptions.html">TicketCreateOptions</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.html">TicketCreateRequestBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithPriority_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithPriority*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithPriority_System_String_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithPriority(System.String)">
+  WithPriority(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the priority ID of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TicketCreateRequestBuilder WithPriority(string priorityId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>priorityId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.html">TicketCreateRequestBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithRequestor_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithRequestor*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithRequestor_System_String_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithRequestor(System.String)">
+  WithRequestor(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the UID of the requestor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TicketCreateRequestBuilder WithRequestor(string uid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.html">TicketCreateRequestBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithResponsible_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithResponsible*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithResponsible_System_String_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithResponsible(System.String)">
+  WithResponsible(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the UID of the responsible person.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TicketCreateRequestBuilder WithResponsible(string uid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.html">TicketCreateRequestBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithStatusId_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithStatusId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithStatusId_System_String_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithStatusId(System.String)">
+  WithStatusId(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the status ID of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TicketCreateRequestBuilder WithStatusId(string statusID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>statusID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.html">TicketCreateRequestBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithTitle_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithTitle*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithTitle_System_String_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithTitle(System.String)">
+  WithTitle(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the title of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TicketCreateRequestBuilder WithTitle(string title)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>title</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.html">TicketCreateRequestBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithTypeId_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithTypeId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_TicketCreateRequestBuilder_WithTypeId_System_String_" data-uid="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.WithTypeId(System.String)">
+  WithTypeId(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the type ID of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TicketCreateRequestBuilder WithTypeId(string typeId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>typeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.html">TicketCreateRequestBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/TicketCreateRequestBuilder.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

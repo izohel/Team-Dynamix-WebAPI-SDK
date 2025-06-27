@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: Itsm.Tdx.WebApi.People
+  commentId: N:Itsm.Tdx.WebApi.People
+  id: Itsm.Tdx.WebApi.People
+  children:
+  - Itsm.Tdx.WebApi.People.PeopleRequestBuilder
+  - Itsm.Tdx.WebApi.People.PersonByIdRequestBuilder
+  - Itsm.Tdx.WebApi.People.PersonLookupRequestBuilder
+  - Itsm.Tdx.WebApi.People.PersonSearchRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: Itsm.Tdx.WebApi.People
+  nameWithType: Itsm.Tdx.WebApi.People
+  fullName: Itsm.Tdx.WebApi.People
+  type: Namespace
+  assemblies:
+  - Itsm.Tdx.WebApi
+references:
+- uid: Itsm.Tdx.WebApi.People.PeopleRequestBuilder
+  commentId: T:Itsm.Tdx.WebApi.People.PeopleRequestBuilder
+  parent: Itsm.Tdx.WebApi.People
+  href: Itsm.Tdx.WebApi.People.PeopleRequestBuilder.html
+  name: PeopleRequestBuilder
+  nameWithType: PeopleRequestBuilder
+  fullName: Itsm.Tdx.WebApi.People.PeopleRequestBuilder
+- uid: Itsm.Tdx.WebApi.People.PersonByIdRequestBuilder
+  commentId: T:Itsm.Tdx.WebApi.People.PersonByIdRequestBuilder
+  parent: Itsm.Tdx.WebApi.People
+  href: Itsm.Tdx.WebApi.People.PersonByIdRequestBuilder.html
+  name: PersonByIdRequestBuilder
+  nameWithType: PersonByIdRequestBuilder
+  fullName: Itsm.Tdx.WebApi.People.PersonByIdRequestBuilder
+- uid: Itsm.Tdx.WebApi.People.PersonLookupRequestBuilder
+  commentId: T:Itsm.Tdx.WebApi.People.PersonLookupRequestBuilder
+  href: Itsm.Tdx.WebApi.People.PersonLookupRequestBuilder.html
+  name: PersonLookupRequestBuilder
+  nameWithType: PersonLookupRequestBuilder
+  fullName: Itsm.Tdx.WebApi.People.PersonLookupRequestBuilder
+- uid: Itsm.Tdx.WebApi.People.PersonSearchRequestBuilder
+  commentId: T:Itsm.Tdx.WebApi.People.PersonSearchRequestBuilder
+  parent: Itsm.Tdx.WebApi.People
+  href: Itsm.Tdx.WebApi.People.PersonSearchRequestBuilder.html
+  name: PersonSearchRequestBuilder
+  nameWithType: PersonSearchRequestBuilder
+  fullName: Itsm.Tdx.WebApi.People.PersonSearchRequestBuilder
+- uid: Itsm.Tdx.WebApi.People
+  commentId: N:Itsm.Tdx.WebApi.People
+  href: Itsm.html
+  name: Itsm.Tdx.WebApi.People
+  nameWithType: Itsm.Tdx.WebApi.People
+  fullName: Itsm.Tdx.WebApi.People
+  spec.csharp:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.People
+    name: People
+    href: Itsm.Tdx.WebApi.People.html
+  spec.vb:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.People
+    name: People
+    href: Itsm.Tdx.WebApi.People.html

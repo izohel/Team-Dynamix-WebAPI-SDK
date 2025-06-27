@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Team Dynamix Web Api SDK | TdxWebApiDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Team Dynamix Web Api SDK | TdxWebApiDocs ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/readme.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="TdxWebApiDocs">
+            TdxWebApiDocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="team-dynamix-web-api-sdk">Team Dynamix Web Api SDK</h1>
+
+<p>A fluent, opinionated C# SDK for interacting with the TeamDynamix Web API.</p>
+<h2 id="-features">✨ Features</h2>
+<ul>
+<li>✅ Fluent-style request builders</li>
+<li>✅ Strongly typed models and builders</li>
+<li>✅ Supports both basic and complex ticket operations</li>
+<li>✅ Extensible and customizable</li>
+<li>✅ Designed for testability and clean layering</li>
+</ul>
+<hr>
+<h2 id="-installation">📦 Installation</h2>
+<p>Install via NuGet:</p>
+<pre><code>dotnet add package TdxClient
+</code></pre>
+<p>Or reference the project directly in your solution:</p>
+<pre><code class="lang-xml">&lt;ProjectReference Include=&quot;..\TdxClient\TdxClient.csproj&quot; /&gt;
+</code></pre>
+<hr>
+<h2 id="-setup">🔧 Setup</h2>
+<h3 id="-quick-start">🚀 Quick Start</h3>
+<h4 id="option-1-minimal-setup-not-recommended-for-aspnet-core">Option 1: Minimal Setup (Not Recommended for ASP.NET Core)</h4>
+<pre><code class="lang-csharp">var client = new TdxClient(
+    tenant: &quot;mytenant&quot;,
+    webServicesBeId: &quot;abc123&quot;,
+    webServicesKey: &quot;super-secret-key&quot;
+);
+
+await client.AuthenticateAsync();
+
+var ticket = await client.Tickets(&quot;244&quot;)[&quot;123456&quot;].GetAsync();
+</code></pre>
+<h3 id="option-2-recommended-setup-with-ihttpclientfactory">Option 2: Recommended Setup with IHttpClientFactory</h3>
+<p>In Program.cs or Startup.cs:</p>
+<pre><code class="lang-csharp">
+builder.Services.AddHttpClient&lt;TdxClient&gt;((provider, httpClient) =&gt;
+{
+    // Optional: Add custom handlers, policies, etc.
+})
+.ConfigurePrimaryHttpMessageHandler(() =&gt; new HttpClientHandler
+{
+    AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
+});
+</code></pre>
+<p>Then register your config:</p>
+<pre><code class="lang-csharp">builder.Services.AddSingleton(new TdxClientOptions
+{
+    EnableThrottleCountdownLogging = true,
+    OnThrottleWait = remaining =&gt; Console.WriteLine($&quot;Waiting {remaining.TotalSeconds} seconds due to rate limit...&quot;),
+    OnThrottleContinue = () =&gt; Console.WriteLine(&quot;Continuing after wait.&quot;)
+});
+
+builder.Services.AddTransient&lt;TdxClient&gt;(provider =&gt;
+{
+    var httpClient = provider.GetRequiredService&lt;IHttpClientFactory&gt;().CreateClient(nameof(TdxClient));
+    var options = provider.GetRequiredService&lt;TdxClientOptions&gt;();
+
+    return new TdxClient(
+        httpClient,
+        tenant: &quot;mytenant&quot;,
+        webServicesBeId: &quot;abc123&quot;,
+        webServicesKey: &quot;super-secret-key&quot;,
+        options
+    );
+});
+</code></pre>
+<p>Then inject it in your service:</p>
+<pre><code class="lang-csharp">
+public class MyService
+{
+    private readonly TdxClient _tdx;
+
+    public MyService(TdxClient tdx)
+    {
+        _tdx = tdx;
+    }
+
+    public async Task RunAsync()
+    {
+        await _tdx.AuthenticateAsync();
+
+        var newTicket = new Ticket
+        {
+            Title = &quot;My New Ticket&quot;,
+            Description = &quot;Created via fluent API&quot;,
+            RequestorUid = Guid.Parse(&quot;...&quot;),
+            StatusID = 1234,
+            TypeID = 5678,
+            AccountID = 9876,
+            PriorityID = 1111
+        };
+
+        var created = await _tdx.Tickets(&quot;244&quot;).Create(newTicket);
+    }
+}
+</code></pre>
+<h3 id="inject-your-own-httpclient-with-custom-delegatinghandlers">Inject Your Own HttpClient With Custom DelegatingHandlers</h3>
+<pre><code class="lang-csharp">// Custom logging handler example
+public class LoggingHandler : DelegatingHandler
+{
+    protected override async Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+    {
+        Console.WriteLine($&quot;Request: {request.Method} {request.RequestUri}&quot;);
+        var response = await base.SendAsync(request, cancellationToken);
+        Console.WriteLine($&quot;Response: {response.StatusCode}&quot;);
+        return response;
+    }
+}
+
+// Create a list of custom handlers
+var handlers = new List&lt;DelegatingHandler&gt; { new LoggingHandler() };
+
+// Create HttpClient with custom handlers using the factory
+var httpClient = TdxClientFactory.CreateHttpClient(handlers, tenant);
+
+// Inject your HttpClient into TdxClient
+var client = new TdxClient(httpClient, tenant, beId, webServicesKey);
+
+// Authenticate and use
+await client.AuthenticateAsync();
+
+var tickets = await client.Tickets(&quot;244&quot;)[&quot;12345&quot;].GetAsync();
+</code></pre>
+<h3 id="advanced-adding-multiple-handlers-logging--retry--telemetry">Advanced: Adding Multiple Handlers (Logging + Retry + Telemetry)</h3>
+<pre><code class="lang-csharp">var handlers = new List&lt;DelegatingHandler&gt;
+{
+    new LoggingHandler(),
+    new RetryHandler(),  // Your custom retry handler if you have one
+    new TelemetryHandler() // Your telemetry handler for metrics
+};
+
+var httpClient = TdxClientFactory.CreateHttpClient(handlers, tenant);
+
+var client = new TdxClient(httpClient, tenant, beId, webServicesKey);
+
+await client.AuthenticateAsync();
+
+// Now all requests go through the pipeline of your handlers
+var tickets = await client.Tickets(&quot;244&quot;)[&quot;12345&quot;].GetAsync();
+</code></pre>
+<h3 id="-not-recommended-manual-httpclient-instantiation">⚠️ Not Recommended: Manual <code>HttpClient</code> Instantiation</h3>
+<p>You will need to handle your own retry policies.</p>
+<pre><code class="lang-csharp">// Use only for quick tests or console apps
+var httpClient = new HttpClient
+{
+    BaseAddress = new Uri(&quot;https://your-org.teamdynamix.com/TDWebApi/api/&quot;)
+};
+
+var tdxClient = new TdxClient(httpClient, &quot;your-webservices-key&quot;, &quot;your-beid&quot;);
+</code></pre>
+<p>This bypasses DI scopes, Polly retry policies, DNS refresh handling, and other best practices.</p>
+<hr>
+<h2 id="-usage-exmaple">🚀 Usage Exmaple</h2>
+<h3 id="-search-for-a-person">🔍 Search for a Person</h3>
+<pre><code class="lang-csharp">var results = await tdxClient.Users.Search
+    .WithEmail(&quot;jdoe@yourorg.edu&quot;)
+    .ExecuteAsync();
+</code></pre>
+<hr>
+<h3 id="-get-a-ticket-by-id">📄 Get a Ticket by ID</h3>
+<pre><code class="lang-csharp">var ticket = await tdxClient.Tickets(&quot;244&quot;)[&quot;123456&quot;].GetAsync();
+</code></pre>
+<hr>
+<h3 id="-create-a-ticket">📝 Create a Ticket</h3>
+<pre><code class="lang-csharp">var ticketRequest = new TicketRequest
+{
+    Title = &quot;New Hire Onboarding&quot;,
+    RequestorUid = &quot;abc-123&quot;,
+    Type = TicketType.OnboardingOrJobUpdate,
+    Description = &quot;Provision access and equipment&quot;,
+    ResponsibleGroupId = &quot;4000&quot;
+};
+
+var ticket = await tdxClient.Tickets(&quot;244&quot;).Create(ticketRequest.MapToTicket());
+</code></pre>
+<h3 id="-create-ticket-cont">📝 Create ticket cont.</h3>
+<pre><code class="lang-csharp">var ticket = await tdxClient.Tickets(&quot;244&quot;).Create().WithTitle(&quot;...&quot;)...
+// if you attempt to send without all required fields it will error our and notify you
+</code></pre>
+<hr>
+<h3 id="-resolve-a-ticket">✅ Resolve a Ticket</h3>
+<pre><code class="lang-csharp">await tdxClient.Tickets(&quot;244&quot;)[&quot;123456&quot;]
+    .SetStatus(TicketStatus.Resolved)
+    .WithComment(&quot;Issue resolved by help desk.&quot;)
+    .UpdateAsync();
+</code></pre>
+<hr>
+<h2 id="-tdxclientoptions">⚙️ TdxClientOptions</h2>
+<p>Customize retry/throttling behavior:</p>
+<pre><code class="lang-csharp">var options = new TdxClientOptions
+{
+    MaxRetries = 3,
+    EnableThrottleCountdownLogging = true,
+    OnThrottleWait = remaining =&gt; Console.WriteLine($&quot;Waiting {remaining.TotalSeconds}...&quot;),
+    OnThrottleContinue = () =&gt; Console.WriteLine(&quot;Continuing.&quot;)
+};
+</code></pre>
+<h2 id="-structure">🧱 Structure</h2>
+<pre><code class="lang-text">TdxClient
+├── People
+│   └── Search
+├── Tickets
+│   ├── Create
+│   └── [ticketId]
+│       ├── Get
+│       ├── SetStatus
+│       └── AddFeedEntry
+</code></pre>
+<hr>
+<h2 id="-extending">📦 Extending</h2>
+<p>You can add more fluent builders by extending BaseRequestBuilder:</p>
+<pre><code class="lang-csharp">public class AssetsRequestBuilder : BaseRequestBuilder
+{
+    public AssetsRequestBuilder(TdxBaseClient client)
+        : base(&quot;assets&quot;, client) { }
+
+    public Task&lt;Asset&gt; GetAssetAsync(string id) =&gt;
+        SendAsync&lt;Asset&gt;(CreateRequest(HttpMethod.Get, id));
+}
+</code></pre>
+<hr>
+<h2 id="-testing">🧪 Testing</h2>
+<p>You can mock the <code>TdxBaseClient</code> and <code>HttpClient</code> layers for unit testing.
+Also would recommend implementing your own httpclient purely to repoint to</p>
+<hr>
+<h2 id="-authentication">🔐 Authentication</h2>
+<p>Supports Web Services Key-based authentication. If your API uses OAuth, you’ll need to extend <code>TdxBaseClient</code> accordingly.</p>
+<hr>
+<h2 id="-license">📄 License</h2>
+<p>MIT</p>
+<hr>
+<h2 id="-support--contribution">🙋 Support / Contribution</h2>
+<p>Open an issue or submit a pull request — contributions welcome!</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/readme.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

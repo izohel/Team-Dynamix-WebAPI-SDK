@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Itsm.Tdx.WebApi.Accounts.Models
+  commentId: N:Itsm.Tdx.WebApi.Accounts.Models
+  id: Itsm.Tdx.WebApi.Accounts.Models
+  children:
+  - Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Itsm.Tdx.WebApi.Accounts.Models
+  nameWithType: Itsm.Tdx.WebApi.Accounts.Models
+  fullName: Itsm.Tdx.WebApi.Accounts.Models
+  type: Namespace
+  assemblies:
+  - Itsm.Tdx.WebApi
+references:
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account
+  commentId: T:Itsm.Tdx.WebApi.Accounts.Models.Account
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html
+  name: Account
+  nameWithType: Account
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account

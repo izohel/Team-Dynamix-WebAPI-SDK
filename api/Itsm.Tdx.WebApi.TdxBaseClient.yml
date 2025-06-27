@@ -1,0 +1,1063 @@
+### YamlMime:ManagedReference
+items:
+- uid: Itsm.Tdx.WebApi.TdxBaseClient
+  commentId: T:Itsm.Tdx.WebApi.TdxBaseClient
+  id: TdxBaseClient
+  parent: Itsm.Tdx.WebApi
+  children:
+  - Itsm.Tdx.WebApi.TdxBaseClient.#ctor(System.Net.Http.HttpClient,Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  - Itsm.Tdx.WebApi.TdxBaseClient.#ctor(System.Net.Http.HttpClient,System.String,Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  - Itsm.Tdx.WebApi.TdxBaseClient.AddAuthorization(System.Net.Http.HttpRequestMessage)
+  - Itsm.Tdx.WebApi.TdxBaseClient.BuildBaseUri(System.String,Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  - Itsm.Tdx.WebApi.TdxBaseClient.CreateRetryPolicy(Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  - Itsm.Tdx.WebApi.TdxBaseClient.HttpClient
+  - Itsm.Tdx.WebApi.TdxBaseClient.RetryPolicy
+  - Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync(System.Net.Http.HttpRequestMessage)
+  - Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync``1(System.Net.Http.HttpRequestMessage)
+  - Itsm.Tdx.WebApi.TdxBaseClient.SetToken(System.String)
+  - Itsm.Tdx.WebApi.TdxBaseClient.TdxClientOptions
+  - Itsm.Tdx.WebApi.TdxBaseClient.Token
+  langs:
+  - csharp
+  - vb
+  name: TdxBaseClient
+  nameWithType: TdxBaseClient
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient
+  type: Class
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: TdxBaseClient
+    path: TdxBaseClient.cs
+    startLine: 9
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: public abstract class TdxBaseClient
+    content.vb: Public MustInherit Class TdxBaseClient
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Itsm.Tdx.WebApi.TdxClient
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.HttpClient
+  commentId: F:Itsm.Tdx.WebApi.TdxBaseClient.HttpClient
+  id: HttpClient
+  parent: Itsm.Tdx.WebApi.TdxBaseClient
+  langs:
+  - csharp
+  - vb
+  name: HttpClient
+  nameWithType: TdxBaseClient.HttpClient
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.HttpClient
+  type: Field
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: HttpClient
+    path: TdxBaseClient.cs
+    startLine: 11
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: protected readonly HttpClient HttpClient
+    return:
+      type: System.Net.Http.HttpClient
+    content.vb: Protected ReadOnly HttpClient As HttpClient
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.RetryPolicy
+  commentId: F:Itsm.Tdx.WebApi.TdxBaseClient.RetryPolicy
+  id: RetryPolicy
+  parent: Itsm.Tdx.WebApi.TdxBaseClient
+  langs:
+  - csharp
+  - vb
+  name: RetryPolicy
+  nameWithType: TdxBaseClient.RetryPolicy
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.RetryPolicy
+  type: Field
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: RetryPolicy
+    path: TdxBaseClient.cs
+    startLine: 12
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: protected readonly AsyncRetryPolicy<HttpResponseMessage> RetryPolicy
+    return:
+      type: Polly.Retry.AsyncRetryPolicy{System.Net.Http.HttpResponseMessage}
+    content.vb: Protected ReadOnly RetryPolicy As AsyncRetryPolicy(Of HttpResponseMessage)
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.TdxClientOptions
+  commentId: F:Itsm.Tdx.WebApi.TdxBaseClient.TdxClientOptions
+  id: TdxClientOptions
+  parent: Itsm.Tdx.WebApi.TdxBaseClient
+  langs:
+  - csharp
+  - vb
+  name: TdxClientOptions
+  nameWithType: TdxBaseClient.TdxClientOptions
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.TdxClientOptions
+  type: Field
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: TdxClientOptions
+    path: TdxBaseClient.cs
+    startLine: 13
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: protected readonly TdxClientOptions TdxClientOptions
+    return:
+      type: Itsm.Tdx.WebApi.Extensions.TdxClientOptions
+    content.vb: Protected ReadOnly TdxClientOptions As TdxClientOptions
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.Token
+  commentId: F:Itsm.Tdx.WebApi.TdxBaseClient.Token
+  id: Token
+  parent: Itsm.Tdx.WebApi.TdxBaseClient
+  langs:
+  - csharp
+  - vb
+  name: Token
+  nameWithType: TdxBaseClient.Token
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.Token
+  type: Field
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Token
+    path: TdxBaseClient.cs
+    startLine: 14
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: protected string? Token
+    return:
+      type: System.String
+    content.vb: Protected Token As String
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.#ctor(System.Net.Http.HttpClient,System.String,Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  commentId: M:Itsm.Tdx.WebApi.TdxBaseClient.#ctor(System.Net.Http.HttpClient,System.String,Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  id: '#ctor(System.Net.Http.HttpClient,System.String,Itsm.Tdx.WebApi.Extensions.TdxClientOptions)'
+  parent: Itsm.Tdx.WebApi.TdxBaseClient
+  langs:
+  - csharp
+  - vb
+  name: TdxBaseClient(HttpClient, string, TdxClientOptions?)
+  nameWithType: TdxBaseClient.TdxBaseClient(HttpClient, string, TdxClientOptions?)
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.TdxBaseClient(System.Net.Http.HttpClient, string, Itsm.Tdx.WebApi.Extensions.TdxClientOptions?)
+  type: Constructor
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: .ctor
+    path: TdxBaseClient.cs
+    startLine: 15
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: protected TdxBaseClient(HttpClient httpClient, string tenant, TdxClientOptions? options)
+    parameters:
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+    - id: tenant
+      type: System.String
+    - id: options
+      type: Itsm.Tdx.WebApi.Extensions.TdxClientOptions
+    content.vb: Protected Sub New(httpClient As HttpClient, tenant As String, options As TdxClientOptions)
+  overload: Itsm.Tdx.WebApi.TdxBaseClient.#ctor*
+  nameWithType.vb: TdxBaseClient.New(HttpClient, String, TdxClientOptions)
+  fullName.vb: Itsm.Tdx.WebApi.TdxBaseClient.New(System.Net.Http.HttpClient, String, Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  name.vb: New(HttpClient, String, TdxClientOptions)
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.#ctor(System.Net.Http.HttpClient,Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  commentId: M:Itsm.Tdx.WebApi.TdxBaseClient.#ctor(System.Net.Http.HttpClient,Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  id: '#ctor(System.Net.Http.HttpClient,Itsm.Tdx.WebApi.Extensions.TdxClientOptions)'
+  parent: Itsm.Tdx.WebApi.TdxBaseClient
+  langs:
+  - csharp
+  - vb
+  name: TdxBaseClient(HttpClient, TdxClientOptions?)
+  nameWithType: TdxBaseClient.TdxBaseClient(HttpClient, TdxClientOptions?)
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.TdxBaseClient(System.Net.Http.HttpClient, Itsm.Tdx.WebApi.Extensions.TdxClientOptions?)
+  type: Constructor
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: .ctor
+    path: TdxBaseClient.cs
+    startLine: 23
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: protected TdxBaseClient(HttpClient httpClient, TdxClientOptions? options)
+    parameters:
+    - id: httpClient
+      type: System.Net.Http.HttpClient
+    - id: options
+      type: Itsm.Tdx.WebApi.Extensions.TdxClientOptions
+    content.vb: Protected Sub New(httpClient As HttpClient, options As TdxClientOptions)
+  overload: Itsm.Tdx.WebApi.TdxBaseClient.#ctor*
+  nameWithType.vb: TdxBaseClient.New(HttpClient, TdxClientOptions)
+  fullName.vb: Itsm.Tdx.WebApi.TdxBaseClient.New(System.Net.Http.HttpClient, Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  name.vb: New(HttpClient, TdxClientOptions)
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.BuildBaseUri(System.String,Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  commentId: M:Itsm.Tdx.WebApi.TdxBaseClient.BuildBaseUri(System.String,Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  id: BuildBaseUri(System.String,Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  parent: Itsm.Tdx.WebApi.TdxBaseClient
+  langs:
+  - csharp
+  - vb
+  name: BuildBaseUri(string, TdxClientOptions)
+  nameWithType: TdxBaseClient.BuildBaseUri(string, TdxClientOptions)
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.BuildBaseUri(string, Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  type: Method
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: BuildBaseUri
+    path: TdxBaseClient.cs
+    startLine: 29
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: protected static Uri BuildBaseUri(string tenant, TdxClientOptions options)
+    parameters:
+    - id: tenant
+      type: System.String
+    - id: options
+      type: Itsm.Tdx.WebApi.Extensions.TdxClientOptions
+    return:
+      type: System.Uri
+    content.vb: Protected Shared Function BuildBaseUri(tenant As String, options As TdxClientOptions) As Uri
+  overload: Itsm.Tdx.WebApi.TdxBaseClient.BuildBaseUri*
+  nameWithType.vb: TdxBaseClient.BuildBaseUri(String, TdxClientOptions)
+  fullName.vb: Itsm.Tdx.WebApi.TdxBaseClient.BuildBaseUri(String, Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  name.vb: BuildBaseUri(String, TdxClientOptions)
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.CreateRetryPolicy(Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  commentId: M:Itsm.Tdx.WebApi.TdxBaseClient.CreateRetryPolicy(Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  id: CreateRetryPolicy(Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  parent: Itsm.Tdx.WebApi.TdxBaseClient
+  langs:
+  - csharp
+  - vb
+  name: CreateRetryPolicy(TdxClientOptions)
+  nameWithType: TdxBaseClient.CreateRetryPolicy(TdxClientOptions)
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.CreateRetryPolicy(Itsm.Tdx.WebApi.Extensions.TdxClientOptions)
+  type: Method
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: CreateRetryPolicy
+    path: TdxBaseClient.cs
+    startLine: 38
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: protected static AsyncRetryPolicy<HttpResponseMessage> CreateRetryPolicy(TdxClientOptions clientOptions)
+    parameters:
+    - id: clientOptions
+      type: Itsm.Tdx.WebApi.Extensions.TdxClientOptions
+    return:
+      type: Polly.Retry.AsyncRetryPolicy{System.Net.Http.HttpResponseMessage}
+    content.vb: Protected Shared Function CreateRetryPolicy(clientOptions As TdxClientOptions) As AsyncRetryPolicy(Of HttpResponseMessage)
+  overload: Itsm.Tdx.WebApi.TdxBaseClient.CreateRetryPolicy*
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.SetToken(System.String)
+  commentId: M:Itsm.Tdx.WebApi.TdxBaseClient.SetToken(System.String)
+  id: SetToken(System.String)
+  parent: Itsm.Tdx.WebApi.TdxBaseClient
+  langs:
+  - csharp
+  - vb
+  name: SetToken(string)
+  nameWithType: TdxBaseClient.SetToken(string)
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.SetToken(string)
+  type: Method
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: SetToken
+    path: TdxBaseClient.cs
+    startLine: 78
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: public void SetToken(string token)
+    parameters:
+    - id: token
+      type: System.String
+    content.vb: Public Sub SetToken(token As String)
+  overload: Itsm.Tdx.WebApi.TdxBaseClient.SetToken*
+  nameWithType.vb: TdxBaseClient.SetToken(String)
+  fullName.vb: Itsm.Tdx.WebApi.TdxBaseClient.SetToken(String)
+  name.vb: SetToken(String)
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.AddAuthorization(System.Net.Http.HttpRequestMessage)
+  commentId: M:Itsm.Tdx.WebApi.TdxBaseClient.AddAuthorization(System.Net.Http.HttpRequestMessage)
+  id: AddAuthorization(System.Net.Http.HttpRequestMessage)
+  parent: Itsm.Tdx.WebApi.TdxBaseClient
+  langs:
+  - csharp
+  - vb
+  name: AddAuthorization(HttpRequestMessage)
+  nameWithType: TdxBaseClient.AddAuthorization(HttpRequestMessage)
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.AddAuthorization(System.Net.Http.HttpRequestMessage)
+  type: Method
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: AddAuthorization
+    path: TdxBaseClient.cs
+    startLine: 79
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: protected void AddAuthorization(HttpRequestMessage request)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+    content.vb: Protected Sub AddAuthorization(request As HttpRequestMessage)
+  overload: Itsm.Tdx.WebApi.TdxBaseClient.AddAuthorization*
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync(System.Net.Http.HttpRequestMessage)
+  commentId: M:Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync(System.Net.Http.HttpRequestMessage)
+  id: SendRequestAsync(System.Net.Http.HttpRequestMessage)
+  parent: Itsm.Tdx.WebApi.TdxBaseClient
+  langs:
+  - csharp
+  - vb
+  name: SendRequestAsync(HttpRequestMessage)
+  nameWithType: TdxBaseClient.SendRequestAsync(HttpRequestMessage)
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync(System.Net.Http.HttpRequestMessage)
+  type: Method
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: SendRequestAsync
+    path: TdxBaseClient.cs
+    startLine: 85
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: public Task<HttpResponseMessage> SendRequestAsync(HttpRequestMessage request)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Public Function SendRequestAsync(request As HttpRequestMessage) As Task(Of HttpResponseMessage)
+  overload: Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync*
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync``1(System.Net.Http.HttpRequestMessage)
+  commentId: M:Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync``1(System.Net.Http.HttpRequestMessage)
+  id: SendRequestAsync``1(System.Net.Http.HttpRequestMessage)
+  parent: Itsm.Tdx.WebApi.TdxBaseClient
+  langs:
+  - csharp
+  - vb
+  name: SendRequestAsync<T>(HttpRequestMessage)
+  nameWithType: TdxBaseClient.SendRequestAsync<T>(HttpRequestMessage)
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync<T>(System.Net.Http.HttpRequestMessage)
+  type: Method
+  source:
+    remote:
+      path: TdxBaseClient.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: SendRequestAsync
+    path: TdxBaseClient.cs
+    startLine: 90
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi
+  syntax:
+    content: public Task<T> SendRequestAsync<T>(HttpRequestMessage request)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+    content.vb: Public Function SendRequestAsync(Of T)(request As HttpRequestMessage) As Task(Of T)
+  overload: Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync*
+  nameWithType.vb: TdxBaseClient.SendRequestAsync(Of T)(HttpRequestMessage)
+  fullName.vb: Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync(Of T)(System.Net.Http.HttpRequestMessage)
+  name.vb: SendRequestAsync(Of T)(HttpRequestMessage)
+references:
+- uid: Itsm.Tdx.WebApi
+  commentId: N:Itsm.Tdx.WebApi
+  href: Itsm.html
+  name: Itsm.Tdx.WebApi
+  nameWithType: Itsm.Tdx.WebApi
+  fullName: Itsm.Tdx.WebApi
+  spec.csharp:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  spec.vb:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpclient
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+- uid: Polly.Retry.AsyncRetryPolicy{System.Net.Http.HttpResponseMessage}
+  commentId: T:Polly.Retry.AsyncRetryPolicy{System.Net.Http.HttpResponseMessage}
+  parent: Polly.Retry
+  definition: Polly.Retry.AsyncRetryPolicy`1
+  href: https://github.com/App-vNext/Polly/blob/a953ba8119074d7f63cc69643d4ef1d1de52ee3f/src/Polly/Retry/AsyncRetryPolicy.cs
+  name: AsyncRetryPolicy<HttpResponseMessage>
+  nameWithType: AsyncRetryPolicy<HttpResponseMessage>
+  fullName: Polly.Retry.AsyncRetryPolicy<System.Net.Http.HttpResponseMessage>
+  nameWithType.vb: AsyncRetryPolicy(Of HttpResponseMessage)
+  fullName.vb: Polly.Retry.AsyncRetryPolicy(Of System.Net.Http.HttpResponseMessage)
+  name.vb: AsyncRetryPolicy(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: Polly.Retry.AsyncRetryPolicy`1
+    name: AsyncRetryPolicy
+    isExternal: true
+    href: https://github.com/App-vNext/Polly/blob/a953ba8119074d7f63cc69643d4ef1d1de52ee3f/src/Polly/Retry/AsyncRetryPolicy.cs
+  - name: <
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage
+  - name: '>'
+  spec.vb:
+  - uid: Polly.Retry.AsyncRetryPolicy`1
+    name: AsyncRetryPolicy
+    isExternal: true
+    href: https://github.com/App-vNext/Polly/blob/a953ba8119074d7f63cc69643d4ef1d1de52ee3f/src/Polly/Retry/AsyncRetryPolicy.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage
+  - name: )
+- uid: Polly.Retry.AsyncRetryPolicy`1
+  commentId: T:Polly.Retry.AsyncRetryPolicy`1
+  isExternal: true
+  href: https://github.com/App-vNext/Polly/blob/a953ba8119074d7f63cc69643d4ef1d1de52ee3f/src/Polly/Retry/AsyncRetryPolicy.cs
+  name: AsyncRetryPolicy<TResult>
+  nameWithType: AsyncRetryPolicy<TResult>
+  fullName: Polly.Retry.AsyncRetryPolicy<TResult>
+  nameWithType.vb: AsyncRetryPolicy(Of TResult)
+  fullName.vb: Polly.Retry.AsyncRetryPolicy(Of TResult)
+  name.vb: AsyncRetryPolicy(Of TResult)
+  spec.csharp:
+  - uid: Polly.Retry.AsyncRetryPolicy`1
+    name: AsyncRetryPolicy
+    isExternal: true
+    href: https://github.com/App-vNext/Polly/blob/a953ba8119074d7f63cc69643d4ef1d1de52ee3f/src/Polly/Retry/AsyncRetryPolicy.cs
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Polly.Retry.AsyncRetryPolicy`1
+    name: AsyncRetryPolicy
+    isExternal: true
+    href: https://github.com/App-vNext/Polly/blob/a953ba8119074d7f63cc69643d4ef1d1de52ee3f/src/Polly/Retry/AsyncRetryPolicy.cs
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Polly.Retry
+  commentId: N:Polly.Retry
+  isExternal: true
+  name: Polly.Retry
+  nameWithType: Polly.Retry
+  fullName: Polly.Retry
+  spec.csharp:
+  - uid: Polly
+    name: Polly
+    isExternal: true
+  - name: .
+  - uid: Polly.Retry
+    name: Retry
+    isExternal: true
+  spec.vb:
+  - uid: Polly
+    name: Polly
+    isExternal: true
+  - name: .
+  - uid: Polly.Retry
+    name: Retry
+    isExternal: true
+- uid: Itsm.Tdx.WebApi.Extensions.TdxClientOptions
+  commentId: T:Itsm.Tdx.WebApi.Extensions.TdxClientOptions
+  parent: Itsm.Tdx.WebApi.Extensions
+  href: Itsm.Tdx.WebApi.Extensions.TdxClientOptions.html
+  name: TdxClientOptions
+  nameWithType: TdxClientOptions
+  fullName: Itsm.Tdx.WebApi.Extensions.TdxClientOptions
+- uid: Itsm.Tdx.WebApi.Extensions
+  commentId: N:Itsm.Tdx.WebApi.Extensions
+  href: Itsm.html
+  name: Itsm.Tdx.WebApi.Extensions
+  nameWithType: Itsm.Tdx.WebApi.Extensions
+  fullName: Itsm.Tdx.WebApi.Extensions
+  spec.csharp:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Extensions
+    name: Extensions
+    href: Itsm.Tdx.WebApi.Extensions.html
+  spec.vb:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Extensions
+    name: Extensions
+    href: Itsm.Tdx.WebApi.Extensions.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.#ctor*
+  commentId: Overload:Itsm.Tdx.WebApi.TdxBaseClient.#ctor
+  href: Itsm.Tdx.WebApi.TdxBaseClient.html#Itsm_Tdx_WebApi_TdxBaseClient__ctor_System_Net_Http_HttpClient_System_String_Itsm_Tdx_WebApi_Extensions_TdxClientOptions_
+  name: TdxBaseClient
+  nameWithType: TdxBaseClient.TdxBaseClient
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.TdxBaseClient
+  nameWithType.vb: TdxBaseClient.New
+  fullName.vb: Itsm.Tdx.WebApi.TdxBaseClient.New
+  name.vb: New
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.BuildBaseUri*
+  commentId: Overload:Itsm.Tdx.WebApi.TdxBaseClient.BuildBaseUri
+  href: Itsm.Tdx.WebApi.TdxBaseClient.html#Itsm_Tdx_WebApi_TdxBaseClient_BuildBaseUri_System_String_Itsm_Tdx_WebApi_Extensions_TdxClientOptions_
+  name: BuildBaseUri
+  nameWithType: TdxBaseClient.BuildBaseUri
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.BuildBaseUri
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uri
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.CreateRetryPolicy*
+  commentId: Overload:Itsm.Tdx.WebApi.TdxBaseClient.CreateRetryPolicy
+  href: Itsm.Tdx.WebApi.TdxBaseClient.html#Itsm_Tdx_WebApi_TdxBaseClient_CreateRetryPolicy_Itsm_Tdx_WebApi_Extensions_TdxClientOptions_
+  name: CreateRetryPolicy
+  nameWithType: TdxBaseClient.CreateRetryPolicy
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.CreateRetryPolicy
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.SetToken*
+  commentId: Overload:Itsm.Tdx.WebApi.TdxBaseClient.SetToken
+  href: Itsm.Tdx.WebApi.TdxBaseClient.html#Itsm_Tdx_WebApi_TdxBaseClient_SetToken_System_String_
+  name: SetToken
+  nameWithType: TdxBaseClient.SetToken
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.SetToken
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.AddAuthorization*
+  commentId: Overload:Itsm.Tdx.WebApi.TdxBaseClient.AddAuthorization
+  href: Itsm.Tdx.WebApi.TdxBaseClient.html#Itsm_Tdx_WebApi_TdxBaseClient_AddAuthorization_System_Net_Http_HttpRequestMessage_
+  name: AddAuthorization
+  nameWithType: TdxBaseClient.AddAuthorization
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.AddAuthorization
+- uid: System.Net.Http.HttpRequestMessage
+  commentId: T:System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  name: HttpRequestMessage
+  nameWithType: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync*
+  commentId: Overload:Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync
+  href: Itsm.Tdx.WebApi.TdxBaseClient.html#Itsm_Tdx_WebApi_TdxBaseClient_SendRequestAsync_System_Net_Http_HttpRequestMessage_
+  name: SendRequestAsync
+  nameWithType: TdxBaseClient.SendRequestAsync
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient.SendRequestAsync
+- uid: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  commentId: T:System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<HttpResponseMessage>
+  nameWithType: Task<HttpResponseMessage>
+  fullName: System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+  nameWithType.vb: Task(Of HttpResponseMessage)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Net.Http.HttpResponseMessage)
+  name.vb: Task(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

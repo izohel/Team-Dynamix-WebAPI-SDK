@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Itsm.Tdx.WebApi.People.Models
+  commentId: N:Itsm.Tdx.WebApi.People.Models
+  id: Itsm.Tdx.WebApi.People.Models
+  children:
+  - Itsm.Tdx.WebApi.People.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Itsm.Tdx.WebApi.People.Models
+  nameWithType: Itsm.Tdx.WebApi.People.Models
+  fullName: Itsm.Tdx.WebApi.People.Models
+  type: Namespace
+  assemblies:
+  - Itsm.Tdx.WebApi
+references:
+- uid: Itsm.Tdx.WebApi.People.Models.User
+  commentId: T:Itsm.Tdx.WebApi.People.Models.User
+  href: Itsm.Tdx.WebApi.People.Models.User.html
+  name: User
+  nameWithType: User
+  fullName: Itsm.Tdx.WebApi.People.Models.User

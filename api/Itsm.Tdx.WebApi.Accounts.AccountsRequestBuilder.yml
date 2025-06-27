@@ -1,0 +1,714 @@
+### YamlMime:ManagedReference
+items:
+- uid: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder
+  commentId: T:Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder
+  id: AccountsRequestBuilder
+  parent: Itsm.Tdx.WebApi.Accounts
+  children:
+  - Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.#ctor(Itsm.Tdx.WebApi.TdxBaseClient)
+  - Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.GetAsync
+  langs:
+  - csharp
+  - vb
+  name: AccountsRequestBuilder
+  nameWithType: AccountsRequestBuilder
+  fullName: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder
+  type: Class
+  source:
+    remote:
+      path: Accounts/AccountsRequestBuilder.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: AccountsRequestBuilder
+    path: Accounts/AccountsRequestBuilder.cs
+    startLine: 6
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts
+  summary: Contains methods for working with accounts/departments.
+  example: []
+  syntax:
+    content: 'public class AccountsRequestBuilder : BaseRequestBuilder'
+    content.vb: Public Class AccountsRequestBuilder Inherits BaseRequestBuilder
+  inheritance:
+  - System.Object
+  - Itsm.Tdx.WebApi.BaseRequestBuilder
+  inheritedMembers:
+  - Itsm.Tdx.WebApi.BaseRequestBuilder.Client
+  - Itsm.Tdx.WebApi.BaseRequestBuilder.Path
+  - Itsm.Tdx.WebApi.BaseRequestBuilder.CreateRequest(System.Net.Http.HttpMethod,System.String,System.Object)
+  - Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync``1(System.Net.Http.HttpRequestMessage)
+  - Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync(System.Net.Http.HttpRequestMessage)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.#ctor(Itsm.Tdx.WebApi.TdxBaseClient)
+  commentId: M:Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.#ctor(Itsm.Tdx.WebApi.TdxBaseClient)
+  id: '#ctor(Itsm.Tdx.WebApi.TdxBaseClient)'
+  parent: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: AccountsRequestBuilder(TdxBaseClient)
+  nameWithType: AccountsRequestBuilder.AccountsRequestBuilder(TdxBaseClient)
+  fullName: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.AccountsRequestBuilder(Itsm.Tdx.WebApi.TdxBaseClient)
+  type: Constructor
+  source:
+    remote:
+      path: Accounts/AccountsRequestBuilder.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: .ctor
+    path: Accounts/AccountsRequestBuilder.cs
+    startLine: 14
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts
+  summary: >-
+    Initializes a new instance of the <xref href="Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder" data-throw-if-not-resolved="false"></xref> class.
+
+    Gets a list of all active <xref href="Itsm.Tdx.WebApi.Accounts.Models.Account?text=accounts%2fdepartments" data-throw-if-not-resolved="false"></xref>.
+  remarks: Will not return full account/department information.
+  example: []
+  syntax:
+    content: public AccountsRequestBuilder(TdxBaseClient client)
+    parameters:
+    - id: client
+      type: Itsm.Tdx.WebApi.TdxBaseClient
+      description: The TdxBaseClient used for requests.
+    content.vb: Public Sub New(client As TdxBaseClient)
+  overload: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.#ctor*
+  nameWithType.vb: AccountsRequestBuilder.New(TdxBaseClient)
+  fullName.vb: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.New(Itsm.Tdx.WebApi.TdxBaseClient)
+  name.vb: New(TdxBaseClient)
+- uid: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.GetAsync
+  commentId: M:Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.GetAsync
+  id: GetAsync
+  parent: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: GetAsync()
+  nameWithType: AccountsRequestBuilder.GetAsync()
+  fullName: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.GetAsync()
+  type: Method
+  source:
+    remote:
+      path: Accounts/AccountsRequestBuilder.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: GetAsync
+    path: Accounts/AccountsRequestBuilder.cs
+    startLine: 24
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts
+  summary: Retrieves a list of all active accounts/departments.
+  example: []
+  syntax:
+    content: public Task<List<Account>> GetAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Itsm.Tdx.WebApi.Accounts.Models.Account}}
+      description: A list of <xref href="Itsm.Tdx.WebApi.Accounts.Models.Account" data-throw-if-not-resolved="false"></xref> objects.
+    content.vb: Public Function GetAsync() As Task(Of List(Of Account))
+  overload: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.GetAsync*
+references:
+- uid: Itsm.Tdx.WebApi.Accounts
+  commentId: N:Itsm.Tdx.WebApi.Accounts
+  href: Itsm.html
+  name: Itsm.Tdx.WebApi.Accounts
+  nameWithType: Itsm.Tdx.WebApi.Accounts
+  fullName: Itsm.Tdx.WebApi.Accounts
+  spec.csharp:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Accounts
+    name: Accounts
+    href: Itsm.Tdx.WebApi.Accounts.html
+  spec.vb:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Accounts
+    name: Accounts
+    href: Itsm.Tdx.WebApi.Accounts.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Itsm.Tdx.WebApi.BaseRequestBuilder
+  commentId: T:Itsm.Tdx.WebApi.BaseRequestBuilder
+  parent: Itsm.Tdx.WebApi
+  href: Itsm.Tdx.WebApi.BaseRequestBuilder.html
+  name: BaseRequestBuilder
+  nameWithType: BaseRequestBuilder
+  fullName: Itsm.Tdx.WebApi.BaseRequestBuilder
+- uid: Itsm.Tdx.WebApi.BaseRequestBuilder.Client
+  commentId: F:Itsm.Tdx.WebApi.BaseRequestBuilder.Client
+  parent: Itsm.Tdx.WebApi.BaseRequestBuilder
+  href: Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_Client
+  name: Client
+  nameWithType: BaseRequestBuilder.Client
+  fullName: Itsm.Tdx.WebApi.BaseRequestBuilder.Client
+- uid: Itsm.Tdx.WebApi.BaseRequestBuilder.Path
+  commentId: F:Itsm.Tdx.WebApi.BaseRequestBuilder.Path
+  parent: Itsm.Tdx.WebApi.BaseRequestBuilder
+  href: Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_Path
+  name: Path
+  nameWithType: BaseRequestBuilder.Path
+  fullName: Itsm.Tdx.WebApi.BaseRequestBuilder.Path
+- uid: Itsm.Tdx.WebApi.BaseRequestBuilder.CreateRequest(System.Net.Http.HttpMethod,System.String,System.Object)
+  commentId: M:Itsm.Tdx.WebApi.BaseRequestBuilder.CreateRequest(System.Net.Http.HttpMethod,System.String,System.Object)
+  parent: Itsm.Tdx.WebApi.BaseRequestBuilder
+  isExternal: true
+  href: Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_CreateRequest_System_Net_Http_HttpMethod_System_String_System_Object_
+  name: CreateRequest(HttpMethod, string, object)
+  nameWithType: BaseRequestBuilder.CreateRequest(HttpMethod, string, object)
+  fullName: Itsm.Tdx.WebApi.BaseRequestBuilder.CreateRequest(System.Net.Http.HttpMethod, string, object)
+  nameWithType.vb: BaseRequestBuilder.CreateRequest(HttpMethod, String, Object)
+  fullName.vb: Itsm.Tdx.WebApi.BaseRequestBuilder.CreateRequest(System.Net.Http.HttpMethod, String, Object)
+  name.vb: CreateRequest(HttpMethod, String, Object)
+  spec.csharp:
+  - uid: Itsm.Tdx.WebApi.BaseRequestBuilder.CreateRequest(System.Net.Http.HttpMethod,System.String,System.Object)
+    name: CreateRequest
+    href: Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_CreateRequest_System_Net_Http_HttpMethod_System_String_System_Object_
+  - name: (
+  - uid: System.Net.Http.HttpMethod
+    name: HttpMethod
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Itsm.Tdx.WebApi.BaseRequestBuilder.CreateRequest(System.Net.Http.HttpMethod,System.String,System.Object)
+    name: CreateRequest
+    href: Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_CreateRequest_System_Net_Http_HttpMethod_System_String_System_Object_
+  - name: (
+  - uid: System.Net.Http.HttpMethod
+    name: HttpMethod
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync``1(System.Net.Http.HttpRequestMessage)
+  commentId: M:Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync``1(System.Net.Http.HttpRequestMessage)
+  parent: Itsm.Tdx.WebApi.BaseRequestBuilder
+  isExternal: true
+  href: Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_SendAsync__1_System_Net_Http_HttpRequestMessage_
+  name: SendAsync<T>(HttpRequestMessage)
+  nameWithType: BaseRequestBuilder.SendAsync<T>(HttpRequestMessage)
+  fullName: Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync<T>(System.Net.Http.HttpRequestMessage)
+  nameWithType.vb: BaseRequestBuilder.SendAsync(Of T)(HttpRequestMessage)
+  fullName.vb: Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync(Of T)(System.Net.Http.HttpRequestMessage)
+  name.vb: SendAsync(Of T)(HttpRequestMessage)
+  spec.csharp:
+  - uid: Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync``1(System.Net.Http.HttpRequestMessage)
+    name: SendAsync
+    href: Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_SendAsync__1_System_Net_Http_HttpRequestMessage_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  - name: )
+  spec.vb:
+  - uid: Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync``1(System.Net.Http.HttpRequestMessage)
+    name: SendAsync
+    href: Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_SendAsync__1_System_Net_Http_HttpRequestMessage_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  - name: )
+- uid: Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync(System.Net.Http.HttpRequestMessage)
+  commentId: M:Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync(System.Net.Http.HttpRequestMessage)
+  parent: Itsm.Tdx.WebApi.BaseRequestBuilder
+  isExternal: true
+  href: Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_SendAsync_System_Net_Http_HttpRequestMessage_
+  name: SendAsync(HttpRequestMessage)
+  nameWithType: BaseRequestBuilder.SendAsync(HttpRequestMessage)
+  fullName: Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync(System.Net.Http.HttpRequestMessage)
+  spec.csharp:
+  - uid: Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync(System.Net.Http.HttpRequestMessage)
+    name: SendAsync
+    href: Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_SendAsync_System_Net_Http_HttpRequestMessage_
+  - name: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  - name: )
+  spec.vb:
+  - uid: Itsm.Tdx.WebApi.BaseRequestBuilder.SendAsync(System.Net.Http.HttpRequestMessage)
+    name: SendAsync
+    href: Itsm.Tdx.WebApi.BaseRequestBuilder.html#Itsm_Tdx_WebApi_BaseRequestBuilder_SendAsync_System_Net_Http_HttpRequestMessage_
+  - name: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Itsm.Tdx.WebApi
+  commentId: N:Itsm.Tdx.WebApi
+  href: Itsm.html
+  name: Itsm.Tdx.WebApi
+  nameWithType: Itsm.Tdx.WebApi
+  fullName: Itsm.Tdx.WebApi
+  spec.csharp:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  spec.vb:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+- uid: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder
+  commentId: T:Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder
+  parent: Itsm.Tdx.WebApi.Accounts
+  href: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.html
+  name: AccountsRequestBuilder
+  nameWithType: AccountsRequestBuilder
+  fullName: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account
+  commentId: T:Itsm.Tdx.WebApi.Accounts.Models.Account
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html
+  name: Account
+  nameWithType: Account
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account
+- uid: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.#ctor*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.#ctor
+  href: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.html#Itsm_Tdx_WebApi_Accounts_AccountsRequestBuilder__ctor_Itsm_Tdx_WebApi_TdxBaseClient_
+  name: AccountsRequestBuilder
+  nameWithType: AccountsRequestBuilder.AccountsRequestBuilder
+  fullName: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.AccountsRequestBuilder
+  nameWithType.vb: AccountsRequestBuilder.New
+  fullName.vb: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.New
+  name.vb: New
+- uid: Itsm.Tdx.WebApi.TdxBaseClient
+  commentId: T:Itsm.Tdx.WebApi.TdxBaseClient
+  parent: Itsm.Tdx.WebApi
+  href: Itsm.Tdx.WebApi.TdxBaseClient.html
+  name: TdxBaseClient
+  nameWithType: TdxBaseClient
+  fullName: Itsm.Tdx.WebApi.TdxBaseClient
+- uid: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.GetAsync*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.GetAsync
+  href: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.html#Itsm_Tdx_WebApi_Accounts_AccountsRequestBuilder_GetAsync
+  name: GetAsync
+  nameWithType: AccountsRequestBuilder.GetAsync
+  fullName: Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.GetAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Itsm.Tdx.WebApi.Accounts.Models.Account}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Itsm.Tdx.WebApi.Accounts.Models.Account}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<Account>>
+  nameWithType: Task<List<Account>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Itsm.Tdx.WebApi.Accounts.Models.Account>>
+  nameWithType.vb: Task(Of List(Of Account))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Itsm.Tdx.WebApi.Accounts.Models.Account))
+  name.vb: Task(Of List(Of Account))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Itsm.Tdx.WebApi.Accounts.Models.Account
+    name: Account
+    href: Itsm.Tdx.WebApi.Accounts.Models.Account.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Itsm.Tdx.WebApi.Accounts.Models.Account
+    name: Account
+    href: Itsm.Tdx.WebApi.Accounts.Models.Account.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

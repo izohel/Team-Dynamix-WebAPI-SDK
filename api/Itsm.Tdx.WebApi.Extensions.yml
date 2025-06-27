@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Itsm.Tdx.WebApi.Extensions
+  commentId: N:Itsm.Tdx.WebApi.Extensions
+  id: Itsm.Tdx.WebApi.Extensions
+  children:
+  - Itsm.Tdx.WebApi.Extensions.TdxClientOptions
+  langs:
+  - csharp
+  - vb
+  name: Itsm.Tdx.WebApi.Extensions
+  nameWithType: Itsm.Tdx.WebApi.Extensions
+  fullName: Itsm.Tdx.WebApi.Extensions
+  type: Namespace
+  assemblies:
+  - Itsm.Tdx.WebApi
+references:
+- uid: Itsm.Tdx.WebApi.Extensions.TdxClientOptions
+  commentId: T:Itsm.Tdx.WebApi.Extensions.TdxClientOptions
+  parent: Itsm.Tdx.WebApi.Extensions
+  href: Itsm.Tdx.WebApi.Extensions.TdxClientOptions.html
+  name: TdxClientOptions
+  nameWithType: TdxClientOptions
+  fullName: Itsm.Tdx.WebApi.Extensions.TdxClientOptions
+- uid: Itsm.Tdx.WebApi.Extensions
+  commentId: N:Itsm.Tdx.WebApi.Extensions
+  href: Itsm.html
+  name: Itsm.Tdx.WebApi.Extensions
+  nameWithType: Itsm.Tdx.WebApi.Extensions
+  fullName: Itsm.Tdx.WebApi.Extensions
+  spec.csharp:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Extensions
+    name: Extensions
+    href: Itsm.Tdx.WebApi.Extensions.html
+  spec.vb:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Extensions
+    name: Extensions
+    href: Itsm.Tdx.WebApi.Extensions.html

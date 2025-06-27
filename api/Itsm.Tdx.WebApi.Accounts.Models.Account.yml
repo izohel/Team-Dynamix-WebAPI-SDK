@@ -1,0 +1,1765 @@
+### YamlMime:ManagedReference
+items:
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account
+  commentId: T:Itsm.Tdx.WebApi.Accounts.Models.Account
+  id: Account
+  parent: Itsm.Tdx.WebApi.Accounts.Models
+  children:
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.Address1
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.Address2
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.Address3
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.Address4
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.Attributes
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.City
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.Code
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.Country
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.CreatedDate
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.Fax
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.ID
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryID
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryName
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.IsActive
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerFullName
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerUID
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.ModifiedDate
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.Name
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.Notes
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.ParentID
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.ParentName
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.Phone
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.PostalCode
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.StateAbbr
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.StateName
+  - Itsm.Tdx.WebApi.Accounts.Models.Account.Url
+  langs:
+  - csharp
+  - vb
+  name: Account
+  nameWithType: Account
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account
+  type: Class
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Account
+    path: Accounts/Models/Account.cs
+    startLine: 3
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: public class Account
+    content.vb: Public Class Account
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.ID
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.ID
+  id: ID
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: Account.ID
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.ID
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ID
+    path: Accounts/Models/Account.cs
+    startLine: 5
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("ID")]
+
+      public required int ID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("ID")>
+
+      Public Property ID As Integer
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.ID*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ID
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Name
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.Name
+  id: Name
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Account.Name
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Name
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Name
+    path: Accounts/Models/Account.cs
+    startLine: 8
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("Name")]
+
+      public string? Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Name")>
+
+      Public Property Name As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.Name*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Name
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.ParentID
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.ParentID
+  id: ParentID
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: ParentID
+  nameWithType: Account.ParentID
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.ParentID
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ParentID
+    path: Accounts/Models/Account.cs
+    startLine: 11
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("ParentID")]
+
+      public int? ParentID { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <JsonProperty("ParentID")>
+
+      Public Property ParentID As Integer?
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.ParentID*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ParentID
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.ParentName
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.ParentName
+  id: ParentName
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: ParentName
+  nameWithType: Account.ParentName
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.ParentName
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ParentName
+    path: Accounts/Models/Account.cs
+    startLine: 14
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("ParentName")]
+
+      public string? ParentName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("ParentName")>
+
+      Public Property ParentName As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.ParentName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ParentName
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.IsActive
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.IsActive
+  id: IsActive
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: Account.IsActive
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.IsActive
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: IsActive
+    path: Accounts/Models/Account.cs
+    startLine: 17
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("IsActive")]
+
+      public bool IsActive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty("IsActive")>
+
+      Public Property IsActive As Boolean
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.IsActive*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: IsActive
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Address1
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.Address1
+  id: Address1
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Address1
+  nameWithType: Account.Address1
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Address1
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Address1
+    path: Accounts/Models/Account.cs
+    startLine: 20
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("Address1")]
+
+      public string? Address1 { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Address1")>
+
+      Public Property Address1 As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.Address1*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Address1
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Address2
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.Address2
+  id: Address2
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Address2
+  nameWithType: Account.Address2
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Address2
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Address2
+    path: Accounts/Models/Account.cs
+    startLine: 23
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("Address2")]
+
+      public string? Address2 { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Address2")>
+
+      Public Property Address2 As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.Address2*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Address2
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Address3
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.Address3
+  id: Address3
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Address3
+  nameWithType: Account.Address3
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Address3
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Address3
+    path: Accounts/Models/Account.cs
+    startLine: 26
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("Address3")]
+
+      public string? Address3 { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Address3")>
+
+      Public Property Address3 As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.Address3*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Address3
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Address4
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.Address4
+  id: Address4
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Address4
+  nameWithType: Account.Address4
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Address4
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Address4
+    path: Accounts/Models/Account.cs
+    startLine: 29
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("Address4")]
+
+      public string? Address4 { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Address4")>
+
+      Public Property Address4 As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.Address4*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Address4
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.City
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.City
+  id: City
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: City
+  nameWithType: Account.City
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.City
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: City
+    path: Accounts/Models/Account.cs
+    startLine: 32
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("City")]
+
+      public string? City { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("City")>
+
+      Public Property City As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.City*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: City
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.StateName
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.StateName
+  id: StateName
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: StateName
+  nameWithType: Account.StateName
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.StateName
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: StateName
+    path: Accounts/Models/Account.cs
+    startLine: 35
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("StateName")]
+
+      public string? StateName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("StateName")>
+
+      Public Property StateName As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.StateName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: StateName
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.StateAbbr
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.StateAbbr
+  id: StateAbbr
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: StateAbbr
+  nameWithType: Account.StateAbbr
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.StateAbbr
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: StateAbbr
+    path: Accounts/Models/Account.cs
+    startLine: 38
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("StateAbbr")]
+
+      public string? StateAbbr { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("StateAbbr")>
+
+      Public Property StateAbbr As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.StateAbbr*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: StateAbbr
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.PostalCode
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.PostalCode
+  id: PostalCode
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: PostalCode
+  nameWithType: Account.PostalCode
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.PostalCode
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: PostalCode
+    path: Accounts/Models/Account.cs
+    startLine: 41
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("PostalCode")]
+
+      public string? PostalCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("PostalCode")>
+
+      Public Property PostalCode As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.PostalCode*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: PostalCode
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Country
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.Country
+  id: Country
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Country
+  nameWithType: Account.Country
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Country
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Country
+    path: Accounts/Models/Account.cs
+    startLine: 44
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("Country")]
+
+      public string? Country { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Country")>
+
+      Public Property Country As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.Country*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Country
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Phone
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.Phone
+  id: Phone
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Phone
+  nameWithType: Account.Phone
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Phone
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Phone
+    path: Accounts/Models/Account.cs
+    startLine: 47
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("Phone")]
+
+      public string? Phone { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Phone")>
+
+      Public Property Phone As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.Phone*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Phone
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Fax
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.Fax
+  id: Fax
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Fax
+  nameWithType: Account.Fax
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Fax
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Fax
+    path: Accounts/Models/Account.cs
+    startLine: 50
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("Fax")]
+
+      public string? Fax { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Fax")>
+
+      Public Property Fax As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.Fax*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Fax
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Url
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.Url
+  id: Url
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: Account.Url
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Url
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Url
+    path: Accounts/Models/Account.cs
+    startLine: 53
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("Url")]
+
+      public string? Url { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Url")>
+
+      Public Property Url As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.Url*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Url
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Notes
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.Notes
+  id: Notes
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Notes
+  nameWithType: Account.Notes
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Notes
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Notes
+    path: Accounts/Models/Account.cs
+    startLine: 56
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("Notes")]
+
+      public string? Notes { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Notes")>
+
+      Public Property Notes As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.Notes*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Notes
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.CreatedDate
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.CreatedDate
+  id: CreatedDate
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: CreatedDate
+  nameWithType: Account.CreatedDate
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.CreatedDate
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: CreatedDate
+    path: Accounts/Models/Account.cs
+    startLine: 59
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("CreatedDate")]
+
+      public DateTime CreatedDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonProperty("CreatedDate")>
+
+      Public Property CreatedDate As Date
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.CreatedDate*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CreatedDate
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.ModifiedDate
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.ModifiedDate
+  id: ModifiedDate
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: ModifiedDate
+  nameWithType: Account.ModifiedDate
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.ModifiedDate
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ModifiedDate
+    path: Accounts/Models/Account.cs
+    startLine: 62
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("ModifiedDate")]
+
+      public DateTime ModifiedDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonProperty("ModifiedDate")>
+
+      Public Property ModifiedDate As Date
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.ModifiedDate*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ModifiedDate
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Code
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.Code
+  id: Code
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: Account.Code
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Code
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Code
+    path: Accounts/Models/Account.cs
+    startLine: 65
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("Code")]
+
+      public string? Code { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("Code")>
+
+      Public Property Code As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.Code*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Code
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryID
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryID
+  id: IndustryID
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: IndustryID
+  nameWithType: Account.IndustryID
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryID
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: IndustryID
+    path: Accounts/Models/Account.cs
+    startLine: 68
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("IndustryID")]
+
+      public int IndustryID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("IndustryID")>
+
+      Public Property IndustryID As Integer
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryID*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: IndustryID
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryName
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryName
+  id: IndustryName
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: IndustryName
+  nameWithType: Account.IndustryName
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryName
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: IndustryName
+    path: Accounts/Models/Account.cs
+    startLine: 71
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("IndustryName")]
+
+      public object? IndustryName { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: >-
+      <JsonProperty("IndustryName")>
+
+      Public Property IndustryName As Object
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: IndustryName
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerUID
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerUID
+  id: ManagerUID
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: ManagerUID
+  nameWithType: Account.ManagerUID
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerUID
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ManagerUID
+    path: Accounts/Models/Account.cs
+    startLine: 74
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("ManagerUID")]
+
+      public string? ManagerUID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("ManagerUID")>
+
+      Public Property ManagerUID As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerUID*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ManagerUID
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerFullName
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerFullName
+  id: ManagerFullName
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: ManagerFullName
+  nameWithType: Account.ManagerFullName
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerFullName
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: ManagerFullName
+    path: Accounts/Models/Account.cs
+    startLine: 77
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("ManagerFullName")]
+
+      public string? ManagerFullName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("ManagerFullName")>
+
+      Public Property ManagerFullName As String
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerFullName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ManagerFullName
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Attributes
+  commentId: P:Itsm.Tdx.WebApi.Accounts.Models.Account.Attributes
+  id: Attributes
+  parent: Itsm.Tdx.WebApi.Accounts.Models.Account
+  langs:
+  - csharp
+  - vb
+  name: Attributes
+  nameWithType: Account.Attributes
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Attributes
+  type: Property
+  source:
+    remote:
+      path: Accounts/Models/Account.cs
+      branch: master
+      repo: https://github.com/izohel/Team-Dynamix-WebAPI-SDK.git
+    id: Attributes
+    path: Accounts/Models/Account.cs
+    startLine: 80
+  assemblies:
+  - Itsm.Tdx.WebApi
+  namespace: Itsm.Tdx.WebApi.Accounts.Models
+  syntax:
+    content: >-
+      [JsonProperty("Attributes")]
+
+      public List<object>? Attributes { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Object}
+    content.vb: >-
+      <JsonProperty("Attributes")>
+
+      Public Property Attributes As List(Of Object)
+  overload: Itsm.Tdx.WebApi.Accounts.Models.Account.Attributes*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Attributes
+references:
+- uid: Itsm.Tdx.WebApi.Accounts.Models
+  commentId: N:Itsm.Tdx.WebApi.Accounts.Models
+  href: Itsm.html
+  name: Itsm.Tdx.WebApi.Accounts.Models
+  nameWithType: Itsm.Tdx.WebApi.Accounts.Models
+  fullName: Itsm.Tdx.WebApi.Accounts.Models
+  spec.csharp:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Accounts
+    name: Accounts
+    href: Itsm.Tdx.WebApi.Accounts.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Accounts.Models
+    name: Models
+    href: Itsm.Tdx.WebApi.Accounts.Models.html
+  spec.vb:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Accounts
+    name: Accounts
+    href: Itsm.Tdx.WebApi.Accounts.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Accounts.Models
+    name: Models
+    href: Itsm.Tdx.WebApi.Accounts.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.ID*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.ID
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_ID
+  name: ID
+  nameWithType: Account.ID
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.ID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Name*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.Name
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_Name
+  name: Name
+  nameWithType: Account.Name
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.ParentID*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.ParentID
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_ParentID
+  name: ParentID
+  nameWithType: Account.ParentID
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.ParentID
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.ParentName*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.ParentName
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_ParentName
+  name: ParentName
+  nameWithType: Account.ParentName
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.ParentName
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.IsActive*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.IsActive
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_IsActive
+  name: IsActive
+  nameWithType: Account.IsActive
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.IsActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Address1*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.Address1
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_Address1
+  name: Address1
+  nameWithType: Account.Address1
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Address1
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Address2*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.Address2
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_Address2
+  name: Address2
+  nameWithType: Account.Address2
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Address2
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Address3*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.Address3
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_Address3
+  name: Address3
+  nameWithType: Account.Address3
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Address3
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Address4*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.Address4
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_Address4
+  name: Address4
+  nameWithType: Account.Address4
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Address4
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.City*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.City
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_City
+  name: City
+  nameWithType: Account.City
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.City
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.StateName*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.StateName
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_StateName
+  name: StateName
+  nameWithType: Account.StateName
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.StateName
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.StateAbbr*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.StateAbbr
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_StateAbbr
+  name: StateAbbr
+  nameWithType: Account.StateAbbr
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.StateAbbr
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.PostalCode*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.PostalCode
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_PostalCode
+  name: PostalCode
+  nameWithType: Account.PostalCode
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.PostalCode
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Country*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.Country
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_Country
+  name: Country
+  nameWithType: Account.Country
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Country
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Phone*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.Phone
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_Phone
+  name: Phone
+  nameWithType: Account.Phone
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Phone
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Fax*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.Fax
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_Fax
+  name: Fax
+  nameWithType: Account.Fax
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Fax
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Url*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.Url
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_Url
+  name: Url
+  nameWithType: Account.Url
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Url
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Notes*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.Notes
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_Notes
+  name: Notes
+  nameWithType: Account.Notes
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Notes
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.CreatedDate*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.CreatedDate
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_CreatedDate
+  name: CreatedDate
+  nameWithType: Account.CreatedDate
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.CreatedDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.ModifiedDate*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.ModifiedDate
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_ModifiedDate
+  name: ModifiedDate
+  nameWithType: Account.ModifiedDate
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.ModifiedDate
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Code*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.Code
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_Code
+  name: Code
+  nameWithType: Account.Code
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Code
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryID*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryID
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_IndustryID
+  name: IndustryID
+  nameWithType: Account.IndustryID
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryID
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryName*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryName
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_IndustryName
+  name: IndustryName
+  nameWithType: Account.IndustryName
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.IndustryName
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerUID*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerUID
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_ManagerUID
+  name: ManagerUID
+  nameWithType: Account.ManagerUID
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerUID
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerFullName*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerFullName
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_ManagerFullName
+  name: ManagerFullName
+  nameWithType: Account.ManagerFullName
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.ManagerFullName
+- uid: Itsm.Tdx.WebApi.Accounts.Models.Account.Attributes*
+  commentId: Overload:Itsm.Tdx.WebApi.Accounts.Models.Account.Attributes
+  href: Itsm.Tdx.WebApi.Accounts.Models.Account.html#Itsm_Tdx_WebApi_Accounts_Models_Account_Attributes
+  name: Attributes
+  nameWithType: Account.Attributes
+  fullName: Itsm.Tdx.WebApi.Accounts.Models.Account.Attributes
+- uid: System.Collections.Generic.List{System.Object}
+  commentId: T:System.Collections.Generic.List{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<object>
+  nameWithType: List<object>
+  fullName: System.Collections.Generic.List<object>
+  nameWithType.vb: List(Of Object)
+  fullName.vb: System.Collections.Generic.List(Of Object)
+  name.vb: List(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

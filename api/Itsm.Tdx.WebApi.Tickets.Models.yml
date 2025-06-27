@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Itsm.Tdx.WebApi.Tickets.Models
+  commentId: N:Itsm.Tdx.WebApi.Tickets.Models
+  id: Itsm.Tdx.WebApi.Tickets.Models
+  children:
+  - Itsm.Tdx.WebApi.Tickets.Models.Notify
+  - Itsm.Tdx.WebApi.Tickets.Models.Ticket
+  langs:
+  - csharp
+  - vb
+  name: Itsm.Tdx.WebApi.Tickets.Models
+  nameWithType: Itsm.Tdx.WebApi.Tickets.Models
+  fullName: Itsm.Tdx.WebApi.Tickets.Models
+  type: Namespace
+  assemblies:
+  - Itsm.Tdx.WebApi
+references:
+- uid: Itsm.Tdx.WebApi.Tickets.Models.Notify
+  commentId: T:Itsm.Tdx.WebApi.Tickets.Models.Notify
+  href: Itsm.Tdx.WebApi.Tickets.Models.Notify.html
+  name: Notify
+  nameWithType: Notify
+  fullName: Itsm.Tdx.WebApi.Tickets.Models.Notify
+- uid: Itsm.Tdx.WebApi.Tickets.Models.Ticket
+  commentId: T:Itsm.Tdx.WebApi.Tickets.Models.Ticket
+  parent: Itsm.Tdx.WebApi.Tickets.Models
+  href: Itsm.Tdx.WebApi.Tickets.Models.Ticket.html
+  name: Ticket
+  nameWithType: Ticket
+  fullName: Itsm.Tdx.WebApi.Tickets.Models.Ticket
+- uid: Itsm.Tdx.WebApi.Tickets.Models
+  commentId: N:Itsm.Tdx.WebApi.Tickets.Models
+  href: Itsm.html
+  name: Itsm.Tdx.WebApi.Tickets.Models
+  nameWithType: Itsm.Tdx.WebApi.Tickets.Models
+  fullName: Itsm.Tdx.WebApi.Tickets.Models
+  spec.csharp:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Tickets
+    name: Tickets
+    href: Itsm.Tdx.WebApi.Tickets.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Tickets.Models
+    name: Models
+    href: Itsm.Tdx.WebApi.Tickets.Models.html
+  spec.vb:
+  - uid: Itsm
+    name: Itsm
+    href: Itsm.html
+  - name: .
+  - uid: Itsm.Tdx
+    name: Tdx
+    href: Itsm.Tdx.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi
+    name: WebApi
+    href: Itsm.Tdx.WebApi.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Tickets
+    name: Tickets
+    href: Itsm.Tdx.WebApi.Tickets.html
+  - name: .
+  - uid: Itsm.Tdx.WebApi.Tickets.Models
+    name: Models
+    href: Itsm.Tdx.WebApi.Tickets.Models.html
