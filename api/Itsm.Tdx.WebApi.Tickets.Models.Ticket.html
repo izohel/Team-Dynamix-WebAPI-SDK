@@ -1,0 +1,4056 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Ticket | TdxWebApiDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Ticket | TdxWebApiDocs ">
+      
+      <meta name="description" content="Represents a ticket with all associated details in TeamDynamix.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/new/master/apiSpec/new?filename=Itsm_Tdx_WebApi_Tickets_Models_Ticket.md&amp;value=---%0Auid%3A%20Itsm.Tdx.WebApi.Tickets.Models.Ticket%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="TdxWebApiDocs">
+            TdxWebApiDocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket">
+
+
+
+  <h1 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket" class="text-break">
+Class Ticket  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Itsm.html">Itsm</a>.<a class="xref" href="Itsm.Tdx.html">Tdx</a>.<a class="xref" href="Itsm.Tdx.WebApi.html">WebApi</a>.<a class="xref" href="Itsm.Tdx.WebApi.Tickets.html">Tickets</a>.<a class="xref" href="Itsm.Tdx.WebApi.Tickets.Models.html">Models</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Itsm.Tdx.WebApi.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a ticket with all associated details in TeamDynamix.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Ticket</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Ticket</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_AccountId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.AccountId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_AccountId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.AccountId">
+  AccountId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the account/department associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;AccountID&quot;)]
+public int AccountId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_AccountName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.AccountName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_AccountName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.AccountName">
+  AccountName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the account/department associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;AccountName&quot;)]
+public string AccountName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ActualMinutes_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ActualMinutes*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ActualMinutes" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ActualMinutes">
+  ActualMinutes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The time, in minutes, entered against the ticket or associated tasks/activities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ActualMinutes&quot;)]
+public int ActualMinutes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_AppId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.AppId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_AppId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.AppId">
+  AppId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the ticketing application associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;AppID&quot;)]
+public int AppId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ArticleAppId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ArticleAppId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ArticleAppId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ArticleAppId">
+  ArticleAppId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L673"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the client portal application associated with the ticket's Knowledge Base article.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ArticleAppID&quot;)]
+public int ArticleAppId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ArticleCategoryPathNames_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ArticleCategoryPathNames*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ArticleCategoryPathNames" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ArticleCategoryPathNames">
+  ArticleCategoryPathNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L667"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A delimited string of the category hierarchy associated with the ticket's Knowledge Base article.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ArticleCategoryPathNames&quot;)]
+public string ArticleCategoryPathNames { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ArticleId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ArticleId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ArticleId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ArticleId">
+  ArticleId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L649"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the Knowledge Base article associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ArticleID&quot;)]
+public int ArticleId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ArticleShortcutId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ArticleShortcutId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ArticleShortcutId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ArticleShortcutId">
+  ArticleShortcutId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the shortcut that is used when viewing the ticket's Knowledge Base article. This is set when the ticket is associated with a cross client portal article shortcut.
+Nullable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ArticleShortcutID&quot;)]
+public int? ArticleShortcutId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ArticleStatus_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ArticleStatus*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ArticleStatus" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ArticleStatus">
+  ArticleStatus
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L661"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the Knowledge Base article associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ArticleStatus&quot;)]
+public ArticleStatus ArticleStatus { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.KnowledgeBase.Models.ArticleStatus.html">ArticleStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ArticleSubject_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ArticleSubject*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ArticleSubject" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ArticleSubject">
+  ArticleSubject
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L655"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The subject of the Knowledge Base article associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ArticleSubject&quot;)]
+public string ArticleSubject { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Attachments_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Attachments*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Attachments" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Attachments">
+  Attachments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L700"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The attachments associated with the ticket.
+Nullable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;Attachments&quot;)]
+public List&lt;Attachment&gt;? Attachments { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Itsm.Tdx.WebApi.Attachments.Models.Attachment.html">Attachment</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Attributes_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Attributes*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Attributes" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Attributes">
+  Attributes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L693"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The custom attributes associated with the ticket.
+Nullable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;Attributes&quot;)]
+public List&lt;CustomAttribute&gt;? Attributes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Itsm.Tdx.WebApi.CustomAttributes.Models.CustomAttribute.html">CustomAttribute</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Classification_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Classification*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Classification" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Classification">
+  Classification
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The classification associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;Classification&quot;)]
+public TicketClass Classification { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.Tickets.Models.TicketClass.html">TicketClass</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ClassificationName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ClassificationName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ClassificationName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ClassificationName">
+  ClassificationName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The application-defined name of the classification associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ClassificationName&quot;)]
+public string ClassificationName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CompletedDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CompletedDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CompletedDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CompletedDate">
+  CompletedDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The completed/closed date of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;CompletedDate&quot;)]
+public DateTime CompletedDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CompletedFullName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CompletedFullName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CompletedFullName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CompletedFullName">
+  CompletedFullName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The full name of the user who completed/closed the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;CompletedFullName&quot;)]
+public string CompletedFullName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CompletedUid_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CompletedUid*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CompletedUid" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CompletedUid">
+  CompletedUid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The UID of the user who completed/closed the ticket.
+Nullable because it may not be provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;CompletedUid&quot;)]
+public string? CompletedUid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ConvertedToTaskDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ConvertedToTaskDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ConvertedToTaskDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ConvertedToTaskDate">
+  ConvertedToTaskDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The date the ticket was converted to a project task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ConvertedToTaskDate&quot;)]
+public DateTime ConvertedToTaskDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ConvertedToTaskFullName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ConvertedToTaskFullName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ConvertedToTaskFullName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ConvertedToTaskFullName">
+  ConvertedToTaskFullName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The full name of the user who converted the ticket to a project task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ConvertedToTaskFullName&quot;)]
+public string ConvertedToTaskFullName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ConvertedToTaskUid_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ConvertedToTaskUid*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ConvertedToTaskUid" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ConvertedToTaskUid">
+  ConvertedToTaskUid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L517"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The UID of the user who converted the ticket to a project task.
+Nullable because it may not be provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ConvertedToTaskUid&quot;)]
+public string? ConvertedToTaskUid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CreatedDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CreatedDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CreatedDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CreatedDate">
+  CreatedDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The created date of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;CreatedDate&quot;)]
+public DateTime CreatedDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CreatedEmail_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CreatedEmail*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CreatedEmail" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CreatedEmail">
+  CreatedEmail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The email address of the user who created the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;CreatedEmail&quot;)]
+public string CreatedEmail { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CreatedFullName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CreatedFullName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CreatedFullName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CreatedFullName">
+  CreatedFullName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The full name of the user who created the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;CreatedFullName&quot;)]
+public string CreatedFullName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CreatedUid_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CreatedUid*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_CreatedUid" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.CreatedUid">
+  CreatedUid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The UID of the user who created the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;CreatedUid&quot;)]
+public string? CreatedUid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_DaysOld_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.DaysOld*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_DaysOld" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.DaysOld">
+  DaysOld
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The age of the ticket, in days.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;DaysOld&quot;)]
+public int DaysOld { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Description_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Description*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Description" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Description">
+  Description
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The description of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;Description&quot;)]
+public string? Description { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_EndDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.EndDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_EndDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.EndDate">
+  EndDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The end date of the ticket.
+Nullable because it may not be provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;EndDate&quot;)]
+public DateTime? EndDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_EstimatedMinutes_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.EstimatedMinutes*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_EstimatedMinutes" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.EstimatedMinutes">
+  EstimatedMinutes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The estimated minutes of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;EstimatedMinutes&quot;)]
+public int EstimatedMinutes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ExpensesBudget_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ExpensesBudget*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ExpensesBudget" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ExpensesBudget">
+  ExpensesBudget
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The expense budget of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ExpensesBudget&quot;)]
+public double ExpensesBudget { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ExpensesBudgetUsed_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ExpensesBudgetUsed*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ExpensesBudgetUsed" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ExpensesBudgetUsed">
+  ExpensesBudgetUsed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The used expense budget of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ExpensesBudgetUsed&quot;)]
+public double ExpensesBudgetUsed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_FormId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.FormId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_FormId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.FormId">
+  FormId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the form associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;FormID&quot;)]
+public int FormId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_FormName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.FormName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_FormName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.FormName">
+  FormName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the form associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;FormName&quot;)]
+public string FormName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_GoesOffHoldDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.GoesOffHoldDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_GoesOffHoldDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.GoesOffHoldDate">
+  GoesOffHoldDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The date the ticket goes off hold.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;GoesOffHoldDate&quot;)]
+public DateTime? GoesOffHoldDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Id_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Id*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Id" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Id">
+  Id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ID&quot;)]
+public int Id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ImpactId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ImpactId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ImpactId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ImpactId">
+  ImpactId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the impact associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ImpactID&quot;)]
+public int ImpactId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ImpactName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ImpactName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ImpactName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ImpactName">
+  ImpactName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the impact associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ImpactName&quot;)]
+public string ImpactName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_IsConvertedToTask_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.IsConvertedToTask*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_IsConvertedToTask" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.IsConvertedToTask">
+  IsConvertedToTask
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the ticket has been converted to a project task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;IsConvertedToTask&quot;)]
+public bool IsConvertedToTask { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_IsOnHold_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.IsOnHold*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_IsOnHold" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.IsOnHold">
+  IsOnHold
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The on hold status of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;IsOnHold&quot;)]
+public bool IsOnHold { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_IsRichHtml_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.IsRichHtml*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_IsRichHtml" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.IsRichHtml">
+  IsRichHtml
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if the ticket description is rich-text or plain-text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;IsRichHtml&quot;)]
+public bool IsRichHtml { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_IsSlaResolveByViolated_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.IsSlaResolveByViolated*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_IsSlaResolveByViolated" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.IsSlaResolveByViolated">
+  IsSlaResolveByViolated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the Service Level Agreement (SLA) associated with the ticket has its &quot;Resolve By&quot; component violated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;IsSlaResolveByViolated&quot;)]
+public bool? IsSlaResolveByViolated { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_IsSlaRespondByViolated_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.IsSlaRespondByViolated*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_IsSlaRespondByViolated" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.IsSlaRespondByViolated">
+  IsSlaRespondByViolated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the Service Level Agreement (SLA) associated with the ticket has its &quot;Respond By&quot; component violated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;IsSlaRespondByViolated&quot;)]
+public bool? IsSlaRespondByViolated { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_IsSlaViolated_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.IsSlaViolated*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_IsSlaViolated" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.IsSlaViolated">
+  IsSlaViolated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the Service Level Agreement (SLA) associated with the ticket has been violated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;IsSlaViolated&quot;)]
+public bool IsSlaViolated { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_LocationId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.LocationId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_LocationId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.LocationId">
+  LocationId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the location associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;LocationID&quot;)]
+public int LocationId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_LocationName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.LocationName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_LocationName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.LocationName">
+  LocationName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L589"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the location associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;LocationName&quot;)]
+public string LocationName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_LocationRoomId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.LocationRoomId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_LocationRoomId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.LocationRoomId">
+  LocationRoomId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L595"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the location room associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;LocationRoomID&quot;)]
+public int LocationRoomId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_LocationRoomName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.LocationRoomName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_LocationRoomName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.LocationRoomName">
+  LocationRoomName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L601"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the location room associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;LocationRoomName&quot;)]
+public string LocationRoomName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ModifiedDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ModifiedDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ModifiedDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ModifiedDate">
+  ModifiedDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The last modified date of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ModifiedDate&quot;)]
+public DateTime ModifiedDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ModifiedFullName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ModifiedFullName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ModifiedFullName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ModifiedFullName">
+  ModifiedFullName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The full name of the user who last modified the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ModifiedFullName&quot;)]
+public string ModifiedFullName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ModifiedUid_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ModifiedUid*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ModifiedUid" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ModifiedUid">
+  ModifiedUid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The UID of the user who last modified the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ModifiedUid&quot;)]
+public string? ModifiedUid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Notify_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Notify*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Notify" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Notify">
+  Notify
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L714"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The list of people who can be notified for the ticket.
+Nullable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;Notify&quot;)]
+public List&lt;ResourceItem&gt;? Notify { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Itsm.Tdx.WebApi.SharedModels.ResourceItem.html">ResourceItem</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ParentClass_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ParentClass*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ParentClass" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ParentClass">
+  ParentClass
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The classification of the parent associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ParentClass&quot;)]
+public TicketClass ParentClass { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.Tickets.Models.TicketClass.html">TicketClass</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ParentId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ParentId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ParentId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ParentId">
+  ParentId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the parent associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ParentID&quot;)]
+public int ParentId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ParentTitle_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ParentTitle*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ParentTitle" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ParentTitle">
+  ParentTitle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The title of the parent associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ParentTitle&quot;)]
+public string ParentTitle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_PlacedOnHoldDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.PlacedOnHoldDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_PlacedOnHoldDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.PlacedOnHoldDate">
+  PlacedOnHoldDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The date the ticket was placed on hold.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;PlacedOnHoldDate&quot;)]
+public DateTime? PlacedOnHoldDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_PriorityId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.PriorityId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_PriorityId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.PriorityId">
+  PriorityId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the priority associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;PriorityID&quot;)]
+public int PriorityId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_PriorityName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.PriorityName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_PriorityName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.PriorityName">
+  PriorityName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the priority associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;PriorityName&quot;)]
+public string PriorityName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_PriorityOrder_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.PriorityOrder*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_PriorityOrder" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.PriorityOrder">
+  PriorityOrder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The order of the priority associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;PriorityOrder&quot;)]
+public double PriorityOrder { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RefCode_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RefCode*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RefCode" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RefCode">
+  RefCode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The reference code of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;RefCode&quot;)]
+public string RefCode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RequestorEmail_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RequestorEmail*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RequestorEmail" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RequestorEmail">
+  RequestorEmail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The email address of the requestor associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;RequestorEmail&quot;)]
+public string RequestorEmail { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RequestorFirstName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RequestorFirstName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RequestorFirstName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RequestorFirstName">
+  RequestorFirstName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The first name of the requestor associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;RequestorFirstName&quot;)]
+public string RequestorFirstName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RequestorLastName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RequestorLastName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RequestorLastName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RequestorLastName">
+  RequestorLastName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The last name of the requestor associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;RequestorLastName&quot;)]
+public string RequestorLastName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RequestorName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RequestorName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RequestorName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RequestorName">
+  RequestorName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The full name of the requestor associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;RequestorName&quot;)]
+public string RequestorName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RequestorPhone_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RequestorPhone*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RequestorPhone" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RequestorPhone">
+  RequestorPhone
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The phone number of the requestor associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;RequestorPhone&quot;)]
+public string RequestorPhone { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RequestorUid_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RequestorUid*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RequestorUid" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RequestorUid">
+  RequestorUid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The UID of the requestor associated with the ticket.
+Nullable because it may not be provided in some cases.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;RequestorUID&quot;)]
+public string? RequestorUid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ResolveByDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ResolveByDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ResolveByDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ResolveByDate">
+  ResolveByDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The &quot;Resolve By&quot; deadline of the Service Level Agreement (SLA) associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ResolveByDate&quot;)]
+public DateTime? ResolveByDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RespondByDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RespondByDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RespondByDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RespondByDate">
+  RespondByDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The &quot;Respond By&quot; deadline of the Service Level Agreement (SLA) associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;RespondByDate&quot;)]
+public DateTime? RespondByDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RespondedDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RespondedDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RespondedDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RespondedDate">
+  RespondedDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The date the ticket was responded to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;RespondedDate&quot;)]
+public DateTime RespondedDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RespondedFullName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RespondedFullName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RespondedFullName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RespondedFullName">
+  RespondedFullName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The full name of the user who responded to the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;RespondedFullName&quot;)]
+public string RespondedFullName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RespondedUid_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RespondedUid*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_RespondedUid" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.RespondedUid">
+  RespondedUid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The UID of the user who responded to the ticket.
+Nullable because it may not be provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;RespondedUid&quot;)]
+public string? RespondedUid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ResponsibleEmail_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ResponsibleEmail*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ResponsibleEmail" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ResponsibleEmail">
+  ResponsibleEmail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The email address of the responsible user associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ResponsibleEmail&quot;)]
+public string ResponsibleEmail { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ResponsibleFullName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ResponsibleFullName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ResponsibleFullName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ResponsibleFullName">
+  ResponsibleFullName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L387"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The full name of the responsible user associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ResponsibleFullName&quot;)]
+public string ResponsibleFullName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ResponsibleGroupId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ResponsibleGroupId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ResponsibleGroupId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ResponsibleGroupId">
+  ResponsibleGroupId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the responsible group associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ResponsibleGroupID&quot;)]
+public int ResponsibleGroupId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ResponsibleGroupName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ResponsibleGroupName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ResponsibleGroupName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ResponsibleGroupName">
+  ResponsibleGroupName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the responsible group associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ResponsibleGroupName&quot;)]
+public string ResponsibleGroupName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ResponsibleUid_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ResponsibleUid*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ResponsibleUid" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ResponsibleUid">
+  ResponsibleUid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The UID of the responsible user associated with the ticket.
+Nullable because it may not be provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ResponsibleUid&quot;)]
+public string? ResponsibleUid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ReviewerEmail_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ReviewerEmail*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ReviewerEmail" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ReviewerEmail">
+  ReviewerEmail
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The email address of the reviewing user associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ReviewerEmail&quot;)]
+public string ReviewerEmail { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ReviewerFullName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ReviewerFullName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ReviewerFullName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ReviewerFullName">
+  ReviewerFullName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The full name of the reviewing user associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ReviewerFullName&quot;)]
+public string ReviewerFullName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ReviewerUid_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ReviewerUid*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ReviewerUid" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ReviewerUid">
+  ReviewerUid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The UID of the reviewing user associated with the ticket.
+Nullable because it may not be provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ReviewerUid&quot;)]
+public string? ReviewerUid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ReviewingGroupId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ReviewingGroupId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ReviewingGroupId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ReviewingGroupId">
+  ReviewingGroupId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the reviewing group associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ReviewingGroupID&quot;)]
+public int ReviewingGroupId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ReviewingGroupName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ReviewingGroupName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ReviewingGroupName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ReviewingGroupName">
+  ReviewingGroupName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the reviewing group associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ReviewingGroupName&quot;)]
+public string ReviewingGroupName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ServiceCategoryId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ServiceCategoryId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ServiceCategoryId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ServiceCategoryId">
+  ServiceCategoryId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L637"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the category associated with the ticket's service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ServiceCategoryID&quot;)]
+public int ServiceCategoryId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ServiceCategoryName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ServiceCategoryName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ServiceCategoryName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ServiceCategoryName">
+  ServiceCategoryName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L643"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the category associated with the ticket's service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ServiceCategoryName&quot;)]
+public string ServiceCategoryName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ServiceId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ServiceId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ServiceId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ServiceId">
+  ServiceId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L613"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the service associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ServiceID&quot;)]
+public int ServiceId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ServiceName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ServiceName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ServiceName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ServiceName">
+  ServiceName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L619"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the service associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ServiceName&quot;)]
+public string ServiceName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ServiceOfferingId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ServiceOfferingId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ServiceOfferingId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ServiceOfferingId">
+  ServiceOfferingId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L625"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the service offering associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ServiceOfferingID&quot;)]
+public int ServiceOfferingId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ServiceOfferingName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ServiceOfferingName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_ServiceOfferingName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.ServiceOfferingName">
+  ServiceOfferingName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L631"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the service offering associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ServiceOfferingName&quot;)]
+public string ServiceOfferingName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_SlaBeginDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.SlaBeginDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_SlaBeginDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.SlaBeginDate">
+  SlaBeginDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The date the Service Level Agreement (SLA) associated with the ticket was started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;SlaBeginDate&quot;)]
+public DateTime? SlaBeginDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_SlaId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.SlaId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_SlaId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.SlaId">
+  SlaId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the Service Level Agreement (SLA) associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;SlaID&quot;)]
+public int SlaId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_SlaName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.SlaName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_SlaName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.SlaName">
+  SlaName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the Service Level Agreement (SLA) associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;SlaName&quot;)]
+public string SlaName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_SourceId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.SourceId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_SourceId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.SourceId">
+  SourceId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the ticket source associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;SourceID&quot;)]
+public int SourceId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_SourceName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.SourceName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_SourceName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.SourceName">
+  SourceName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the ticket source associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;SourceName&quot;)]
+public string SourceName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_StartDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.StartDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_StartDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.StartDate">
+  StartDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The start date of the ticket.
+Nullable because it may not be provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;StartDate&quot;)]
+public DateTime? StartDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_StatusClass_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.StatusClass*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_StatusClass" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.StatusClass">
+  StatusClass
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The class of the ticket status associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;StatusClass&quot;)]
+public StatusClass StatusClass { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Itsm.Tdx.WebApi.Tickets.Models.StatusClass.html">StatusClass</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_StatusId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.StatusId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_StatusId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.StatusId">
+  StatusId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the ticket status associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;StatusID&quot;)]
+public int StatusId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_StatusName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.StatusName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_StatusName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.StatusName">
+  StatusName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the ticket status associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;StatusName&quot;)]
+public string StatusName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskEndDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskEndDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskEndDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskEndDate">
+  TaskEndDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The end date of the associated project task when the ticket has been converted to a project task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TaskEndDate&quot;)]
+public DateTime TaskEndDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskId">
+  TaskId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the associated project task when the ticket has been converted to a project task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TaskID&quot;)]
+public int TaskId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskPercentComplete_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskPercentComplete*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskPercentComplete" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskPercentComplete">
+  TaskPercentComplete
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The percent complete of the associated project task when the ticket has been converted to a project task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TaskPercentComplete&quot;)]
+public int TaskPercentComplete { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskPlanId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskPlanId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskPlanId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskPlanId">
+  TaskPlanId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the associated project plan when the ticket has been converted to a project task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TaskPlanID&quot;)]
+public int TaskPlanId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskPlanName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskPlanName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskPlanName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskPlanName">
+  TaskPlanName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the associated project plan when the ticket has been converted to a project task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TaskPlanName&quot;)]
+public string TaskPlanName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskProjectId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskProjectId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskProjectId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskProjectId">
+  TaskProjectId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the associated project when the ticket has been converted to a project task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TaskProjectID&quot;)]
+public int TaskProjectId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskProjectName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskProjectName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskProjectName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskProjectName">
+  TaskProjectName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the associated project when the ticket has been converted to a project task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TaskProjectName&quot;)]
+public string TaskProjectName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskStartDate_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskStartDate*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskStartDate" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskStartDate">
+  TaskStartDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The start date of the associated project task when the ticket has been converted to a project task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TaskStartDate&quot;)]
+public DateTime TaskStartDate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskTitle_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskTitle*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TaskTitle" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TaskTitle">
+  TaskTitle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The title of the associated project task when the ticket has been converted to a project task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TaskTitle&quot;)]
+public string TaskTitle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Tasks_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Tasks*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Tasks" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Tasks">
+  Tasks
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L707"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ticket tasks associated with the ticket.
+Nullable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;Tasks&quot;)]
+public List&lt;TicketTask&gt;? Tasks { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Itsm.Tdx.WebApi.Tickets.Models.TicketTask.html">TicketTask</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TimeBudget_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TimeBudget*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TimeBudget" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TimeBudget">
+  TimeBudget
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The time budget of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TimeBudget&quot;)]
+public double TimeBudget { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TimeBudgetUsed_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TimeBudgetUsed*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TimeBudgetUsed" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TimeBudgetUsed">
+  TimeBudgetUsed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L492"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The used time budget of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TimeBudgetUsed&quot;)]
+public double TimeBudgetUsed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Title_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Title*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Title" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Title">
+  Title
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The title of the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;Title&quot;)]
+public string Title { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TypeCategoryId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TypeCategoryId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TypeCategoryId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TypeCategoryId">
+  TypeCategoryId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the category associated with the ticket's type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TypeCategoryID&quot;)]
+public int TypeCategoryId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TypeCategoryName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TypeCategoryName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TypeCategoryName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TypeCategoryName">
+  TypeCategoryName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the category associated with the ticket's type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TypeCategoryName&quot;)]
+public string TypeCategoryName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TypeId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TypeId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TypeId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TypeId">
+  TypeId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the ticket type associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TypeID&quot;)]
+public int TypeId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TypeName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TypeName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_TypeName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.TypeName">
+  TypeName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the ticket type associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;TypeName&quot;)]
+public string TypeName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_UrgencyId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.UrgencyId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_UrgencyId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.UrgencyId">
+  UrgencyId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the urgency associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;UrgencyID&quot;)]
+public int UrgencyId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_UrgencyName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.UrgencyName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_UrgencyName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.UrgencyName">
+  UrgencyName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the urgency associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;UrgencyName&quot;)]
+public string UrgencyName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Uri_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Uri*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_Uri" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.Uri">
+  Uri
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The URI to retrieve the full details of the ticket via the web API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;Uri&quot;)]
+public string Uri { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_WorkflowConfigurationId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.WorkflowConfigurationId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_WorkflowConfigurationId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.WorkflowConfigurationId">
+  WorkflowConfigurationId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L726"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the configuration workflow associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;WorkflowConfigurationID&quot;)]
+public int WorkflowConfigurationId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_WorkflowId_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.WorkflowId*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_WorkflowId" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.WorkflowId">
+  WorkflowId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L720"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The ID of the workflow associated with the ticket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;WorkflowID&quot;)]
+public int WorkflowId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_WorkflowName_" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.WorkflowName*"></a>
+
+  <h3 id="Itsm_Tdx_WebApi_Tickets_Models_Ticket_WorkflowName" data-uid="Itsm.Tdx.WebApi.Tickets.Models.Ticket.WorkflowName">
+  WorkflowName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L733"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the workflow associated with the ticket.
+Nullable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;WorkflowName&quot;)]
+public string? WorkflowName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/izohel/Team-Dynamix-WebAPI-SDK/blob/master/Tickets/Models/Ticket.cs/#L18" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

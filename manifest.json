@@ -1,5 +1,5 @@
 {
-  "source_base_path": "C:/Users/PeterS/source/repos/ItsmIntegrations/TdxApi",
+  "source_base_path": "/home/runner/work/Team-Dynamix-WebAPI-SDK/Team-Dynamix-WebAPI-SDK",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -11,21 +11,686 @@
       }
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "bin/Debug/net8.0/methods.md",
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Accounts.AccountItemRequestBuilder.yml",
       "output": {
         ".html": {
-          "relative_path": "bin/Debug/net8.0/methods.html"
+          "relative_path": "api/Itsm.Tdx.WebApi.Accounts.AccountItemRequestBuilder.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Accounts.AccountItemRequestBuilder",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Accounts.AccountItemRequestBuilder.yml\" sourcestartlinenumber=\"1\">Provides operations to retrieve information about a specific account/department\nin the TeamDynamix system.</p>\n"
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "bin/Debug/net8.0/readme.md",
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.yml",
       "output": {
         ".html": {
-          "relative_path": "bin/Debug/net8.0/readme.html"
+          "relative_path": "api/Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Accounts.AccountsRequestBuilder.yml\" sourcestartlinenumber=\"1\">Contains methods for working with accounts/departments in the TeamDynamix API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Accounts.Models.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Accounts.Models.Account.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Accounts.Models.Account",
+      "Summary": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Accounts.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Accounts.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Accounts.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Accounts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Accounts.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Accounts",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Apps.Models.UserApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Apps.Models.UserApplication.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Apps.Models.UserApplication",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Apps.Models.UserApplication.yml\" sourcestartlinenumber=\"1\">An association that a user has with an application.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Apps.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Apps.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Apps.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Attachments.Models.Attachment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Attachments.Models.Attachment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Attachments.Models.Attachment",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Attachments.Models.Attachment.yml\" sourcestartlinenumber=\"1\">An attachment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Attachments.Models.AttachmentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Attachments.Models.AttachmentType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Attachments.Models.AttachmentType",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Attachments.Models.AttachmentType.yml\" sourcestartlinenumber=\"1\">Describes the different types of supported attachments.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Attachments.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Attachments.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Attachments.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.BaseRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.BaseRequestBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.BaseRequestBuilder",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.BaseRequestBuilder.yml\" sourcestartlinenumber=\"1\">Abstract base class for building and sending HTTP requests to the TeamDynamix API.\nProvides helper methods to create requests with optional JSON bodies and send them\nusing a <xref href=\"Itsm.Tdx.WebApi.TdxBaseClient\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.CustomAttributes.Models.CustomAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.CustomAttributes.Models.CustomAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.CustomAttributes.Models.CustomAttribute",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.CustomAttributes.Models.CustomAttribute.yml\" sourcestartlinenumber=\"1\">Represents a custom attribute in the TeamDynamix system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.CustomAttributes.Models.CustomAttributeChoice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.CustomAttributes.Models.CustomAttributeChoice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.CustomAttributes.Models.CustomAttributeChoice",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.CustomAttributes.Models.CustomAttributeChoice.yml\" sourcestartlinenumber=\"1\">Represents a selectable choice for a custom attribute in the TeamDynamix system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.CustomAttributes.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.CustomAttributes.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.CustomAttributes.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Exceptions.UserException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Exceptions.UserException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Exceptions.UserException",
+      "Summary": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Exceptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Exceptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Extensions.TdxClientOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Extensions.TdxClientOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Extensions.TdxClientOptions",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Extensions.TdxClientOptions.yml\" sourcestartlinenumber=\"1\">Configuration options for the TeamDynamix API client.</p>\n<p sourcefile=\"api/Itsm.Tdx.WebApi.Extensions.TdxClientOptions.yml\" sourcestartlinenumber=\"3\">This class provides settings that control the behavior of the client,\nincluding how it constructs the base API URL, and how it handles throttling\nresponses from the API (HTTP 429 Too Many Requests).</p>\n<p sourcefile=\"api/Itsm.Tdx.WebApi.Extensions.TdxClientOptions.yml\" sourcestartlinenumber=\"7\">Use these options to customize retry logic, logging, and notification callbacks\nrelated to API throttling to improve robustness and observability of API calls.\nApplies only if not overriding the default HttpClient.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Extensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Extensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.KnowledgeBase.Models.ArticleStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.KnowledgeBase.Models.ArticleStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.KnowledgeBase.Models.ArticleStatus",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.KnowledgeBase.Models.ArticleStatus.yml\" sourcestartlinenumber=\"1\">Describes the different article statuses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.KnowledgeBase.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.KnowledgeBase.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.KnowledgeBase.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.People.Models.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.People.Models.User.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.People.Models.User",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.People.Models.User.yml\" sourcestartlinenumber=\"1\">Represents a user in the TeamDynamix system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.People.Models.UserType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.People.Models.UserType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.People.Models.UserType",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.People.Models.UserType.yml\" sourcestartlinenumber=\"1\">Describes the different types of users and customers tracked within TeamDynamix.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.People.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.People.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.People.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.People.PeopleRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.People.PeopleRequestBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.People.PeopleRequestBuilder",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.People.PeopleRequestBuilder.yml\" sourcestartlinenumber=\"1\">Provides methods for interacting with people in the TeamDynamix system.\nThis includes searching for people or retrieving them by UID.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.People.PersonByIdRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.People.PersonByIdRequestBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.People.PersonByIdRequestBuilder",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.People.PersonByIdRequestBuilder.yml\" sourcestartlinenumber=\"1\">Provides functionality to retrieve a person by their unique identifier (UID)\nfrom the TeamDynamix people database.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.People.PersonLookupRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.People.PersonLookupRequestBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.People.PersonLookupRequestBuilder",
+      "Summary": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.People.PersonSearchRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.People.PersonSearchRequestBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.People.PersonSearchRequestBuilder",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.People.PersonSearchRequestBuilder.yml\" sourcestartlinenumber=\"1\">Provides functionality to search for people in the TeamDynamix people database\nbased on various search criteria.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.People.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.People.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.People",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.SharedModels.ResourceItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.SharedModels.ResourceItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.SharedModels.ResourceItem",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.SharedModels.ResourceItem.yml\" sourcestartlinenumber=\"1\">A single person, group, or account/department.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.SharedModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.SharedModels.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.SharedModels",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.TdxBaseClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.TdxBaseClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.TdxBaseClient",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.TdxBaseClient.yml\" sourcestartlinenumber=\"1\">Base abstract client for interacting with the TeamDynamix API.\nProvides core HTTP communication features such as:</p>\n<ul sourcefile=\"api/Itsm.Tdx.WebApi.TdxBaseClient.yml\" sourcestartlinenumber=\"3\">\n<li sourcefile=\"api/Itsm.Tdx.WebApi.TdxBaseClient.yml\" sourcestartlinenumber=\"3\">Configurable <xref href=\"Itsm.Tdx.WebApi.TdxBaseClient.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> with base address setup.</li>\n<li sourcefile=\"api/Itsm.Tdx.WebApi.TdxBaseClient.yml\" sourcestartlinenumber=\"4\">Retry policy handling for HTTP 429 (Too Many Requests) throttling responses.</li>\n<li sourcefile=\"api/Itsm.Tdx.WebApi.TdxBaseClient.yml\" sourcestartlinenumber=\"5\">Token-based authorization header management.</li>\n<li sourcefile=\"api/Itsm.Tdx.WebApi.TdxBaseClient.yml\" sourcestartlinenumber=\"6\">Generic request sending methods with built-in retry logic and deserialization.</li>\n</ul>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.TdxClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.TdxClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.TdxClient",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.TdxClient.yml\" sourcestartlinenumber=\"1\">Client for interacting with the TeamDynamix API, extending <xref href=\"Itsm.Tdx.WebApi.TdxBaseClient\" data-throw-if-not-resolved=\"false\"></xref>.\nProvides strongly typed request builders for People, Tickets, and Accounts endpoints,\nand handles authentication using provided credentials.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.TdxClientFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.TdxClientFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.TdxClientFactory",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.TdxClientFactory.yml\" sourcestartlinenumber=\"1\">Factory for creating <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> instances with advanced control over the message handler pipeline.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.ConflictType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.ConflictType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.Models.ConflictType",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Tickets.Models.ConflictType.yml\" sourcestartlinenumber=\"1\">Describes the different types of conflicts that can be detected for a scheduled maintenance activity for a CI.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.StatusClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.StatusClass.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.Models.StatusClass",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Tickets.Models.StatusClass.yml\" sourcestartlinenumber=\"1\">Describes the different classes of statuses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.Ticket.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.Ticket.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.Models.Ticket",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Tickets.Models.Ticket.yml\" sourcestartlinenumber=\"1\">Represents a ticket with all associated details in TeamDynamix.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.TicketClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.TicketClass.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.Models.TicketClass",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Tickets.Models.TicketClass.yml\" sourcestartlinenumber=\"1\">Describes the different classifications of tickets.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.TicketTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.TicketTask.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.Models.TicketTask",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Tickets.Models.TicketTask.yml\" sourcestartlinenumber=\"1\">A ticket task or activity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.TicketTaskType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.TicketTaskType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.Models.TicketTaskType",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Tickets.Models.TicketTaskType.yml\" sourcestartlinenumber=\"1\">Describes the different types of items that can be backended by ticket tasks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.Options.TicketCreateOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.Options.TicketCreateOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.Options.TicketCreateOptions",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Tickets.Options.TicketCreateOptions.yml\" sourcestartlinenumber=\"1\">Represents optional parameters that can be applied when creating a ticket via the TeamDynamix API.\nThese options are serialized into query string parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.Options.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.Options",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.TicketCreateObjectRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.TicketCreateObjectRequestBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.TicketCreateObjectRequestBuilder",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Tickets.TicketCreateObjectRequestBuilder.yml\" sourcestartlinenumber=\"1\">Provides a builder for creating tickets using a fully constructed <xref href=\"Itsm.Tdx.WebApi.Tickets.Models.Ticket\" data-throw-if-not-resolved=\"false\"></xref> object.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Tickets.TicketCreateRequestBuilder.yml\" sourcestartlinenumber=\"1\">Provides a fluent interface for constructing and submitting a new ticket using discrete fields.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.TicketItemRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.TicketItemRequestBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.TicketItemRequestBuilder",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Tickets.TicketItemRequestBuilder.yml\" sourcestartlinenumber=\"1\">Provides operations to retrieve a specific ticket by ID.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.TicketsRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.TicketsRequestBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets.TicketsRequestBuilder",
+      "Summary": "<p sourcefile=\"api/Itsm.Tdx.WebApi.Tickets.TicketsRequestBuilder.yml\" sourcestartlinenumber=\"1\">Provides operations to manage and create tickets within a specific ticketing application\nin the TeamDynamix platform.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.Tickets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.Tickets.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi.Tickets",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Itsm.Tdx.WebApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Itsm.Tdx.WebApi.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Itsm.Tdx.WebApi",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -52,20 +717,20 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/methods.md",
+      "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "docs/methods.html"
+          "relative_path": "index.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "index.md",
+      "source_relative_path": "methods.md",
       "output": {
         ".html": {
-          "relative_path": "index.html"
+          "relative_path": "methods.html"
         }
       },
       "version": ""
