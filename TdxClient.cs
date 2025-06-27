@@ -12,7 +12,7 @@ public class TdxClient : TdxBaseClient
 {
     private readonly string _webServicesBeId;
     private readonly string _webServicesKey;
-    public PeopleRequestBuilder Users => new(this);
+    public PeopleRequestBuilder People => new(this);
     public TicketsRequestBuilder Tickets(string appId) => new(this, appId);
     public AccountsRequestBuilder Accounts => new(this);
     /// <summary>
