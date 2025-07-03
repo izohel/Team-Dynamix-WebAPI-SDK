@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Itsm.Tdx.WebApi.CustomAttributes.Models;
+namespace TeamDynamix.Api.CustomAttributes.Models;
 
 /// <summary>
 /// Represents a selectable choice for a custom attribute in the TeamDynamix system.
