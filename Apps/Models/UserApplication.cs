@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Itsm.Tdx.WebApi.Apps.Models;
+namespace TeamDynamix.Api.Apps.Models;
 /// <summary>
 /// An association that a user has with an application.
 /// </summary>
