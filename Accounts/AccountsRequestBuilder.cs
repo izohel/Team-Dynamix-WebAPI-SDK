@@ -1,11 +1,11 @@
-﻿using Itsm.Tdx.WebApi.Accounts.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TeamDynamix.Api.Accounts.Models;
 
-namespace Itsm.Tdx.WebApi.Accounts;
+namespace TeamDynamix.Api.Accounts;
 /// <summary>
 /// Contains methods for working with accounts/departments in the TeamDynamix API.
 /// </summary>

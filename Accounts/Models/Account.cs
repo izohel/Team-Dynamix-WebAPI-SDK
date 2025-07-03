@@ -1,10 +1,10 @@
-﻿using Itsm.Tdx.WebApi.CustomAttributes.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using TeamDynamix.Api.CustomAttributes.Models;
 
 
-namespace Itsm.Tdx.WebApi.Accounts.Models;
+namespace TeamDynamix.Api.Accounts.Models;
 /// <summary>
-/// 
+/// Represents a physical or virtual location in the TeamDynamix system.
 /// </summary>
 public class Account
 {
