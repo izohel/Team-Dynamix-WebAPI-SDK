@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Itsm.Tdx.WebApi.Attachments.Models;
+namespace TeamDynamix.Api.Attachments.Models;
 /// <summary>
 /// An attachment.
 /// </summary>
