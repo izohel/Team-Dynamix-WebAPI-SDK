@@ -1,10 +1,9 @@
-﻿using Itsm.Tdx.WebApi.Exceptions;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.Text;
 
 
-namespace Itsm.Tdx.WebApi.People;
+namespace TeamDynamix.Api.People;
 /// <summary>
 /// Provides methods for interacting with people in the TeamDynamix system.
 /// This includes searching for people or retrieving them by UID.

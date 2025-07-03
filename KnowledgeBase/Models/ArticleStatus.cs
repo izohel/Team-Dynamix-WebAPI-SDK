@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Itsm.Tdx.WebApi.KnowledgeBase.Models;
+namespace TeamDynamix.Api.KnowledgeBase.Models;
 /// <summary>
 /// Describes the different article statuses.
 /// </summary>

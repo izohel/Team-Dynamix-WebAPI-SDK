@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Itsm.Tdx.WebApi.Tickets.Models;
+namespace TeamDynamix.Api.Tickets.Models;
 /// <summary>
 /// A ticket task or activity.
 /// </summary>
@@ -64,7 +64,7 @@ public class TicketTask
     public DateTime CreatedDate { get; set; }
 
     /// <summary>The UID of the user who created the task.</summary>
-    [JsonProperty("CreatedUid")]
+    [JsonProperty("CreatedUID")]
     public Guid CreatedUid { get; set; }
 
     /// <summary>The full name of the user who created the task.</summary>

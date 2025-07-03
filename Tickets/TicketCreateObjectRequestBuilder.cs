@@ -1,8 +1,8 @@
-﻿using Itsm.Tdx.WebApi.Tickets.Models;
-using Itsm.Tdx.WebApi.Tickets.Options;
+﻿using TeamDynamix.Api.Tickets.Models;
+using TeamDynamix.Api.Tickets.Options;
 
 
-namespace Itsm.Tdx.WebApi.Tickets;
+namespace TeamDynamix.Api.Tickets;
 /// <summary>
 /// Provides a builder for creating tickets using a fully constructed <see cref="Ticket"/> object.
 /// </summary>

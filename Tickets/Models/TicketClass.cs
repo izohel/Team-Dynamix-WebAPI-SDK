@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Itsm.Tdx.WebApi.Tickets.Models;
+namespace TeamDynamix.Api.Tickets.Models;
 /// <summary>
 /// Describes the different classifications of tickets.
 /// </summary>

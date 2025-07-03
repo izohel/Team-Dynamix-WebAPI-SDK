@@ -1,11 +1,11 @@
-﻿using Itsm.Tdx.WebApi.Exceptions;
-using Itsm.Tdx.WebApi.People.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
 using System.Text;
+using TeamDynamix.Api.Exceptions;
+using TeamDynamix.Api.People.Models;
 
-namespace Itsm.Tdx.WebApi.People;
+namespace TeamDynamix.Api.People;
 
 /// <summary>
 /// Provides functionality to search for people in the TeamDynamix people database

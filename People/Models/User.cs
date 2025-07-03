@@ -1,12 +1,13 @@
-﻿using Itsm.Tdx.WebApi.CustomAttributes.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TeamDynamix.Api.Apps.Models;
+using TeamDynamix.Api.CustomAttributes.Models;
 
-namespace Itsm.Tdx.WebApi.People.Models;
+namespace TeamDynamix.Api.People.Models;
 /// <summary>
 /// Represents a user in the TeamDynamix system.
 /// </summary>
@@ -154,7 +155,7 @@ public class User
     /// The organizationally-defined (platform) applications associated with the user. Editable via API. Nullable.
     /// </summary>
     [JsonProperty(nameof(OrgApplications))]
-    public List<Apps.Models.UserApplication>? OrgApplications { get; set; }
+    public List<UserApplication>? OrgApplications { get; set; }
 
     /// <summary>
     /// The ID of the primary client portal application associated with the user. Editable via API. Nullable.

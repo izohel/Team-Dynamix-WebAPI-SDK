@@ -1,9 +1,10 @@
-﻿using Itsm.Tdx.WebApi.Tickets.Models;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.IO;
 using System.Text;
+using TeamDynamix.Api;
+using TeamDynamix.Api.Tickets.Models;
 
-namespace Itsm.Tdx.WebApi.Tickets;
+namespace TeamDynamix.Api.Tickets;
 /// <summary>
 /// Provides operations to manage and create tickets within a specific ticketing application
 /// in the TeamDynamix platform.

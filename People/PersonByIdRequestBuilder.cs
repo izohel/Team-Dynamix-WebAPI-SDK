@@ -1,6 +1,7 @@
-﻿using Itsm.Tdx.WebApi.People.Models;
+﻿using TeamDynamix.Api;
+using TeamDynamix.Api.People.Models;
 
-namespace Itsm.Tdx.WebApi.People;
+namespace TeamDynamix.Api.People;
 
 /// <summary>
 /// Provides functionality to retrieve a person by their unique identifier (UID)

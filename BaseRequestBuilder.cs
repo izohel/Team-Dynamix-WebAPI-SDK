@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Itsm.Tdx.WebApi;
+namespace TeamDynamix.Api;
 /// <summary>
 /// Abstract base class for building and sending HTTP requests to the TeamDynamix API.
 /// Provides helper methods to create requests with optional JSON bodies and send them

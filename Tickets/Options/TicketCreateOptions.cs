@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Itsm.Tdx.WebApi.Tickets.Options;
+namespace TeamDynamix.Api.Tickets.Options;
 /// <summary>
 /// Represents optional parameters that can be applied when creating a ticket via the TeamDynamix API.
 /// These options are serialized into query string parameters.

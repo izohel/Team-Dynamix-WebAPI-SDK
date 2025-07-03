@@ -1,12 +1,14 @@
 ﻿using Polly;
 using Polly.Retry;
-using Itsm.Tdx.WebApi.Extensions;
 using Newtonsoft.Json;
-using Itsm.Tdx.WebApi.People;
-using Itsm.Tdx.WebApi.Tickets;
-using Itsm.Tdx.WebApi.Accounts;
+using TeamDynamix.Api.Accounts;
+using TeamDynamix.Api.People;
+using TeamDynamix.Api.Tickets;
+using TeamDynamix.Api.Extensions;
+using TeamDynamix.Api.Locations;
+using TeamDynamix.Api.Assets;
 
-namespace Itsm.Tdx.WebApi;
+namespace TeamDynamix.Api;
 
 /// <summary>
 /// Client for interacting with the TeamDynamix API, extending <see cref="TdxBaseClient"/>.
@@ -26,6 +28,12 @@ public class TdxClient : TdxBaseClient
     private readonly string _webServicesKey;
 
     /// <summary>
+    /// Provides methods for working with assets.To the specified App
+    /// </summary>
+    /// <param name="appId">The application ID used to scope asset requests.</param>
+    /// <returns>A <see cref="AssetsRequestBuilder"/> instance for the app</returns>
+    public AssetsRequestBuilder Assets(string appId) => new(this, appId); 
+    /// <summary>
     /// Provides access to People-related API requests.
     /// </summary>
     public PeopleRequestBuilder People => new(this);
@@ -36,7 +44,10 @@ public class TdxClient : TdxBaseClient
     /// <param name="appId">The application ID used to scope ticket requests.</param>
     /// <returns>A <see cref="TicketsRequestBuilder"/> instance for the specified appId.</returns>
     public TicketsRequestBuilder Tickets(string appId) => new(this, appId);
-
+    /// <summary>
+    /// Contains methods for working with locations.
+    /// </summary>
+    public LocationsRequestBuilder Locations => new(this);
     /// <summary>
     /// Provides access to Accounts-related API requests.
     /// </summary>

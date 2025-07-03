@@ -1,4 +1,4 @@
-﻿namespace Itsm.Tdx.WebApi.Exceptions;
+﻿namespace TeamDynamix.Api.Exceptions;
 
 /// <summary>
 /// 

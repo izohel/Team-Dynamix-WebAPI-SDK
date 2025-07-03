@@ -1,12 +1,12 @@
-﻿using Itsm.Tdx.WebApi.Tickets.Models;
-using Itsm.Tdx.WebApi.Tickets.Options;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TeamDynamix.Api.Tickets.Models;
+using TeamDynamix.Api.Tickets.Options;
 
-namespace Itsm.Tdx.WebApi.Tickets;
+namespace TeamDynamix.Api.Tickets;
 /// <summary>
 /// Provides a fluent interface for constructing and submitting a new ticket using discrete fields.
 /// </summary>
@@ -83,9 +83,7 @@ public class TicketCreateRequestBuilder : BaseRequestBuilder
     {
 
         foreach (string field in requiredFields)
-        {
             if (!_ticket.ContainsKey(field))
                 throw new InvalidOperationException($"{field} is required to create a ticket.");
-        }
     }
 }

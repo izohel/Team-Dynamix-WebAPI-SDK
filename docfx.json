@@ -6,7 +6,8 @@
         {
           "src": ".",
           "files": [
-            "**/*.csproj"
+            "TdxApi.sln",
+            "TdxApi.csproj"
           ]
         }
       ],
@@ -17,14 +18,19 @@
     "content": [
       {
         "files": [
-          "**/*.{md,yml}",
-          "api/**"
+          "**/*.{md,yml}"
         ],
         "exclude": [
           "_site/**"
         ]
       }
     ],
+    "fileMetadata": {
+      "homepage": {
+        "files": [ "..\\.readme.md" ],
+        "src": "..\\.readme.md"
+      }
+    },
     "resource": [
       {
         "files": [
@@ -35,13 +41,15 @@
     "output": "_site",
     "template": [
       "default",
-      "modern"
+      "modern",
+        "templates/material/public"
     ],
     "globalMetadata": {
-      "_appName": "TdxWebApiDocs",
-      "_appTitle": "TdxWebApiDocs",
+      "_appName": "TeamDynamix WebAPI SDK",
+      "_appTitle": "TeamDynamix WebAPI SDK",
       "_enableSearch": true,
       "pdf": true
-    }
+    },
+    "postProcessors": ["ExtractSearchIndex"]
   }
 }

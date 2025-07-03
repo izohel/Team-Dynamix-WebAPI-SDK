@@ -1,7 +1,4 @@
-﻿using Itsm.Tdx.WebApi.CustomAttributes.Models;
-using Itsm.Tdx.WebApi.KnowledgeBase.Models;
-using Itsm.Tdx.WebApi.SharedModels;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +6,11 @@ using System.Net.Mail;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using TeamDynamix.Api.CustomAttributes.Models;
+using TeamDynamix.Api.KnowledgeBase.Models;
+using TeamDynamix.Api.SharedModels;
 
-namespace Itsm.Tdx.WebApi.Tickets.Models;
+namespace TeamDynamix.Api.Tickets.Models;
 
 /// <summary>
 /// Represents a ticket with all associated details in TeamDynamix.

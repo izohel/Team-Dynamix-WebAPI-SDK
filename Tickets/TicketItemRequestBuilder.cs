@@ -1,6 +1,7 @@
-﻿using Itsm.Tdx.WebApi.Tickets.Models;
+﻿using TeamDynamix.Api;
+using TeamDynamix.Api.Tickets.Models;
 
-namespace Itsm.Tdx.WebApi.Tickets;
+namespace TeamDynamix.Api.Tickets;
 /// <summary>
 /// Provides operations to retrieve a specific ticket by ID.
 /// </summary>

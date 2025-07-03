@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Itsm.Tdx.WebApi.SharedModels;
+namespace TeamDynamix.Api.SharedModels;
 
 /// <summary>
 /// A single person, group, or account/department.

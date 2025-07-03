@@ -1,4 +1,4 @@
-﻿namespace Itsm.Tdx.WebApi.People;
+﻿namespace TeamDynamix.Api.People;
 /// <summary>
 /// 
 /// </summary>

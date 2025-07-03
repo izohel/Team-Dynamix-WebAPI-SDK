@@ -1,12 +1,12 @@
-﻿using Itsm.Tdx.WebApi.Extensions;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Polly;
 using Polly.Retry;
 using System.Globalization;
 using System.Net;
 using System.Net.Http.Headers;
+using TeamDynamix.Api.Extensions;
 
-namespace Itsm.Tdx.WebApi;
+namespace TeamDynamix.Api;
 /// <summary>
 /// Base abstract client for interacting with the TeamDynamix API.
 /// Provides core HTTP communication features such as:
@@ -53,9 +53,7 @@ public abstract class TdxBaseClient
         : this(httpClient, options)
     {
         if (httpClient.BaseAddress == null)
-        {
             httpClient.BaseAddress = BuildBaseUri(tenant, options ?? new TdxClientOptions());
-        }
     }
 
     /// <summary>
@@ -196,11 +194,13 @@ public abstract class TdxBaseClient
     private async Task<HttpResponseMessage> SendWithPolicyAsync(HttpRequestMessage request)
     {
         ArgumentNullException.ThrowIfNull(request);
-        AddAuthorization(request);
+        
         Context context = new();
 
         HttpResponseMessage response = await RetryPolicy.ExecuteAsync(async ctx =>
         {
+            request = await CreateRequest(request);
+            AddAuthorization(request);
             HttpResponseMessage resp = await HttpClient.SendAsync(request);
 
             if (resp.Headers.TryGetValues("X-RateLimit-Reset", out IEnumerable<string>? values))
@@ -214,6 +214,33 @@ public abstract class TdxBaseClient
         }, context);
 
         return response;
+    }
+    private static async Task<HttpRequestMessage> CreateRequest(HttpRequestMessage request)
+    {
+        HttpRequestMessage requestMessage = new (request.Method, request.RequestUri)
+        {
+            Version = request.Version
+        };
+
+        // Clone headers
+        foreach (KeyValuePair<string, IEnumerable<string>> header in request.Headers)
+            requestMessage.Headers.TryAddWithoutValidation(header.Key, header.Value);
+
+        // Clone content if present
+        if (request.Content != null)
+        {
+            MemoryStream ms = new ();
+            await request.Content.CopyToAsync(ms).ConfigureAwait(false);
+            ms.Position = 0;
+
+            StreamContent content = new (ms);
+            foreach (KeyValuePair<string, IEnumerable<string>> header in request.Content.Headers)
+                content.Headers.TryAddWithoutValidation(header.Key, header.Value);
+
+            requestMessage.Content = content;
+        }
+
+        return requestMessage;
     }
 }
 

@@ -1,4 +1,4 @@
-﻿namespace Itsm.Tdx.WebApi;
+﻿namespace TeamDynamix.Api;
 /// <summary>
 /// Factory for creating <see cref="HttpClient"/> instances with advanced control over the message handler pipeline.
 /// </summary>

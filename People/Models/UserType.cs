@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Itsm.Tdx.WebApi.People.Models;
+namespace TeamDynamix.Api.People.Models;
 /// <summary>
 /// Describes the different types of users and customers tracked within TeamDynamix.
 /// </summary>

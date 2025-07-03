@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Itsm.Tdx.WebApi.Extensions;
+namespace TeamDynamix.Api.Extensions;
 /// <summary>
 /// Configuration options for the TeamDynamix API client.
 /// 
