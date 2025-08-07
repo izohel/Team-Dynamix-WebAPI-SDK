@@ -250,6 +250,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TeamDynamix.Api.Auth.AuthRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TeamDynamix.Api.Auth.AuthRequestBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TeamDynamix.Api.Auth.AuthRequestBuilder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TeamDynamix.Api.Auth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TeamDynamix.Api.Auth.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TeamDynamix.Api.Auth",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/TeamDynamix.Api.BaseRequestBuilder.yml",
       "output": {
         ".html": {
@@ -470,6 +498,48 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "TeamDynamix.Api.Locations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TeamDynamix.Api.Patching.PatchBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TeamDynamix.Api.Patching.PatchBuilder-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TeamDynamix.Api.Patching.PatchBuilder<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TeamDynamix.Api.Patching.PatchOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TeamDynamix.Api.Patching.PatchOperation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TeamDynamix.Api.Patching.PatchOperation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TeamDynamix.Api.Patching.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TeamDynamix.Api.Patching.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "TeamDynamix.Api.Patching",
       "Summary": null
     },
     {

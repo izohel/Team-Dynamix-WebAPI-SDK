@@ -2245,6 +2245,82 @@ references:
   commentId: F:TeamDynamix.Api.Attachments.Models.AttachmentType.Ticket
   fullName: TeamDynamix.Api.Attachments.Models.AttachmentType.Ticket
   nameWithType: AttachmentType.Ticket
+- uid: TeamDynamix.Api.Auth
+  name: TeamDynamix.Api.Auth
+  href: api/TeamDynamix.Api.Auth.html
+  commentId: N:TeamDynamix.Api.Auth
+  fullName: TeamDynamix.Api.Auth
+  nameWithType: TeamDynamix.Api.Auth
+- uid: TeamDynamix.Api.Auth.AuthRequestBuilder
+  name: AuthRequestBuilder
+  href: api/TeamDynamix.Api.Auth.AuthRequestBuilder.html
+  commentId: T:TeamDynamix.Api.Auth.AuthRequestBuilder
+  fullName: TeamDynamix.Api.Auth.AuthRequestBuilder
+  nameWithType: AuthRequestBuilder
+- uid: TeamDynamix.Api.Auth.AuthRequestBuilder.#ctor(TeamDynamix.Api.TdxBaseClient)
+  name: AuthRequestBuilder(TdxBaseClient)
+  href: api/TeamDynamix.Api.Auth.AuthRequestBuilder.html#TeamDynamix_Api_Auth_AuthRequestBuilder__ctor_TeamDynamix_Api_TdxBaseClient_
+  commentId: M:TeamDynamix.Api.Auth.AuthRequestBuilder.#ctor(TeamDynamix.Api.TdxBaseClient)
+  name.vb: New(TdxBaseClient)
+  fullName: TeamDynamix.Api.Auth.AuthRequestBuilder.AuthRequestBuilder(TeamDynamix.Api.TdxBaseClient)
+  fullName.vb: TeamDynamix.Api.Auth.AuthRequestBuilder.New(TeamDynamix.Api.TdxBaseClient)
+  nameWithType: AuthRequestBuilder.AuthRequestBuilder(TdxBaseClient)
+  nameWithType.vb: AuthRequestBuilder.New(TdxBaseClient)
+- uid: TeamDynamix.Api.Auth.AuthRequestBuilder.#ctor*
+  name: AuthRequestBuilder
+  href: api/TeamDynamix.Api.Auth.AuthRequestBuilder.html#TeamDynamix_Api_Auth_AuthRequestBuilder__ctor_
+  commentId: Overload:TeamDynamix.Api.Auth.AuthRequestBuilder.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TeamDynamix.Api.Auth.AuthRequestBuilder.AuthRequestBuilder
+  fullName.vb: TeamDynamix.Api.Auth.AuthRequestBuilder.New
+  nameWithType: AuthRequestBuilder.AuthRequestBuilder
+  nameWithType.vb: AuthRequestBuilder.New
+- uid: TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateAdminAsync(System.String,System.String)
+  name: AuthenticateAdminAsync(string, string)
+  href: api/TeamDynamix.Api.Auth.AuthRequestBuilder.html#TeamDynamix_Api_Auth_AuthRequestBuilder_AuthenticateAdminAsync_System_String_System_String_
+  commentId: M:TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateAdminAsync(System.String,System.String)
+  name.vb: AuthenticateAdminAsync(String, String)
+  fullName: TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateAdminAsync(string, string)
+  fullName.vb: TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateAdminAsync(String, String)
+  nameWithType: AuthRequestBuilder.AuthenticateAdminAsync(string, string)
+  nameWithType.vb: AuthRequestBuilder.AuthenticateAdminAsync(String, String)
+- uid: TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateAdminAsync*
+  name: AuthenticateAdminAsync
+  href: api/TeamDynamix.Api.Auth.AuthRequestBuilder.html#TeamDynamix_Api_Auth_AuthRequestBuilder_AuthenticateAdminAsync_
+  commentId: Overload:TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateAdminAsync
+  isSpec: "True"
+  fullName: TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateAdminAsync
+  nameWithType: AuthRequestBuilder.AuthenticateAdminAsync
+- uid: TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateUserAsync(System.String,System.String)
+  name: AuthenticateUserAsync(string, string)
+  href: api/TeamDynamix.Api.Auth.AuthRequestBuilder.html#TeamDynamix_Api_Auth_AuthRequestBuilder_AuthenticateUserAsync_System_String_System_String_
+  commentId: M:TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateUserAsync(System.String,System.String)
+  name.vb: AuthenticateUserAsync(String, String)
+  fullName: TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateUserAsync(string, string)
+  fullName.vb: TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateUserAsync(String, String)
+  nameWithType: AuthRequestBuilder.AuthenticateUserAsync(string, string)
+  nameWithType.vb: AuthRequestBuilder.AuthenticateUserAsync(String, String)
+- uid: TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateUserAsync*
+  name: AuthenticateUserAsync
+  href: api/TeamDynamix.Api.Auth.AuthRequestBuilder.html#TeamDynamix_Api_Auth_AuthRequestBuilder_AuthenticateUserAsync_
+  commentId: Overload:TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateUserAsync
+  isSpec: "True"
+  fullName: TeamDynamix.Api.Auth.AuthRequestBuilder.AuthenticateUserAsync
+  nameWithType: AuthRequestBuilder.AuthenticateUserAsync
+- uid: TeamDynamix.Api.Auth.AuthRequestBuilder.GetCurrentUserAsync
+  name: GetCurrentUserAsync()
+  href: api/TeamDynamix.Api.Auth.AuthRequestBuilder.html#TeamDynamix_Api_Auth_AuthRequestBuilder_GetCurrentUserAsync
+  commentId: M:TeamDynamix.Api.Auth.AuthRequestBuilder.GetCurrentUserAsync
+  fullName: TeamDynamix.Api.Auth.AuthRequestBuilder.GetCurrentUserAsync()
+  nameWithType: AuthRequestBuilder.GetCurrentUserAsync()
+- uid: TeamDynamix.Api.Auth.AuthRequestBuilder.GetCurrentUserAsync*
+  name: GetCurrentUserAsync
+  href: api/TeamDynamix.Api.Auth.AuthRequestBuilder.html#TeamDynamix_Api_Auth_AuthRequestBuilder_GetCurrentUserAsync_
+  commentId: Overload:TeamDynamix.Api.Auth.AuthRequestBuilder.GetCurrentUserAsync
+  isSpec: "True"
+  fullName: TeamDynamix.Api.Auth.AuthRequestBuilder.GetCurrentUserAsync
+  nameWithType: AuthRequestBuilder.GetCurrentUserAsync
 - uid: TeamDynamix.Api.BaseRequestBuilder
   name: BaseRequestBuilder
   href: api/TeamDynamix.Api.BaseRequestBuilder.html
@@ -3437,6 +3513,119 @@ references:
   isSpec: "True"
   fullName: TeamDynamix.Api.Locations.Models.LocationRoom.UsersCount
   nameWithType: LocationRoom.UsersCount
+- uid: TeamDynamix.Api.Patching
+  name: TeamDynamix.Api.Patching
+  href: api/TeamDynamix.Api.Patching.html
+  commentId: N:TeamDynamix.Api.Patching
+  fullName: TeamDynamix.Api.Patching
+  nameWithType: TeamDynamix.Api.Patching
+- uid: TeamDynamix.Api.Patching.PatchBuilder`1
+  name: PatchBuilder<T>
+  href: api/TeamDynamix.Api.Patching.PatchBuilder-1.html
+  commentId: T:TeamDynamix.Api.Patching.PatchBuilder`1
+  name.vb: PatchBuilder(Of T)
+  fullName: TeamDynamix.Api.Patching.PatchBuilder<T>
+  fullName.vb: TeamDynamix.Api.Patching.PatchBuilder(Of T)
+  nameWithType: PatchBuilder<T>
+  nameWithType.vb: PatchBuilder(Of T)
+- uid: TeamDynamix.Api.Patching.PatchBuilder`1.Add(System.String,System.Object)
+  name: Add(string, object)
+  href: api/TeamDynamix.Api.Patching.PatchBuilder-1.html#TeamDynamix_Api_Patching_PatchBuilder_1_Add_System_String_System_Object_
+  commentId: M:TeamDynamix.Api.Patching.PatchBuilder`1.Add(System.String,System.Object)
+  name.vb: Add(String, Object)
+  fullName: TeamDynamix.Api.Patching.PatchBuilder<T>.Add(string, object)
+  fullName.vb: TeamDynamix.Api.Patching.PatchBuilder(Of T).Add(String, Object)
+  nameWithType: PatchBuilder<T>.Add(string, object)
+  nameWithType.vb: PatchBuilder(Of T).Add(String, Object)
+- uid: TeamDynamix.Api.Patching.PatchBuilder`1.Add*
+  name: Add
+  href: api/TeamDynamix.Api.Patching.PatchBuilder-1.html#TeamDynamix_Api_Patching_PatchBuilder_1_Add_
+  commentId: Overload:TeamDynamix.Api.Patching.PatchBuilder`1.Add
+  isSpec: "True"
+  fullName: TeamDynamix.Api.Patching.PatchBuilder<T>.Add
+  fullName.vb: TeamDynamix.Api.Patching.PatchBuilder(Of T).Add
+  nameWithType: PatchBuilder<T>.Add
+  nameWithType.vb: PatchBuilder(Of T).Add
+- uid: TeamDynamix.Api.Patching.PatchBuilder`1.Build
+  name: Build()
+  href: api/TeamDynamix.Api.Patching.PatchBuilder-1.html#TeamDynamix_Api_Patching_PatchBuilder_1_Build
+  commentId: M:TeamDynamix.Api.Patching.PatchBuilder`1.Build
+  fullName: TeamDynamix.Api.Patching.PatchBuilder<T>.Build()
+  fullName.vb: TeamDynamix.Api.Patching.PatchBuilder(Of T).Build()
+  nameWithType: PatchBuilder<T>.Build()
+  nameWithType.vb: PatchBuilder(Of T).Build()
+- uid: TeamDynamix.Api.Patching.PatchBuilder`1.Build*
+  name: Build
+  href: api/TeamDynamix.Api.Patching.PatchBuilder-1.html#TeamDynamix_Api_Patching_PatchBuilder_1_Build_
+  commentId: Overload:TeamDynamix.Api.Patching.PatchBuilder`1.Build
+  isSpec: "True"
+  fullName: TeamDynamix.Api.Patching.PatchBuilder<T>.Build
+  fullName.vb: TeamDynamix.Api.Patching.PatchBuilder(Of T).Build
+  nameWithType: PatchBuilder<T>.Build
+  nameWithType.vb: PatchBuilder(Of T).Build
+- uid: TeamDynamix.Api.Patching.PatchBuilder`1.Remove(System.String)
+  name: Remove(string)
+  href: api/TeamDynamix.Api.Patching.PatchBuilder-1.html#TeamDynamix_Api_Patching_PatchBuilder_1_Remove_System_String_
+  commentId: M:TeamDynamix.Api.Patching.PatchBuilder`1.Remove(System.String)
+  name.vb: Remove(String)
+  fullName: TeamDynamix.Api.Patching.PatchBuilder<T>.Remove(string)
+  fullName.vb: TeamDynamix.Api.Patching.PatchBuilder(Of T).Remove(String)
+  nameWithType: PatchBuilder<T>.Remove(string)
+  nameWithType.vb: PatchBuilder(Of T).Remove(String)
+- uid: TeamDynamix.Api.Patching.PatchBuilder`1.Remove*
+  name: Remove
+  href: api/TeamDynamix.Api.Patching.PatchBuilder-1.html#TeamDynamix_Api_Patching_PatchBuilder_1_Remove_
+  commentId: Overload:TeamDynamix.Api.Patching.PatchBuilder`1.Remove
+  isSpec: "True"
+  fullName: TeamDynamix.Api.Patching.PatchBuilder<T>.Remove
+  fullName.vb: TeamDynamix.Api.Patching.PatchBuilder(Of T).Remove
+  nameWithType: PatchBuilder<T>.Remove
+  nameWithType.vb: PatchBuilder(Of T).Remove
+- uid: TeamDynamix.Api.Patching.PatchOperation
+  name: PatchOperation
+  href: api/TeamDynamix.Api.Patching.PatchOperation.html
+  commentId: T:TeamDynamix.Api.Patching.PatchOperation
+  fullName: TeamDynamix.Api.Patching.PatchOperation
+  nameWithType: PatchOperation
+- uid: TeamDynamix.Api.Patching.PatchOperation.Op
+  name: Op
+  href: api/TeamDynamix.Api.Patching.PatchOperation.html#TeamDynamix_Api_Patching_PatchOperation_Op
+  commentId: P:TeamDynamix.Api.Patching.PatchOperation.Op
+  fullName: TeamDynamix.Api.Patching.PatchOperation.Op
+  nameWithType: PatchOperation.Op
+- uid: TeamDynamix.Api.Patching.PatchOperation.Op*
+  name: Op
+  href: api/TeamDynamix.Api.Patching.PatchOperation.html#TeamDynamix_Api_Patching_PatchOperation_Op_
+  commentId: Overload:TeamDynamix.Api.Patching.PatchOperation.Op
+  isSpec: "True"
+  fullName: TeamDynamix.Api.Patching.PatchOperation.Op
+  nameWithType: PatchOperation.Op
+- uid: TeamDynamix.Api.Patching.PatchOperation.Path
+  name: Path
+  href: api/TeamDynamix.Api.Patching.PatchOperation.html#TeamDynamix_Api_Patching_PatchOperation_Path
+  commentId: P:TeamDynamix.Api.Patching.PatchOperation.Path
+  fullName: TeamDynamix.Api.Patching.PatchOperation.Path
+  nameWithType: PatchOperation.Path
+- uid: TeamDynamix.Api.Patching.PatchOperation.Path*
+  name: Path
+  href: api/TeamDynamix.Api.Patching.PatchOperation.html#TeamDynamix_Api_Patching_PatchOperation_Path_
+  commentId: Overload:TeamDynamix.Api.Patching.PatchOperation.Path
+  isSpec: "True"
+  fullName: TeamDynamix.Api.Patching.PatchOperation.Path
+  nameWithType: PatchOperation.Path
+- uid: TeamDynamix.Api.Patching.PatchOperation.Value
+  name: Value
+  href: api/TeamDynamix.Api.Patching.PatchOperation.html#TeamDynamix_Api_Patching_PatchOperation_Value
+  commentId: P:TeamDynamix.Api.Patching.PatchOperation.Value
+  fullName: TeamDynamix.Api.Patching.PatchOperation.Value
+  nameWithType: PatchOperation.Value
+- uid: TeamDynamix.Api.Patching.PatchOperation.Value*
+  name: Value
+  href: api/TeamDynamix.Api.Patching.PatchOperation.html#TeamDynamix_Api_Patching_PatchOperation_Value_
+  commentId: Overload:TeamDynamix.Api.Patching.PatchOperation.Value
+  isSpec: "True"
+  fullName: TeamDynamix.Api.Patching.PatchOperation.Value
+  nameWithType: PatchOperation.Value
 - uid: TeamDynamix.Api.People
   name: TeamDynamix.Api.People
   href: api/TeamDynamix.Api.People.html
@@ -4993,33 +5182,33 @@ references:
   commentId: T:TeamDynamix.Api.TdxClient
   fullName: TeamDynamix.Api.TdxClient
   nameWithType: TdxClient
-- uid: TeamDynamix.Api.TdxClient.#ctor(System.Net.Http.HttpClient,System.String,System.String,System.String,TeamDynamix.Api.Extensions.TdxClientOptions)
-  name: TdxClient(HttpClient, string, string, string, TdxClientOptions?)
-  href: api/TeamDynamix.Api.TdxClient.html#TeamDynamix_Api_TdxClient__ctor_System_Net_Http_HttpClient_System_String_System_String_System_String_TeamDynamix_Api_Extensions_TdxClientOptions_
-  commentId: M:TeamDynamix.Api.TdxClient.#ctor(System.Net.Http.HttpClient,System.String,System.String,System.String,TeamDynamix.Api.Extensions.TdxClientOptions)
-  name.vb: New(HttpClient, String, String, String, TdxClientOptions)
-  fullName: TeamDynamix.Api.TdxClient.TdxClient(System.Net.Http.HttpClient, string, string, string, TeamDynamix.Api.Extensions.TdxClientOptions?)
-  fullName.vb: TeamDynamix.Api.TdxClient.New(System.Net.Http.HttpClient, String, String, String, TeamDynamix.Api.Extensions.TdxClientOptions)
-  nameWithType: TdxClient.TdxClient(HttpClient, string, string, string, TdxClientOptions?)
-  nameWithType.vb: TdxClient.New(HttpClient, String, String, String, TdxClientOptions)
-- uid: TeamDynamix.Api.TdxClient.#ctor(System.String,System.String,System.String)
-  name: TdxClient(string, string, string)
-  href: api/TeamDynamix.Api.TdxClient.html#TeamDynamix_Api_TdxClient__ctor_System_String_System_String_System_String_
-  commentId: M:TeamDynamix.Api.TdxClient.#ctor(System.String,System.String,System.String)
-  name.vb: New(String, String, String)
-  fullName: TeamDynamix.Api.TdxClient.TdxClient(string, string, string)
-  fullName.vb: TeamDynamix.Api.TdxClient.New(String, String, String)
-  nameWithType: TdxClient.TdxClient(string, string, string)
-  nameWithType.vb: TdxClient.New(String, String, String)
-- uid: TeamDynamix.Api.TdxClient.#ctor(System.String,System.String,System.String,TeamDynamix.Api.Extensions.TdxClientOptions)
-  name: TdxClient(string, string, string, TdxClientOptions)
-  href: api/TeamDynamix.Api.TdxClient.html#TeamDynamix_Api_TdxClient__ctor_System_String_System_String_System_String_TeamDynamix_Api_Extensions_TdxClientOptions_
-  commentId: M:TeamDynamix.Api.TdxClient.#ctor(System.String,System.String,System.String,TeamDynamix.Api.Extensions.TdxClientOptions)
-  name.vb: New(String, String, String, TdxClientOptions)
-  fullName: TeamDynamix.Api.TdxClient.TdxClient(string, string, string, TeamDynamix.Api.Extensions.TdxClientOptions)
-  fullName.vb: TeamDynamix.Api.TdxClient.New(String, String, String, TeamDynamix.Api.Extensions.TdxClientOptions)
-  nameWithType: TdxClient.TdxClient(string, string, string, TdxClientOptions)
-  nameWithType.vb: TdxClient.New(String, String, String, TdxClientOptions)
+- uid: TeamDynamix.Api.TdxClient.#ctor(System.Net.Http.HttpClient,System.String,TeamDynamix.Api.Extensions.TdxClientOptions)
+  name: TdxClient(HttpClient, string, TdxClientOptions?)
+  href: api/TeamDynamix.Api.TdxClient.html#TeamDynamix_Api_TdxClient__ctor_System_Net_Http_HttpClient_System_String_TeamDynamix_Api_Extensions_TdxClientOptions_
+  commentId: M:TeamDynamix.Api.TdxClient.#ctor(System.Net.Http.HttpClient,System.String,TeamDynamix.Api.Extensions.TdxClientOptions)
+  name.vb: New(HttpClient, String, TdxClientOptions)
+  fullName: TeamDynamix.Api.TdxClient.TdxClient(System.Net.Http.HttpClient, string, TeamDynamix.Api.Extensions.TdxClientOptions?)
+  fullName.vb: TeamDynamix.Api.TdxClient.New(System.Net.Http.HttpClient, String, TeamDynamix.Api.Extensions.TdxClientOptions)
+  nameWithType: TdxClient.TdxClient(HttpClient, string, TdxClientOptions?)
+  nameWithType.vb: TdxClient.New(HttpClient, String, TdxClientOptions)
+- uid: TeamDynamix.Api.TdxClient.#ctor(System.String)
+  name: TdxClient(string)
+  href: api/TeamDynamix.Api.TdxClient.html#TeamDynamix_Api_TdxClient__ctor_System_String_
+  commentId: M:TeamDynamix.Api.TdxClient.#ctor(System.String)
+  name.vb: New(String)
+  fullName: TeamDynamix.Api.TdxClient.TdxClient(string)
+  fullName.vb: TeamDynamix.Api.TdxClient.New(String)
+  nameWithType: TdxClient.TdxClient(string)
+  nameWithType.vb: TdxClient.New(String)
+- uid: TeamDynamix.Api.TdxClient.#ctor(System.String,TeamDynamix.Api.Extensions.TdxClientOptions)
+  name: TdxClient(string, TdxClientOptions)
+  href: api/TeamDynamix.Api.TdxClient.html#TeamDynamix_Api_TdxClient__ctor_System_String_TeamDynamix_Api_Extensions_TdxClientOptions_
+  commentId: M:TeamDynamix.Api.TdxClient.#ctor(System.String,TeamDynamix.Api.Extensions.TdxClientOptions)
+  name.vb: New(String, TdxClientOptions)
+  fullName: TeamDynamix.Api.TdxClient.TdxClient(string, TeamDynamix.Api.Extensions.TdxClientOptions)
+  fullName.vb: TeamDynamix.Api.TdxClient.New(String, TeamDynamix.Api.Extensions.TdxClientOptions)
+  nameWithType: TdxClient.TdxClient(string, TdxClientOptions)
+  nameWithType.vb: TdxClient.New(String, TdxClientOptions)
 - uid: TeamDynamix.Api.TdxClient.#ctor*
   name: TdxClient
   href: api/TeamDynamix.Api.TdxClient.html#TeamDynamix_Api_TdxClient__ctor_
@@ -5059,19 +5248,19 @@ references:
   isSpec: "True"
   fullName: TeamDynamix.Api.TdxClient.Assets
   nameWithType: TdxClient.Assets
-- uid: TeamDynamix.Api.TdxClient.AuthenticateAsync
-  name: AuthenticateAsync()
-  href: api/TeamDynamix.Api.TdxClient.html#TeamDynamix_Api_TdxClient_AuthenticateAsync
-  commentId: M:TeamDynamix.Api.TdxClient.AuthenticateAsync
-  fullName: TeamDynamix.Api.TdxClient.AuthenticateAsync()
-  nameWithType: TdxClient.AuthenticateAsync()
-- uid: TeamDynamix.Api.TdxClient.AuthenticateAsync*
-  name: AuthenticateAsync
-  href: api/TeamDynamix.Api.TdxClient.html#TeamDynamix_Api_TdxClient_AuthenticateAsync_
-  commentId: Overload:TeamDynamix.Api.TdxClient.AuthenticateAsync
+- uid: TeamDynamix.Api.TdxClient.Auth
+  name: Auth
+  href: api/TeamDynamix.Api.TdxClient.html#TeamDynamix_Api_TdxClient_Auth
+  commentId: P:TeamDynamix.Api.TdxClient.Auth
+  fullName: TeamDynamix.Api.TdxClient.Auth
+  nameWithType: TdxClient.Auth
+- uid: TeamDynamix.Api.TdxClient.Auth*
+  name: Auth
+  href: api/TeamDynamix.Api.TdxClient.html#TeamDynamix_Api_TdxClient_Auth_
+  commentId: Overload:TeamDynamix.Api.TdxClient.Auth
   isSpec: "True"
-  fullName: TeamDynamix.Api.TdxClient.AuthenticateAsync
-  nameWithType: TdxClient.AuthenticateAsync
+  fullName: TeamDynamix.Api.TdxClient.Auth
+  nameWithType: TdxClient.Auth
 - uid: TeamDynamix.Api.TdxClient.Locations
   name: Locations
   href: api/TeamDynamix.Api.TdxClient.html#TeamDynamix_Api_TdxClient_Locations
@@ -7578,22 +7767,6 @@ references:
   isSpec: "True"
   fullName: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithOptions
   nameWithType: TicketCreateRequestBuilder.WithOptions
-- uid: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithPriority(System.String)
-  name: WithPriority(string)
-  href: api/TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.html#TeamDynamix_Api_Tickets_TicketCreateRequestBuilder_WithPriority_System_String_
-  commentId: M:TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithPriority(System.String)
-  name.vb: WithPriority(String)
-  fullName: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithPriority(string)
-  fullName.vb: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithPriority(String)
-  nameWithType: TicketCreateRequestBuilder.WithPriority(string)
-  nameWithType.vb: TicketCreateRequestBuilder.WithPriority(String)
-- uid: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithPriority*
-  name: WithPriority
-  href: api/TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.html#TeamDynamix_Api_Tickets_TicketCreateRequestBuilder_WithPriority_
-  commentId: Overload:TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithPriority
-  isSpec: "True"
-  fullName: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithPriority
-  nameWithType: TicketCreateRequestBuilder.WithPriority
 - uid: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithRequestor(System.String)
   name: WithRequestor(string)
   href: api/TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.html#TeamDynamix_Api_Tickets_TicketCreateRequestBuilder_WithRequestor_System_String_
@@ -7626,6 +7799,22 @@ references:
   isSpec: "True"
   fullName: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithResponsible
   nameWithType: TicketCreateRequestBuilder.WithResponsible
+- uid: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithResponsibleGroup(System.String)
+  name: WithResponsibleGroup(string)
+  href: api/TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.html#TeamDynamix_Api_Tickets_TicketCreateRequestBuilder_WithResponsibleGroup_System_String_
+  commentId: M:TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithResponsibleGroup(System.String)
+  name.vb: WithResponsibleGroup(String)
+  fullName: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithResponsibleGroup(string)
+  fullName.vb: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithResponsibleGroup(String)
+  nameWithType: TicketCreateRequestBuilder.WithResponsibleGroup(string)
+  nameWithType.vb: TicketCreateRequestBuilder.WithResponsibleGroup(String)
+- uid: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithResponsibleGroup*
+  name: WithResponsibleGroup
+  href: api/TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.html#TeamDynamix_Api_Tickets_TicketCreateRequestBuilder_WithResponsibleGroup_
+  commentId: Overload:TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithResponsibleGroup
+  isSpec: "True"
+  fullName: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithResponsibleGroup
+  nameWithType: TicketCreateRequestBuilder.WithResponsibleGroup
 - uid: TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.WithStatusId(System.String)
   name: WithStatusId(string)
   href: api/TeamDynamix.Api.Tickets.TicketCreateRequestBuilder.html#TeamDynamix_Api_Tickets_TicketCreateRequestBuilder_WithStatusId_System_String_
