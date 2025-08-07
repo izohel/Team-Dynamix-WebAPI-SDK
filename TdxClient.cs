@@ -7,6 +7,7 @@ using TeamDynamix.Api.Tickets;
 using TeamDynamix.Api.Extensions;
 using TeamDynamix.Api.Locations;
 using TeamDynamix.Api.Assets;
+using TeamDynamix.Api.Auth;
 
 namespace TeamDynamix.Api;
 
@@ -24,9 +25,11 @@ namespace TeamDynamix.Api;
 /// </remarks>
 public class TdxClient : TdxBaseClient
 {
-    private readonly string _webServicesBeId;
-    private readonly string _webServicesKey;
-
+    /// <summary>
+    /// Provides authentication-related actions such as admin login, SSO login,
+    /// and current user retrieval for the TeamDynamix API.
+    /// </summary>
+    public AuthRequestBuilder Auth => new(this);
     /// <summary>
     /// Provides methods for working with assets.To the specified App
     /// </summary>
@@ -57,33 +60,19 @@ public class TdxClient : TdxBaseClient
     /// Initializes a new instance of <see cref="TdxClient"/> with default retry policy and no throttling callbacks.
     /// </summary>
     /// <param name="tenant">The tenant name or base URL for API access.</param>
-    /// <param name="webServicesBeId">The BEID credential for authentication.</param>
-    /// <param name="webServicesKey">The Web Services key credential for authentication.</param>
-    /// <exception cref="ArgumentException">Thrown if <paramref name="webServicesBeId"/> or <paramref name="webServicesKey"/> is null or empty.</exception>
-    public TdxClient(string tenant, string webServicesBeId, string webServicesKey)
-       : this(tenant, webServicesBeId, webServicesKey, new TdxClientOptions())
+    public TdxClient(string tenant)
+       : this(tenant, new TdxClientOptions())
     {
-        ArgumentException.ThrowIfNullOrEmpty(webServicesBeId, nameof(webServicesBeId));
-        ArgumentException.ThrowIfNullOrEmpty(webServicesKey, nameof(webServicesKey));
-        _webServicesBeId = webServicesBeId;
-        _webServicesKey = webServicesKey;
     }
 
     /// <summary>
     /// Initializes a new instance of <see cref="TdxClient"/> with full configuration options.
     /// </summary>
     /// <param name="tenant">The tenant name or base URL for API access.</param>
-    /// <param name="webServicesBeId">The BEID credential for authentication.</param>
-    /// <param name="webServicesKey">The Web Services key credential for authentication.</param>
     /// <param name="options">Optional configuration settings for the client, such as retry policies.</param>
-    /// <exception cref="ArgumentException">Thrown if <paramref name="webServicesBeId"/> or <paramref name="webServicesKey"/> is null or empty.</exception>
-    public TdxClient(string tenant, string webServicesBeId, string webServicesKey, TdxClientOptions options)
+    public TdxClient(string tenant, TdxClientOptions options)
         : base(new HttpClient { BaseAddress = BuildBaseUri(tenant, options) }, options: options)
     {
-        ArgumentException.ThrowIfNullOrEmpty(webServicesBeId, nameof(webServicesBeId));
-        ArgumentException.ThrowIfNullOrEmpty(webServicesKey, nameof(webServicesKey));
-        _webServicesBeId = webServicesBeId;
-        _webServicesKey = webServicesKey;
     }
 
     /// <summary>
@@ -91,49 +80,49 @@ public class TdxClient : TdxBaseClient
     /// </summary>
     /// <param name="httpClient">A preconfigured <see cref="HttpClient"/> instance to use for requests.</param>
     /// <param name="tenant">The tenant name or base URL for API access.</param>
-    /// <param name="webServicesBeId">The BEID credential for authentication.</param>
-    /// <param name="webServicesKey">The Web Services key credential for authentication.</param>
     /// <param name="options">Optional configuration settings for the client.</param>
-    /// <exception cref="ArgumentException">Thrown if <paramref name="webServicesBeId"/> or <paramref name="webServicesKey"/> is null or empty.</exception>
     /// <remarks>
     /// Use this constructor to supply your own <see cref="HttpClient"/> instance, for example, one configured with custom
     /// message handlers, logging, or retry policies. If <see cref="HttpClient.BaseAddress"/> is not set,
     /// it will be inferred from the tenant and options.
     /// </remarks>
-    public TdxClient(HttpClient httpClient, string tenant, string webServicesBeId, string webServicesKey, TdxClientOptions? options = null)
+    public TdxClient(HttpClient httpClient, string tenant,TdxClientOptions? options = null)
         : base(httpClient, tenant, options ?? new TdxClientOptions())
     {
-        ArgumentException.ThrowIfNullOrEmpty(webServicesBeId, nameof(webServicesBeId));
-        ArgumentException.ThrowIfNullOrEmpty(webServicesKey, nameof(webServicesKey));
-        _webServicesBeId = webServicesBeId;
-        _webServicesKey = webServicesKey;
     }
 
-    /// <summary>
-    /// Authenticates the client by sending the BEID and WebServicesKey to the authentication endpoint
-    /// and storing the returned token for subsequent API requests.
-    /// </summary>
-    /// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
-    /// <exception cref="ArgumentException">Thrown if the authentication token cannot be retrieved or is empty.</exception>
-    public async Task AuthenticateAsync()
-    {
-        var loginPayload = new
-        {
-            BEID = _webServicesBeId,
-            WebServicesKey = _webServicesKey
-        };
+    //public async Task AuthenticateAsync()
+    //{
+    //    var loginPayload = new
+    //    {
+    //        BEID = _webServicesBeId,
+    //        WebServicesKey = _webServicesKey
+    //    };
 
-        HttpRequestMessage request = new(HttpMethod.Post, "auth/loginadmin/")
-        {
-            Content = new StringContent(JsonConvert.SerializeObject(loginPayload), System.Text.Encoding.UTF8, "application/json")
-        };
+    //    HttpRequestMessage request = new(HttpMethod.Post, "auth/loginadmin/")
+    //    {
+    //        Content = new StringContent(JsonConvert.SerializeObject(loginPayload), System.Text.Encoding.UTF8, "application/json")
+    //    };
 
-        HttpResponseMessage response = await SendRequestAsync(request);
+    //    HttpResponseMessage response = await SendRequestAsync(request);
 
-        string token = await response.Content.ReadAsStringAsync();
+    //    string token = await response.Content.ReadAsStringAsync();
 
-        ArgumentException.ThrowIfNullOrEmpty("Token could not be retrieved.", token);
+    //    ArgumentException.ThrowIfNullOrEmpty("Token could not be retrieved.", token);
 
-        SetToken(token.Trim());
-    }
+    //    SetToken(token.Trim());
+    //}
+
+    //public async Task AuthenticateSsoAsync()
+    //{
+    //    HttpRequestMessage request = new(HttpMethod.Post, "auth/loginadmin/auth/loginsso");
+
+    //    HttpResponseMessage response = await SendRequestAsync(request);
+
+    //    string token = await response.Content.ReadAsStringAsync();
+
+    //    ArgumentException.ThrowIfNullOrEmpty("Token could not be retrieved.", token);
+
+    //    SetToken(token.Trim());
+    //}
 }

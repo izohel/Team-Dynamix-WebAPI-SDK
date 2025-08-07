@@ -14,7 +14,7 @@ public class TicketCreateRequestBuilder : BaseRequestBuilder
 {
     private readonly Dictionary<string, object> _ticket = new();
     private readonly TicketCreateOptions _options = new();
-    private readonly string[] requiredFields = { "TypeId", "Title", "AccountId", "StatusId", "PriorityId", "RequestorUid" };
+    private readonly string[] requiredFields = { "TypeId", "Title", "AccountId", "StatusId","RequestorUid" };
     /// <summary>
     /// Initializes a new instance of the <see cref="TicketCreateRequestBuilder"/> class.
     /// </summary>
@@ -35,9 +35,6 @@ public class TicketCreateRequestBuilder : BaseRequestBuilder
     /// <summary>Sets the status ID of the ticket.</summary>
     public TicketCreateRequestBuilder WithStatusId(string statusID) => Add("StatusId",statusID);
 
-    /// <summary>Sets the priority ID of the ticket.</summary>
-    public TicketCreateRequestBuilder WithPriority(string priorityId) => Add("PriorityId", priorityId);
-
     /// <summary>Sets the UID of the requestor.</summary>
     public TicketCreateRequestBuilder WithRequestor(string uid) => Add("RequestorUid", uid);
 
@@ -46,6 +43,10 @@ public class TicketCreateRequestBuilder : BaseRequestBuilder
 
     /// <summary>Sets the UID of the responsible person.</summary>
     public TicketCreateRequestBuilder WithResponsible(string uid) => Add("ResponsibleUid", uid);
+
+    /// <summary> Sets Id of the responsible group associated with the ticket. </summary>
+    /// <param name="id">Id Of the responsible group</param>
+    public TicketCreateRequestBuilder WithResponsibleGroup(string id) => Add("ResponsibleGroupID", id);
 
     private TicketCreateRequestBuilder Add(string key, object value)
     {
@@ -72,7 +73,8 @@ public class TicketCreateRequestBuilder : BaseRequestBuilder
         string queryString = _options.ToQueryString();
         HttpRequestMessage request = CreateRequest(HttpMethod.Post, $"?{queryString}", _ticket);
 
-        //string requestBody = await request.Content.ReadAsStringAsync();
+        string requestBody = await request.Content.ReadAsStringAsync();
+        Console.WriteLine(requestBody);
         return await SendAsync<Ticket>(request);
     }
     /// <summary>
